@@ -1,17 +1,112 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>China</title>
-</head>
-<body>
-    <h1>China Page</h1>
-    {% for question in questions.all %}
+{% load staticfiles %}
+<!DOCTYPE HTML>
+<!--
+	Paradigm Shift by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>China</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" href="{% static 'china/css/main.css' %}"/>
+	</head>
+	<body class="is-preload">
 
-    {{ question.question }}
+		<!-- Wrapper -->
+			<div id="wrapper">
 
-    {% endfor %}
-</body>
+				<!-- Intro -->
+					<section class="intro">
+						<header>
+							<h1>China</h1>
+							<p>“生死有命，富贵在天”</p>
+							<ul class="actions">
+								<li><a href="#first" class="arrow scrolly"><span class="label">Next</span></a></li>
+							</ul>
+						</header>
+						<div class="content">
+							<span class="image fill" data-position="center"><img src="images/pic01.jpg" alt="" /></span>
+						</div>
+					</section>
+
+                <!-- Section -->
+                {% for question in questions.all %}
+					<section id="first">
+						<header>
+                            <div>
+                                <h1>{{ forloop.counter }}</h1>
+                                <h3>Lorem gravida</h3>
+								<p>Proin aliquam facilisis ante interdum. Sed nulla amet lorem feugiat tempus aenean ornare velit lacus, ac varius sed enim lorem ullamcorper dolore.  ac varius enim lorem ullamcorper dolore. Proin aliquam facilisis.</p>
+                            </div>
+
+						</header>
+						<div class="content">
+                            <h2>{{ question.question }}</h2>
+                            <ul class="actions">
+                                <li><a href="#" class="button">Default</a></li>
+                                <li><a href="#" class="button">Default</a></li>
+                                <li><a href="#" class="button">Default</a></li>
+                                <li><a href="#" class="button">Default</a></li>
+                            </ul>
+
+						</div>
+                    </section>
+                {% endfor %}
+
+				<!-- Elements -->
+				
+					<section>
+						<header>
+							<h2>Elements</h2>
+						</header>
+						<div class="content">
+
+							
+
+							<section>
+								<header>
+									<h3>Buttons</h3>
+								</header>
+								<div class="content">
+									<ul class="actions">
+										<li><a href="#" class="button primary">Primary</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button large">Large</a></li>
+										<li><a href="#" class="button">Default</a></li>
+										<li><a href="#" class="button small">Small</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button primary icon fa-download">Icon</a></li>
+										<li><a href="#" class="button icon fa-download">Icon</a></li>
+									</ul>
+									<ul class="actions">
+										<li><span class="button primary disabled">Disabled</span></li>
+										<li><span class="button disabled">Disabled</span></li>
+									</ul>
+								</div>
+							</section>
+
+						</div>
+					</section>
+
+				<!-- Copyright -->
+					<div class="copyright">&copy; Untitled. All rights reserved. </div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="{% static 'china/js/jquery.min.js' %}"></script>
+			<script src="{% static 'china/js/jquery.scrolly.min.js' %}"></script>
+			<script src="{% static 'china/js/browser.min.js' %}"></script>
+			<script src="{% static 'china/js/breakpoints.min.js' %}"></script>
+			<script src="{% static 'china/js/util.js' %}"></script>
+			<script src="{% static 'china/js/main.js' %}"></script>
+
+	</body>
 </html>
