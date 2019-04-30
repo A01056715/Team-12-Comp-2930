@@ -15,6 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.conf import settings
+from django.conf.urls.static import static
 
 import globe.views
 import china.views
@@ -23,4 +25,4 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('home/', globe.views.home, name='globe'),
     path('china/', china.views.base, name='china'),
-]
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) 
