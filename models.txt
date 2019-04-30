@@ -1,0 +1,64 @@
+from django.db import models
+
+class country(models.Model):
+    #Primary Key
+    country_id = models.AutoField(primary_key=True)
+    category = models.CharField(maxLength=10)
+
+class question(models.Model):
+    #Primary Key
+    quiz_question_id = models.IntegerField(primary_key=True)
+    question = models.CharField();
+    #Foreign Key
+    country_id = models.ForeignKey(
+        country,
+        on_delete=models.CASCADE,
+    )
+    is_active = models.BooleanField()
+
+class question_choices(models.Model):
+    #Primary Key
+    quiz_choice_id = models.IntegerField(primary_key=True)
+    is_correct_choice = models.BooleanField()
+    #Foreign Key
+    quiz_question_id = models.ForeignKey(
+        question,
+        on_delete=models.CASCADE,
+    )
+    choice = models.integerField()
+
+class user_question_answer(models.Model):
+    #Primary Key & Foreign Key
+    quiz_user_id = models.ForeignKey(
+        user,
+        on_delete=models.CASCADE,
+    )
+    #Primary Key & Foreign Key
+    quiz_question_id = models.ForeignKey(
+        question,
+        on_delete=models.CASCADE,
+    )
+    #Primary Key & Foreign Key
+    choice_id = models.ForeignKey(
+        question_choices,
+        on_delete=models.CASCADE,
+    )
+    is_correct = models.BooleanField()
+    score = models.IntegerField()
+
+class user(models.Model):
+    #Primary Key
+    quiz_user_id = models.AutoField(primary_key=True)
+    quiz_username = models.CharField(maxLength=10)
+    quiz_useremail = models.EmailField()
+    quiz_userpassword = models.CharField(max_length=10)
+
+class user_score(models.Model):
+    #Primary Key
+    score_id = models.IntegerField()
+    user_id = models.ForeignKey(
+        user,
+        on_delete=models.CASCADE
+    )
+    best_score = models.IntegerField()
+

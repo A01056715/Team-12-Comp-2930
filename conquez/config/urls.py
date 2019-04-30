@@ -17,8 +17,10 @@ from django.contrib import admin
 from django.urls import path
 
 import globe.views
+import china.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', globe.views.home, name='globe'),
+    path('home/', globe.views.home, name='globe'),
+    path('china/', china.views.base, name='china'),
 ]
