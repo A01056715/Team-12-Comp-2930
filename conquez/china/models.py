@@ -6,4 +6,5 @@ class Question(models.Model):
     image = models.ImageField(upload_to='images/')
     #Question
     question = models.CharField(max_length=200)
+
     

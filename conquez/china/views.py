@@ -1,5 +1,7 @@
 from django.shortcuts import render
+from .models import Question
 
 # Create your views here.
 def base(request):
-    return render(request, 'china.html')
+    questions = Question.objects
+    return render(request, 'china/china.html', {'questions':questions})
