@@ -23,6 +23,6 @@ import china.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('home/', globe.views.home, name='globe'),
+    path('', globe.views.home, name='globe'),
     path('china/', china.views.base, name='china'),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) 
