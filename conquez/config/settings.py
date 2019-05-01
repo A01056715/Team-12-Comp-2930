@@ -39,6 +39,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'globe',
     'china',
+    'india',
+    'canada',
+    'brazil',
+    'turkey',
 ]
 
 MIDDLEWARE = [
