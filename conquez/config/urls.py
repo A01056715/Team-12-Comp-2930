@@ -20,9 +20,17 @@ from django.conf.urls.static import static
 
 import globe.views
 import china.views
+import canada.views
+import brazil.views
+import india.views
+import turkey.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', globe.views.home, name='globe'),
     path('china/', china.views.base, name='china'),
+    path('canada/', canada.views.base, name='canada'),
+    path('brazil/', brazil.views.base, name='brazil'),
+    path('india/', india.views.base, name='india'),
+    path('turkey/', turkey.views.base, name='turkey'),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) 
