@@ -1,113 +1,112 @@
-{% load static %}
-<!DOCTYPE HTML>
-<!--
-	Paradigm Shift by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+{% load staticfiles %}
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>China</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-		<link rel="stylesheet" href="{% static 'china/css/main.css' %}"/>
-	</head>
-	<body class="is-preload">
+  <head>
+    <meta charset="utf-8">
+    <title>China</title>
+    <link rel="stylesheet" href="{% static 'china/css/style.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+  </head>
+  <body>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+    <div class="wrapper">
+      <div class="card card--19">
+        <div class="card__header card__header--19">
+          <div class="card__watermark" data-watermark="Air"></div>
 
-				<!-- Intro -->
-					<section class="intro">
-						<header>
-							<h1>China</h1>
-							<h2>“生死有命，富贵在天”</h2>
-							<ul class="actions">
-								<li><a href="#first" class="arrow scrolly"><span class="label">Next</span></a></li>
-							</ul>
-						</header>
-						<div class="content">
-							<span class="image fill" data-position="center"><img src="images/pic01.jpg" alt="" /></span>
-						</div>
-					</section>
+          <img src="https://s32.postimg.org/7b31lbyit/nike.png" alt="Nike" class="card__logo card__will-animate">
 
-                <!-- Section -->
-                {% for question in questions.all %}
-					<section id="first">
-						<header>
-                            <div>
-                                <h1>{{ forloop.counter }}</h1>
-                                <h3>Explaination</h3>
-								<p>{{ question.explanation }}</p>
-                            </div>
+          <span class="card__price card__will-animate">$120</span>
 
-						</header>
-						<div class="content">
-							<h2>{{ question.question }}</h2>
-							<img src="{{ question.image.url }}"></img>
-                            <ul class="actions">
-                                <li><a href="#" class="button">Default</a></li>
-                                <li><a href="#" class="button">Default</a></li>
-                                <li><a href="#" class="button">Default</a></li>
-                                <li><a href="#" class="button">Default</a></li>
-                            </ul>
+          <h1 class="card__title card__will-animate">Air Structure 1</h1>
+          <span class="card__subtitle card__will-animate">From the Flymesh upper to the triple-density foam midsole, the Nike Air Zoom Structure 19 Men's Running Shoe offers plenty of support and the response you need for a smooth, stable ride that feels ultra fast.</span>
 
-						</div>
-                    </section>
-                {% endfor %}
+        </div>
 
-				<!-- Elements -->
-				
-					<section>
-						<header>
-							<h2>Elements</h2>
-						</header>
-						<div class="content">
+        <div class="card__body">
+          <img src="https://s32.postimg.org/jqzrf2rut/nike19.png" alt="Nike 19" class="card__image card__will-animate">
+          <div class="card__wish-list card__wish-list--19 card__will-animate">Wish List</div>
 
-							
+          <span class="card__category card__will-animate">Men's running shoe</span>
+        </div>
+      </div>
 
-							<section>
-								<header>
-									<h3>Buttons</h3>
-								</header>
-								<div class="content">
-									<ul class="actions">
-										<li><a href="#" class="button primary">Primary</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button large">Large</a></li>
-										<li><a href="#" class="button">Default</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button primary icon fa-download">Icon</a></li>
-										<li><a href="#" class="button icon fa-download">Icon</a></li>
-									</ul>
-									<ul class="actions">
-										<li><span class="button primary disabled">Disabled</span></li>
-										<li><span class="button disabled">Disabled</span></li>
-									</ul>
-								</div>
-							</section>
+      <div class="card card--solstice">
+        <div class="card__header card__header--solstice">
+          <div class="card__watermark" data-watermark="Classic"></div>
 
-						</div>
-					</section>
+          <img src="https://s32.postimg.org/7b31lbyit/nike.png" alt="Nike" class="card__logo card__will-animate">
 
-				<!-- Copyright -->
-					<div class="copyright">&copy; Untitled. All rights reserved. </div>
+          <span class="card__price card__will-animate">$129</span>
 
-			</div>
+          <h1 class="card__title card__will-animate">Air Solstice QS</h1>
+          <span class="card__subtitle card__will-animate">The Nike Air Solstice draws inspiration from the swoosh's classic running shoes of the 1980's updating the style with premium materials and impressive production quality.</span>
 
-		<!-- Scripts -->
-			<script src="{% static 'china/js/jquery.min.js' %}"></script>
-			<script src="{% static 'china/js/jquery.scrolly.min.js' %}"></script>
-			<script src="{% static 'china/js/browser.min.js' %}"></script>
-			<script src="{% static 'china/js/breakpoints.min.js' %}"></script>
-			<script src="{% static 'china/js/util.js' %}"></script>
-			<script src="{% static 'china/js/main.js' %}"></script>
+        </div>
 
-	</body>
+        <div class="card__body">
+          <img src="https://s32.postimg.org/eoifkaikl/nike_air_solstice.png" alt="Nike Solstice" class="card__image card__will-animate">
+          <div class="card__wish-list card__wish-list--solstice card__will-animate">Wish List</div>
+
+          <span class="card__category card__will-animate">Men's shoe</span>
+        </div>
+      </div>
+
+      <div class="card card--huarache">
+        <div class="card__header card__header--huarache">
+          <div class="card__watermark" data-watermark="Safari"></div>
+
+          <img src="https://s32.postimg.org/7b31lbyit/nike.png" alt="Nike" class="card__logo card__will-animate">
+
+          <span class="card__price card__will-animate">$140</span>
+
+          <h1 class="card__title card__will-animate">Air Huarache Utility</h1>
+          <span class="card__subtitle card__will-animate">The Nike Air Huarache Utility Men's Shoe toughens up a famous running shoe with a nylon upper, fused mudguard and vibrant detail.</span>
+
+        </div>
+
+        <div class="card__body">
+          <img src="https://s32.postimg.org/4fpyeguit/nike_safari.png" alt="Nike Huarache" class="card__image card__will-animate">
+          <div class="card__wish-list card__wish-list--solstice card__will-animate">Wish List</div>
+
+          <span class="card__category card__will-animate">Men's shoe</span>
+        </div>
+      </div>
+
+      <div class="card card--huarache">
+          <div class="card__header card__header--huarache">
+            <div class="card__watermark" data-watermark="Safari"></div>
+  
+            <img src="https://s32.postimg.org/7b31lbyit/nike.png" alt="Nike" class="card__logo card__will-animate">
+  
+            <span class="card__price card__will-animate">$140</span>
+  
+            <h1 class="card__title card__will-animate">Air Huarache Utility</h1>
+            <span class="card__subtitle card__will-animate">The Nike Air Huarache Utility Men's Shoe toughens up a famous running shoe with a nylon upper, fused mudguard and vibrant detail.</span>
+  
+          </div>
+  
+          <div class="card__body">
+            <img src="https://s32.postimg.org/4fpyeguit/nike_safari.png" alt="Nike Huarache" class="card__image card__will-animate">
+            <div class="card__wish-list card__wish-list--solstice card__will-animate">Wish List</div>
+  
+            <span class="card__category card__will-animate">Men's shoe</span>
+          </div>
+        </div>
+
+    </div> <!-- /wrapper -->
+
+    <div class="cards-placeholder">
+      <div class="cards-placeholder__item"></div>
+      <div class="cards-placeholder__item"></div>
+      <div class="cards-placeholder__item"></div>
+      <div class="cards-placeholder__item"></div>
+    </div>
+
+  </body>
+</html>
+  
+    <script src="{% static 'china/js/index.js' %}"></script>
+
+</body>
 </html>
