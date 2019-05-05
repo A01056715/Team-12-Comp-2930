@@ -21,9 +21,9 @@ body {
 .card {
   display: block;
   position: absolute;
-  top: 15px;
-  margin: 0 auto;
-  width: 600px;
+  top: 40px;
+  margin: 100px auto;
+  width: 350px;
   background-color: #fff;
   border-radius: 15px;
 

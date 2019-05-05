@@ -1,11 +1,11 @@
 html,
 body {
-  height: 100%;
+  height: 95%;
   width: 100%;
   margin: 0;
   padding: 0;
 
-  font-family: "Roboto", "Helvetica", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 
   transition: background-color 0.2s;
   will-change: background-color;
@@ -21,11 +21,12 @@ body {
 .card {
   display: block;
   position: absolute;
-  top: 15px;
+  top: 10%;
   margin: 0 auto;
-  width: 600px;
+  width: 400px;
   background-color: #fff;
   border-radius: 15px;
+  height: 600px;
 
   box-shadow: 0 30 50 rgba(0, 0, 0, 0.2);
 
@@ -40,12 +41,13 @@ body {
   user-select: none;
 }
 
-.card--19 {
+.card--first {
   left: 50%;
 }
 
-.card--solstice,
-.card--huarache {
+.card--second,
+.card--third,
+.card--fourth {
   left: 150%;
 }
 
@@ -58,7 +60,7 @@ body {
   color: #fff;
 }
 
-.card__header--19 {
+.card__header--first {
   background-color: #F72648;
   background-image: linear-gradient(#F72648, #FCCB3C);
 
@@ -66,7 +68,7 @@ body {
   background: linear-gradient(#F72648, #FCCB3C);
 }
 
-.card__header--solstice {
+.card__header--second {
   background-color: #3CA3FC;
   background-image: linear-gradient(#3CA3FC, #FFD300);
 
@@ -74,12 +76,20 @@ body {
   background: linear-gradient(#3CA3FC, #FFD300);
 }
 
-.card__header--huarache {
+.card__header--third {
   background-color: #26C9F7;
   background-image: linear-gradient(#26C9F7, #DFFC3C);
 
   background: #26C9F7;
   background: linear-gradient(#26C9F7, #DFFC3C);
+}
+
+.card__header--fourth {
+  background-color: #B993D6;
+  background-image: linear-gradient(#B993D6, #8CA6DB);
+
+  background: #B993D6;
+  background: linear-gradient(#B993D6, #8CA6DB);
 }
 
 .card__watermark {
@@ -113,10 +123,9 @@ body {
 
 .card__title {
   margin: 35px 0 20px;
-  font-size: 15px;
+  font-size: 30px;
   line-height: 1.1em;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
+  font-weight: semi-bold;
 }
 
 .card__subtitle {
@@ -186,7 +195,7 @@ body {
 .cards-placeholder {
   display: block;
   position: relative;
-  margin-bottom: -60px;
+  margin-bottom: 20px;
   text-align: center;
 }
 
