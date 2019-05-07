@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="https://threejs.org/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/giojs@2.2.1/build/gio.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" href="main.css">
+
+    
+    <title>Globe</title>
+
+</head>
+<body>
+    <!-- container to draw 3D Gio globe-->
+    <div id="globalArea"></div>
+    <!-- container for selected country -->
+    <div id="infoBoard">
+        <div id="nameCard"></div>
+    </div>
+    <header><a href="#">Profile</a> </header>
+    <script>
+        let globe = initGlobe();
+        //globe.onCountryPicked(callBack(globe));
+    </script>
+</body>
+</html>
