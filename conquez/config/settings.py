@@ -25,7 +25,7 @@ SECRET_KEY = 'keo8h)ht$ub7!7652)nipmz$bt^3-+c7fa-3)=wya2_3wv4zas'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['still-lake-26463.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
@@ -84,10 +84,10 @@ WSGI_APPLICATION = 'config.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'conquezdb',
-        'USER': 'postgres', 
-        'PASSWORD': 'django1234',
-        'HOST': 'localhost',
+        'NAME': 'd55bakse6kntn4',
+        'USER': 'vgusbiettsfavn', 
+        'PASSWORD': 'e8eec130a581f3db5193ecf005a9e8d7991955fe4b9aa787906ecb780b8c490b',
+        'HOST': 'ec2-174-129-208-118.compute-1.amazonaws.com',
         'PORT': '5432',
     }
 }
