@@ -1,0 +1,45 @@
+body {
+    background-color: #519f19;
+    color: white;
+    text-align: center;
+    font-family: "Open Sans";
+}
+
+#container {
+    margin-bottom: 40px;
+}
+
+input[type=text], input[type=password] {
+    width: 90%;
+    height: 40px;
+    border: solid 1px #eeeeee;
+    text-align: center;
+}
+
+form button {
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    width: 80%;
+    padding: 15px 15px 15px 15px;
+    border-radius: 20px;
+    -webkit-transition: background-color 0.5s, color 0.5s;
+    transition: background-color 0.5s, color 0.5s;
+    text-align: center;
+    margin: auto;
+}
+
+form button:hover {
+    background-color: white;
+    color: #519f19;
+}
+
+#back {
+    float: left;
+    color: white;
+    background-color: transparent;
+    font-weight: bold;
+    border: none;
+    font-size: large;
+    margin-top: 10px;
+}
