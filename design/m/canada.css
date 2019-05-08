@@ -1,0 +1,19 @@
+body {
+     background-repeat: no-repeat;
+     background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("sliderpage/canada/js/niagra.jpg");
+     background-size: cover;
+     text-align: center;
+ }
+
+h1 {
+    color: white;
+}
+
+/**#overlay {
+    background-color: rgba(255,255,255,.5);
+    margin: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+}*/
