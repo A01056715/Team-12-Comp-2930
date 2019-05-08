@@ -69,27 +69,27 @@ body {
 }
 
 .card__header--second {
-  background-color: #3CA3FC;
-  background-image: linear-gradient(#3CA3FC, #FFD300);
+  background-color: #3D9B35;
+  background-image: linear-gradient(#3D9B35, #34c033);
 
-  background: #3CA3FC;
-  background: linear-gradient(#3CA3FC, #FFD300);
+  background: #3D9B35;
+  background: linear-gradient(#3D9B35, #34c033);
 }
 
 .card__header--third {
-  background-color: #26C9F7;
-  background-image: linear-gradient(#26C9F7, #DFFC3C);
+  background-color: #003366;
+  background-image: linear-gradient(#003366, #003399);
 
-  background: #26C9F7;
-  background: linear-gradient(#26C9F7, #DFFC3C);
+  background: #003366;
+  background: linear-gradient(#003366, #003399);
 }
 
 .card__header--fourth {
-  background-color: #B993D6;
-  background-image: linear-gradient(#B993D6, #8CA6DB);
+  background-color: #FF0000;
+  background-image: linear-gradient(#FF0000, #FFF0F5);
 
-  background: #B993D6;
-  background: linear-gradient(#B993D6, #8CA6DB);
+  background: #FF0000;
+  background: linear-gradient(#FF0000, #FFF0F5);
 }
 
 .card__watermark {
@@ -171,13 +171,18 @@ body {
 }
 
 .card__wish-list--solstice {
-  color: #FFBA00;
-  border-color: #FFBA00;
+  color: #34c033;
+  border-color: #34c033;
+}
+
+.card__wish-list--quebec {
+  color: #003366;
+  border-color: #003366;
 }
 
 .card__wish-list--huarache {
-  color: #26C9F7;
-  border-color: #26C9F7;
+  color: #FF0000;
+  border-color: #FF0000;
 }
 
 .card__category {
