@@ -1,6 +1,5 @@
 html,
 body {
-  height: 95%;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -9,11 +8,14 @@ body {
 
   transition: background-color 0.2s;
   will-change: background-color;
+  overflow: hidden;
+  position: fixed;
+  height: 100%;
 }
 
 .wrapper {
-  position: relative;
-  overflow-x: hidden;
+  position: fixed;
+  overflow: hidden;
   width: 100%;
   height: 100%;
 }
@@ -61,36 +63,37 @@ body {
 }
 
 .card__header--first {
-  background-color: #FF9933;
-  background-image: linear-gradient(#FF9933, #F4C430
+  background-color: #E30A17;
+  background-image: linear-gradient(#E30A17, #FF0000);
   );
 
-  background: #FF9933;
-  background: linear-gradient(#FF9933, #F4C430);
+  background: #E30A17;
+  background: linear-gradient(#E30A17, #FF0000);
 }
 
 .card__header--second {
-  background-color: #138808;
-  background-image: linear-gradient(#138808, #34c033);
+  background-color: rgb(204,204,204);
+  background-image: linear-gradient(rgb(204,204,204),#ffffff);
 
-  background: #138808;
-  background: linear-gradient(#138808, #34c033);
+  background: rgb(204,204,204);
+  background: linear-gradient(rgb(204,204,204),#ffffff);
+  color: black;
 }
 
 .card__header--third {
-  background-color: #000080;
-  background-image: linear-gradient(#000080, #003366);
+  background-color: rgb(55,32,90);
+  background-image: linear-gradient(rgb(55,32,90), #8850FF);
 
-  background: #000080;
-  background: linear-gradient(#000080, #003366);
+  background: rgb(55,32,90);
+  background: linear-gradient(rgb(55,32,90), #8850FF);
 }
 
 .card__header--fourth {
-  background-color: #FFAA1D;
-  background-image: linear-gradient(#FFAA1D,,#EEEA62);
+  background-color: rgb(38,54,19);
+  background-image: linear-gradient(rgb(38,54,19), rgb(66,147,60));
 
-  background: #FFAA1D;
-  background: linear-gradient(#FFAA1D,#EEEA62);
+  background: rgb(38,54,19);
+  background: linear-gradient(rgb(38,54,19),  rgb(66,147,60));
 }
 
 .card__watermark {
@@ -167,23 +170,23 @@ body {
 }
 
 .card__wish-list--19 {
-  color: #FF9933;
-  border-color: #FF9933;
+  color: #E30A17;
+  border-color: #E30A17;
 }
 
 .card__wish-list--solstice {
-  color: #138808;
-  border-color:#138808;
+  color: rgb(204,204,204);
+  border-color: rgb(204,204,204)
 }
 
 .card__wish-list--quebec {
-  color: #003366;
-  border-color: #003366;
+  color: rgb(55,32,90);
+  border-color: rgb(55,32,90);
 }
 
 .card__wish-list--huarache {
-  color: #FFAA1D;
-  border-color: #FFAA1D;
+  color: rgb(38,54,19);
+  border-color: rgb(66,147,60);
 }
 
 .card__category {
