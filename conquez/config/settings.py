@@ -43,13 +43,8 @@ INSTALLED_APPS = [
     'canada',
     'brazil',
     'turkey',
-<<<<<<< HEAD
-    'social_authen',
-    'social_django', 
-=======
     'authen',
     'social_django',
->>>>>>> mergeproject
 ]
 
 AUTHENTICATION_BACKENDS = [
