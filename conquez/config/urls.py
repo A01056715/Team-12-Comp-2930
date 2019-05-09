@@ -30,7 +30,7 @@ import authen.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('home', authen.views.home, name='globe'),
+    path('home', authen.views.home, name='home'),
     path('china/', china.views.base, name='china'),
     path('canada/', canada.views.base, name='canada'),
     path('brazil/', brazil.views.base, name='brazil'),
