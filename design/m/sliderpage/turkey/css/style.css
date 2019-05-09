@@ -20,7 +20,6 @@ body {
   height: 100%;
 }
 
-
 .card {
   display: block;
   position: absolute;
@@ -64,35 +63,37 @@ body {
 }
 
 .card__header--first {
-  background-color: #E8112D;
-  background-image: linear-gradient(#E8112D, #FF0000);
+  background-color: #E30A17;
+  background-image: linear-gradient(#E30A17, #FF0000);
+  );
 
-  background: #E8112D;
-  background: linear-gradient(#E8112D, #FF0000);
+  background: #E30A17;
+  background: linear-gradient(#E30A17, #FF0000);
 }
 
 .card__header--second {
-  background-color: #3D9B35;
-  background-image: linear-gradient(#3D9B35, #34c033);
+  background-color: rgb(204,204,204);
+  background-image: linear-gradient(rgb(204,204,204),#ffffff);
 
-  background: #3D9B35;
-  background: linear-gradient(#3D9B35, #34c033);
+  background: rgb(204,204,204);
+  background: linear-gradient(rgb(204,204,204),#ffffff);
+  color: black;
 }
 
 .card__header--third {
-  background-color: #003366;
-  background-image: linear-gradient(#003366, #003399);
+  background-color: rgb(55,32,90);
+  background-image: linear-gradient(rgb(55,32,90), #8850FF);
 
-  background: #003366;
-  background: linear-gradient(#003366, #003399);
+  background: rgb(55,32,90);
+  background: linear-gradient(rgb(55,32,90), #8850FF);
 }
 
 .card__header--fourth {
-  background-color: #FF0000;
-  background-image: linear-gradient(#FF0000, #FFF0F5);
+  background-color: rgb(38,54,19);
+  background-image: linear-gradient(rgb(38,54,19), rgb(66,147,60));
 
-  background: #FF0000;
-  background: linear-gradient(#FF0000, #FFF0F5);
+  background: rgb(38,54,19);
+  background: linear-gradient(rgb(38,54,19),  rgb(66,147,60));
 }
 
 .card__watermark {
@@ -169,23 +170,23 @@ body {
 }
 
 .card__wish-list--19 {
-  color: #E8112D;
-  border-color: #E8112D;
+  color: #E30A17;
+  border-color: #E30A17;
 }
 
 .card__wish-list--solstice {
-  color: #34c033;
-  border-color: #34c033;
+  color: rgb(204,204,204);
+  border-color: rgb(204,204,204)
 }
 
 .card__wish-list--quebec {
-  color: #003366;
-  border-color: #003366;
+  color: rgb(55,32,90);
+  border-color: rgb(55,32,90);
 }
 
 .card__wish-list--huarache {
-  color: #FF0000;
-  border-color: #FF0000;
+  color: rgb(38,54,19);
+  border-color: rgb(66,147,60);
 }
 
 .card__category {
@@ -202,19 +203,16 @@ body {
 
 .cards-placeholder {
   display: block;
+  position: relative;
   margin-bottom: 20px;
   text-align: center;
-  position: fixed;
-  left: 50%;
-  transform: translate(-50%, 0);
-  bottom: 0;
 }
 
 .cards-placeholder__item {
   opacity: 0.3;
   display: inline-block;
   margin-right: 10px;
-  background-color: black;
+  background-color: #fff;
   width: 30px;
   height: 5px;
   border-radius: 5px;
