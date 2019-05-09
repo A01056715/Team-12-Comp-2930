@@ -14,9 +14,10 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
+from django.contrib.auth import views as auth_views
 
 import globe.views
 import china.views
@@ -24,6 +25,7 @@ import canada.views
 import brazil.views
 import india.views
 import turkey.views
+import social_authen.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -32,5 +34,9 @@ urlpatterns = [
     path('canada/', canada.views.base, name='canada'),
     path('brazil/', brazil.views.base, name='brazil'),
     path('india/', india.views.base, name='india'),
-    path('turkey/', turkey.views.base, name='turkey'),
+    path('turkey/', turkey.views.base, name='turkey'),  
+    path("login/", social_authen.views.login, name="login"),
+    path("logout/", auth_views.LogoutView.as_view(), name="logout"),
+    path('social-auth/', include('social_django.urls', namespace="social")),
+    path("", social_authen.views.home, name="home"),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) 
