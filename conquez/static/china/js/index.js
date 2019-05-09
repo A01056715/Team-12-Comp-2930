@@ -1,17 +1,25 @@
 (function () {
   'use strict';
 
-  var BODY_BACKGROUNDS = [
-    '#462066',
+  /**var BODY_BACKGROUNDS = [
+    "linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.3)), url('niagra.jpg')",
     '#FFB85F',
     '#FF7A5A',
     '#00AAA0',
+  ];**/
+
+  var BODY_BACKGROUNDS = [
+      'white',
+      'white',
+      'white',
+      'white'
   ];
 
   function Slider () {
     this.cards = document.querySelectorAll('.card');
     this.currentIndex = 0;
 
+    this.isDragging = false;
     this.isDragging = false;
     this.startX = 0;
     this.currentX = 0;
@@ -44,7 +52,10 @@
     placeholders[this.currentIndex].classList.add('cards-placeholder__item--active');
 
     var bodyEl = document.querySelector('body');
-    bodyEl.style.backgroundColor = BODY_BACKGROUNDS[this.currentIndex];
+    bodyEl.style.background = BODY_BACKGROUNDS[this.currentIndex];
+    bodyEl.style.backgroundSize = "cover";
+    bodyEl.style.backgroundRepeat = "no-repeat";
+    bodyEl.style.height = "100%";
   };
 
   // mousedown event
