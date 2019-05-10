@@ -27,6 +27,7 @@ function begin001() {
     option2.innerHTML = answer1[1];
     option3.innerHTML = answer1[2];
     option4.innerHTML = answer1[3];
+    answer.innerHTML = "";
     number1.innerHTML = n++;
 }
 
