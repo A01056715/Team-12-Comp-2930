@@ -4,15 +4,20 @@ let question = ["Why is Taj-Mahal turning yellow ?<br /><br />",
     "What is 2 + 2?<br /><br />",
     "Which is the heaviest 1kg of feathers or 1kg of iron?"];
 
-let answer1 = ["<button class=buttons002 onclick=question1correct()>Due to reaction with SO2</button>",
-    "<button class=buttons002 onclick=q1Incorrect()>Pollution</button>",
-    "<button class=buttons002 onclick=q1Incorrect()>Friction</button>",
-    "<button class=buttons002 onclick=q1Incorrect()>I don't know</button>"];
+let answer1 = ["<button class=buttons002 onclick=question1correct()>1</button> Due to reaction with SO2",
+    "<button class=buttons002 onclick=q1Incorrect()>2</button>Pollution",
+    "<button class=buttons002 onclick=q1Incorrect()>3</button>Friction",
+    "<button class=buttons002 onclick=q1Incorrect()>4</button>I don't know"];
+
+let answer2 = ["<button class=buttons002 onclick=question2correct()>A</button>",
+    "<button class=buttons002 onclick=q2Incorrect()>C</button>",
+    "<button class=buttons002 onclick=q2Incorrect()>F</button>",
+    "<button class=buttons002 onclick=q2Incorrect()>I </button>"];
 
 let correct = ["Correct!! Due to reaction with SO2 , Taj-Mahal turning yellow",
-    "Correct", "Correct", "Correct"];
-let incorrect = ["<button class=buttons002 onclick=begin001()>Incorrect!!!! Try Agin",
- "Incorrect", "Incorrect", "Incorrect"];
+    "Correct, A comes before B", "Correct", "Correct"];
+let incorrect = ["<button class=buttons002 onclick=begin001()> <- </button>Incorrect!!!! Try Agin",
+    "Incorrect", "Incorrect", "Incorrect"];
 //<div id = "submit"><button id = "submit-button">Submit</button></div>
 
 let n = 0;
@@ -48,3 +53,21 @@ function q1Incorrect() {
     option4.innerHTML = "";
     next1.innerHTML = "<button class=buttons001 onclick=new002()>Next</button>";
 }
+// function question2correct() {
+//     answer.innerHTML = "<div id=green001>" + correct[1] + "</div>";
+//     option1.innerHTML = "";
+//     option2.innerHTML = "";
+//     option3.innerHTML = "";
+//     option4.innerHTML = "";
+//     next.innerHTML = "<button class=buttons001 onclick=new002()>Next</button>";
+//     score.innerHTML = s++;
+// }
+// function q2Incorrect() {
+//     answer.innerHTML = "<div id=red001>" + incorrect[1] + "</div>";
+//     option1.innerHTML = "";
+//     option2.innerHTML = "";
+//     option3.innerHTML = "";
+//     option4.innerHTML = "";
+//     next1.innerHTML = "<button class=buttons001 onclick=new002()>Next</button>";
+// }
+
