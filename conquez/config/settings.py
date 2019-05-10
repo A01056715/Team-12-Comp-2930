@@ -25,7 +25,7 @@ SECRET_KEY = 'keo8h)ht$ub7!7652)nipmz$bt^3-+c7fa-3)=wya2_3wv4zas'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['still-lake-26463.herokuapp.com', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['conquez.herokuapp.com', '127.0.0.1', 'localhost']
 
 
 # Application definition
@@ -188,3 +188,5 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR,  'static')
 
 SESSION_COOKIE_SAMESITE = None
+
+SOCIAL_AUTH_REDIRECT_IS_HTTPS = True
