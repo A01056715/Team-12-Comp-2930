@@ -100,7 +100,7 @@ body.open:after {
 }
 
 .b-bun {
-  background: white;
+  background: black;
   position: relative;
   transition: all 0.4s ease;
 }

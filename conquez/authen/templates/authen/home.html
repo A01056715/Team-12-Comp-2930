@@ -1,39 +1,72 @@
-{% extends 'authen/base.html' %}
-{% block title %} Home {% endblock %}
-{% block content %}
-<div class="row">
-    <div class="col-sm-12 mb-3">
-        <h4 class="text-center">Hello{{ user.username }}</h4>
-        <h4 class ="text-center">Welcome to Conquez</h4>
-    </div>
-    {% for ass in backends.associated %}
-    {% if ass.provider == 'facebook' %}
-    <div class="col-md-6 text-center">
-        <img src="{{ass.extra_data.picture.data.url}}" alt="" width="150" height="150" style="border-radius: 50%">
-    </div>
-    <div class="col-md-6 social-container my-2">
-        <p> Signed in via: {{ ass.provider }} </p>
-        <p> Name: {{ ass.extra_data.name }} </p>
-        <p> Provider url: <a href="{{ass.extra_data.profile_url}}">link</a></p>
-    </div>
-    {% endif %}
-    
-    {% if ass.provider == 'google-oauth2' %}
-    <div class="col-md-6 text-center">
-        <img src="{{ass.extra_data.picture_url}}" alt="" width="150" height="150" style="border-radius: 50%">
-    </div>
-    <div class="col-md-6 social-container my-2">
-        <p> Signed in via: Google </p>
-        <p> Name: {{ ass.extra_data.name }} </p>
-        <p> Provider url: <a href="{{ass.extra_data.profile_url}}">link</a></p>
-    </div>
-    {% endif %}
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    {% endfor %}
-    <div class="col-sm-12 mt-2 text-center">
-        <button class="btn btn-danger">
-            <a href="{% url 'logout' %}">Logout</a>
-        </button>
+    <script src="https://threejs.org/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/giojs@2.2.1/build/gio.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="{% static 'authen/js/main.js' %}"></script>
+    <link rel="stylesheet" type="text/css" href="{% static 'authen/css/main.css' %}">
+
+    
+    <title>Globe</title>
+
+</head>
+<body>
+    <div class="row">
+        <div class="col-sm-12 mb-3">
+            <h4 class="text-center">Welcome Back, {{ user.username }}</h4>
+        </div>
+        {% for ass in backends.associated %}
+        {% if ass.provider == 'facebook' %}
+        <div class="col-md-6 text-center">
+            <img src="{{ass.extra_data.picture.data.url}}" alt="" width="150" height="150" style="border-radius: 50%">
+        </div>
+        <div class="col-md-6 social-container my-2">
+            <p> Signed in via: {{ ass.provider }} </p>
+            <p> Name: {{ ass.extra_data.name }} </p>
+            <p> Provider url: <a href="{{ass.extra_data.profile_url}}">link</a></p>
+        </div>
+        {% endif %}
+        
+        {% if ass.provider == 'google-oauth2' %}
+        <div class="col-md-6 text-center">
+            <img src="{{ass.extra_data.picture_url}}" alt="" width="150" height="150" style="border-radius: 50%">
+        </div>
+        <div class="col-md-6 social-container my-2">
+            <p> Signed in via: Google </p>
+            <p> Name: {{ ass.extra_data.name }} </p>
+            <p> Provider url: <a href="{{ass.extra_data.profile_url}}">link</a></p>
+        </div>
+        {% endif %}
+    
+        {% endfor %}
+        <header><a href="#">Profile</a> </header>
+        <div class="col-sm-12 mt-2 text-center">
+            <button class="btn btn-danger">
+                <a href="{% url 'logout' %}">Logout</a>
+            </button>
+            <a href="{% url 'china' %}">China</a>
+            <a href="{% url 'brazil' %}">Brazil</a>
+            <a href="{% url 'india' %}">India</a>
+            <a href="{% url 'turkey' %}">Turkey</a>
+            <a href="{% url 'canada' %}">Canada</a>
+        </div>
     </div>
-</div>
-{% endblock %}
+    <div>
+        <!-- container to draw 3D Gio globe-->
+        <div id="globalArea"></div>
+        <!-- container for selected country -->
+        <div id="infoBoard">
+            <div id="nameCard"></div>
+        </div>
+        <script>
+            initGlobe();
+        </script>
+    </div>
+    
+</body>
