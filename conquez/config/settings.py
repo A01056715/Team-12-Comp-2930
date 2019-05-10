@@ -151,8 +151,8 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-SOCIAL_AUTH_FACEBOOK_KEY = '425982481566899'         
-SOCIAL_AUTH_FACEBOOK_SECRET = 'aac7f0dd5920e8d8791a5f3ce0566d56' 
+SOCIAL_AUTH_FACEBOOK_KEY = '2380139345552475'         
+SOCIAL_AUTH_FACEBOOK_SECRET = '86498316b90262a605eda0b0cfd2cc61' 
 SOCIAL_AUTH_FACEBOOK_SCOPE = ['email', 'user_link']
 SOCIAL_AUTH_FACEBOOK_PROFILE_EXTRA_PARAMS = {       
   'fields': 'id, name, email, picture.type(large), link'
@@ -164,8 +164,8 @@ SOCIAL_AUTH_FACEBOOK_EXTRA_DATA = [
     ('link', 'profile_url'),
 ]
 
-SOCIAL_AUTH_GOOGLE_OAUTH2_KEY ='475228708910-dqr1ljopch7ia7vjajrs52vfhm0c9pfi.apps.googleusercontent.com'  #Paste CLient Key
-SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = 'iPMK5hTZzlbJBcy-YB_1q5N9'
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY ='346054491258-uttc5dnkilkpntrqj251mgbgssffgh0t.apps.googleusercontent.com'  #Paste CLient Key
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = '-FuX8n7N-FbTc-KyhMBW_T8z'
 
 # Internationalization
 # https://docs.djangoproject.com/en/2.2/topics/i18n/
