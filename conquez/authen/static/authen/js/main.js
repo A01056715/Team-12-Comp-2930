@@ -1,79 +1,95 @@
-
-function initGlobe() {
-    let configurations = {
-        color: {
-            surface: 0xFF0000,
-            //selected: 2141154,
-        },
-    };
-    let container = document.getElementById( "globalArea" );
-    let controller = new GIO.Controller( container, configurations );
-    controller.setInitCountry('CA').adjustOceanBrightness( 2 ).setTransparentBackground( true );
-    controller.addHalo(0xFF0000);
-    let data = [
-        {
-            "e": "CA",
-            "i": "IN",
-            // "v": 100000,
-            // "inColor": "#0000FF",
-            // "outColor": "#00FF00",
-        },
-        {
-            "e": "CA",
-            "i": "CN",
-            // "v": 3000000,
-            // "inColor": "#EE0E00",
-            // "outColor": "#FFFF00"
-        },
-        {
-            "e": "CA",
-            "i": "TR",
-            // "v": 3000000,
-            // "inColor": "#EE0E00",
-            // "outColor": "#FFFF00"
-        },
-        {
-            "e": "CA",
-            "i": "BR",
-            // "v": 3000000,
-            // "inColor": "#EE0E00",
-            // "outColor": "#FFFF00"
-        },
-    ];
-    controller.addData(data);
-    //controller.setAutoRotation( true, 1 );
-    controller.init();
-    return controller
-}
-
-
-
-function callBack(controller) {
-    let selectedCountry = controller.getSelectedCountry();
-    let available_countries =['brazil', 'canada','china', 'india', 'turkey']; // countries with quizzes available
-    let nameCard =   $( "#nameCard" );
-    if(available_countries.includes((selectedCountry.name).toLowerCase())) {
-      nameCard.text(selectedCountry.name);
-      nameCard.append('<a href="#" id="quizLink"><br/>Conquer</a>');
-
-        $( "#infoBoard" ).fadeIn(1000);
-
-        setTimeout(function () {
-            $( "#infoBoard" ).fadeOut(1000)
-
-        }, 3000)
+let configs = {
+    color: {
+        surface:0xFF0000,
+        //selected: 2141154,
     }
+};
+let container = document.getElementById( "globalArea" );
+let controller = new GIO.Controller( container, configs );
+
+let data = [
+    {
+        "e": "CA",
+        "i": "IN",
+    },
+    {
+        "e": "CA",
+        "i": "CN",
+    },
+    {
+        "e": "CA",
+        "i": "TR",
+    },
+    {
+        "e": "CA",
+        "i": "BR",
+    },
+    {
+        "e": "IN",
+        "i": "CN",
+    },
+    {
+        "e": "IN",
+        "i": "TR",
+    },
+    {
+        "e": "IN",
+        "i": "BR",
+    },
+    {
+        "e": "CN",
+        "i": "BR",
+    },
+    {
+        "e": "CN",
+        "i": "TR",
+    },
+    {
+        "e": "BR",
+        "i": "TR",
+    },
+
+];
+controller.addData(data);
+controller.setInitCountry('CA').adjustOceanBrightness( 2 ).setTransparentBackground( true ).addHalo(0xFF0000);
+controller.init();
+controller.onCountryPicked(callback);
+
+function callback(selectedCountry) {
+    let available_countries = [ 'BRAZIL', 'CANADA', 'CHINA', 'INDIA', 'TURKEY'];
+    let nameCard = $( "#nameCard" );
+    let infoBoard = $( "#infoBoard" );
+    if( available_countries.includes(selectedCountry.name)){
+        nameCard.text( controller.getSelectedCountry().name+'\'s' + " EMPIRE" );
+        nameCard.append('<br/><a id="link">Conquer</a>');
+        infoBoard.fadeIn( 1000 );
+
+        setTimeout( function () {
+
+            $( "#infoBoard" ).fadeOut( 1000 );
+
+        }, 3500 );
+
+    }
+
     else{
-        nameCard.text(selectedCountry.name + ' quiz is not available');
-        $( "#infoBoard" ).fadeIn(1000);
+        nameCard.text( controller.getSelectedCountry().name+'\'s' + ' quiz is not available' );
+        infoBoard.fadeIn( 1000 );
 
-        setTimeout(function () {
-            $( "#infoBoard" ).fadeOut(1000)
+        setTimeout( function () {
 
-        }, 3000)
+            $( "#infoBoard" ).fadeOut( 1000 );
+
+        }, 3500 );
+
     }
-    //controller.switchCountry("IN");
+
+
+    console.log(controller.getSelectedCountry().name);
+
 }
+function explode() {
+    $('#globalArea').toggle('explode')
 
-
+}
 
