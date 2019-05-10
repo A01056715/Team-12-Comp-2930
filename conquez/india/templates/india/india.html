@@ -1,113 +1,129 @@
 {% load staticfiles %}
-<!DOCTYPE HTML>
-<!--
-	Paradigm Shift by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>India</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-		<link rel="stylesheet" href="{% static 'china/css/main.css' %}"/>
-	</head>
-	<body class="is-preload">
+  <head>
+    <meta charset="utf-8">
+    <title>India</title>
+    <link rel="stylesheet" href="{% static 'india/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'india/css/burger.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet">
+  </head>
+  <body>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+    <!-- Navigation -->
+    <div class="b-nav">
+      <li><a class="b-link" href="{% url 'home' %}">Globe</a></li>
+      <li><a class="b-link" href="" target="_blank">Profile</a></li>
+    </div>
+    
+    <!-- Burger-Icon -->
+    <div class="b-container">
+      <div class="b-menu">
+        <div class="b-bun b-bun--top"></div>
+        <div class="b-bun b-bun--mid"></div>
+        <div class="b-bun b-bun--bottom"></div>
+      </div>
+    </div>
 
-				<!-- Intro -->
-					<section class="intro">
-						<header>
-							<h1>India</h1>
-							<h2>India Description</h2>
-							<ul class="actions">
-								<li><a href="#first" class="arrow scrolly"><span class="label">Next</span></a></li>
-							</ul>
-						</header>
-						<div class="content">
-							<span class="image fill" data-position="center"><img src="images/pic01.jpg" alt="" /></span>
-						</div>
-					</section>
+    <div class="wrapper">
+      <div class="card card--first">
+        <div class="card__header card__header--first">
+          <div class="card__watermark" data-watermark="Ind"></div>
+          <div class="card__logo card__will-animate"></div>
 
-                <!-- Section -->
-                {% for question in questions.all %}
-					<section id="first">
-						<header>
-                            <div>
-                                <h1>{{ forloop.counter }}</h1>
-                                <h3>Explaination</h3>
-								<p>{{ question.explanation }}</p>
-                            </div>
+          <span class="card__price card__will-animate">Question 1</span>
 
-						</header>
-						<div class="content">
-							<h2>{{ question.question }}</h2>
-							<img src="{{ question.image.url }}" alt="">
-                            <ul class="actions">
-                                <li><a href="#" class="button">Default</a></li>
-                                <li><a href="#" class="button">Default</a></li>
-                                <li><a href="#" class="button">Default</a></li>
-                                <li><a href="#" class="button">Default</a></li>
-                            </ul>
+          <h1 class="card__title card__will-animate">Pollution</h1>
+          <span class="card__subtitle card__will-animate">Something about India here</span>
 
-						</div>
-                    </section>
-                {% endfor %}
+        </div>
 
-				<!-- Elements -->
-				
-					<section>
-						<header>
-							<h2>Elements</h2>
-						</header>
-						<div class="content">
+        <div class="card__body">
+          <div class="card__image card__will-animate"></div>
+          <div class="card__wish-list card__wish-list--19 card__will-animate">Multiple Choice Section</div>
 
-							
+          <span class="card__category card__will-animate"></span>
+        </div>
+      </div>
 
-							<section>
-								<header>
-									<h3>Buttons</h3>
-								</header>
-								<div class="content">
-									<ul class="actions">
-										<li><a href="#" class="button primary">Primary</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button large">Large</a></li>
-										<li><a href="#" class="button">Default</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button primary icon fa-download">Icon</a></li>
-										<li><a href="#" class="button icon fa-download">Icon</a></li>
-									</ul>
-									<ul class="actions">
-										<li><span class="button primary disabled">Disabled</span></li>
-										<li><span class="button disabled">Disabled</span></li>
-									</ul>
-								</div>
-							</section>
+      <div class="card card--second">
+        <div class="card__header card__header--second">
+          <div class="card__watermark" data-watermark="Ind"></div>
 
-						</div>
-					</section>
+          <div class="card__logo card__will-animate"></div>
 
-				<!-- Copyright -->
-					<div class="copyright">&copy; Untitled. All rights reserved. </div>
+          <span class="card__price card__will-animate">Question 2</span>
 
-			</div>
+          <h1 class="card__title card__will-animate">Ecosystem</h1>
+          <span class="card__subtitle card__will-animate">Fill in the blanks: China alone accounts for XX% of the global net increase in leaf area with only 6.6% of global vegetated area. </span>
 
-		<!-- Scripts -->
-			<script src="{% static 'china/js/jquery.min.js' %}"></script>
-			<script src="{% static 'china/js/jquery.scrolly.min.js' %}"></script>
-			<script src="{% static 'china/js/browser.min.js' %}"></script>
-			<script src="{% static 'china/js/breakpoints.min.js' %}"></script>
-			<script src="{% static 'china/js/util.js' %}"></script>
-			<script src="{% static 'china/js/main.js' %}"></script>
+        </div>
 
-	</body>
+        <div class="card__body">
+          <div class="card__image card__will-animate"></div>
+          <div class="card__wish-list card__wish-list--solstice card__will-animate">Multiple Choice Section</div>
+
+          <span class="card__category card__will-animate"></span>
+        </div>
+      </div>
+
+      <div class="card card--third">
+        <div class="card__header card__header--third">
+          <div class="card__watermark" data-watermark="Ind"></div>
+
+          <div class="card__logo card__will-animate"></div>
+
+          <span class="card__price card__will-animate">Question 3</span>
+
+          <h1 class="card__title card__will-animate">Waste Management</h1>
+          <span class="card__subtitle card__will-animate">What recycling-related thing did China do that heavily influenced the behaviour of other developed countries?</span>
+
+        </div>
+
+        <div class="card__body">
+          <div class="card__image card__will-animate"></div>
+          <div class="card__wish-list card__wish-list--taiwan card__will-animate">Multiple Choice Section</div>
+
+          <span class="card__category card__will-animate"></span>
+        </div>
+      </div>
+
+      <div class="card card--fourth">
+          <div class="card__header card__header--fourth">
+            <div class="card__watermark" data-watermark="Ind"></div>
+  
+            <div class="card__logo card__will-animate"></div>
+  
+            <span class="card__price card__will-animate">Question 4</span>
+  
+            <h1 class="card__title card__will-animate">3R's</h1>
+            <span class="card__subtitle card__will-animate">Which region in China has the most efficient recycling systems in the world?</span>
+  
+          </div>
+  
+          <div class="card__body">
+            <div class="card__image card__will-animate"></div>
+            <div class="card__wish-list card__wish-list--huarache card__will-animate">Multiple Choice Section</div>
+  
+            <span class="card__category card__will-animate"></span>
+          </div>
+        </div>
+
+    </div> <!-- /wrapper -->
+
+    <div class="cards-placeholder">
+      <div class="cards-placeholder__item"></div>
+      <div class="cards-placeholder__item"></div>
+      <div class="cards-placeholder__item"></div>
+      <div class="cards-placeholder__item"></div>
+    </div>
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+    crossorigin="anonymous"></script>
+  <script src="{% static 'india/js/index.js' %}"></script>
+  <script src="{% static 'india/js/breakpoints.min.js' %}"></script>
+  <script src="{% static 'india/js/burger.js' %}"></script>
+
+</body>
 </html>
