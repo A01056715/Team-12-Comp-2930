@@ -20,7 +20,6 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib.auth import views as auth_views
 
-import globe.views
 import china.views
 import brazil.views
 import india.views
@@ -30,7 +29,6 @@ import authen.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('home', globe.views.home, name='home'),
     path('china/', china.views.base, name='china'),
     path('canada/', canada.views.base, name='canada'),
     path('brazil/', brazil.views.base, name='brazil'),
@@ -39,5 +37,5 @@ urlpatterns = [
     path("login/", authen.views.login, name="login"),
     path("logout/", auth_views.LogoutView.as_view(), name="logout"),
     path('social-auth/', include('social_django.urls', namespace="social")),
-    path("", authen.views.home, name="home"),
+    path('', authen.views.home, name='home'),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) 
