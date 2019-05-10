@@ -1,6 +1,5 @@
 html,
 body {
-  height: 95%;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -9,11 +8,14 @@ body {
 
   transition: background-color 0.2s;
   will-change: background-color;
+  overflow: hidden;
+  position: fixed;
+  height: 100%;
 }
 
 .wrapper {
-  position: relative;
-  overflow-x: hidden;
+  position: fixed;
+  overflow: hidden;
   width: 100%;
   height: 100%;
 }
@@ -21,12 +23,13 @@ body {
 .card {
   display: block;
   position: absolute;
-  top: 18%;
+  top: 10%;
   margin: 0 auto;
-  width: 330px;
+  width: 400px;
   background-color: #fff;
   border-radius: 15px;
-  height: 500px;
+  height: 600px;
+  text-align: center;
 
   box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.2);
 
@@ -58,38 +61,39 @@ body {
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
   color: #fff;
+  font-size: 24px;
 }
 
 .card__header--first {
   background-color: #E8112D;
-  background-image: linear-gradient(#E8112D, white);
+  background-image: linear-gradient(#E8112D, #FF0000);
 
   background: #E8112D;
-  background: linear-gradient(#E8112D, white);
+  background: linear-gradient(#E8112D, #FF0000);
 }
 
 .card__header--second {
-  background-color: #3CA3FC;
-  background-image: linear-gradient(#3CA3FC, #FFD300);
+  background-color: #3D9B35;
+  background-image: linear-gradient(#3D9B35, #34c033);
 
-  background: #3CA3FC;
-  background: linear-gradient(#3CA3FC, #FFD300);
+  background: #3D9B35;
+  background: linear-gradient(#3D9B35, #34c033);
 }
 
 .card__header--third {
-  background-color: #26C9F7;
-  background-image: linear-gradient(#26C9F7, #DFFC3C);
+  background-color: #003366;
+  background-image: linear-gradient(#003366, #003399);
 
-  background: #26C9F7;
-  background: linear-gradient(#26C9F7, #DFFC3C);
+  background: #003366;
+  background: linear-gradient(#003366, #003399);
 }
 
 .card__header--fourth {
-  background-color: #B993D6;
-  background-image: linear-gradient(#B993D6, #8CA6DB);
+  background-color: #FF0000;
+  background-image: linear-gradient(#FF0000, #FFF0F5);
 
-  background: #B993D6;
-  background: linear-gradient(#B993D6, #8CA6DB);
+  background: #FF0000;
+  background: linear-gradient(#FF0000, #FFF0F5);
 }
 
 .card__watermark {
@@ -117,26 +121,28 @@ body {
 
 .card__price {
   float: right;
-  font-size: 16px;
   font-weight: 300;
+  font-size: 16px
 }
 
 .card__title {
   margin: 35px 0 20px;
   font-size: 30px;
   line-height: 1.1em;
-  font-weight: semi-bold;
+  font-weight: bolder;
 }
 
 .card__subtitle {
   display: block;
-  font-size: 13px;
+  font-size: 24px;
   font-weight: 300;
+  line-height: normal;
+  vert-align: middle;
 }
 
 .card__body {
   position: relative;
-  padding: 40px 30px 20px;
+  padding: 30px 30px 20px;
 }
 
 .card__image {
@@ -155,11 +161,11 @@ body {
 
 .card__wish-list {
   display: block;
-  width: 50%;
-  margin: 0 auto 15px;
-  padding: 15px;
+  width: 80%;
+  margin: 0 auto 14px;
+  padding: 10px;
   border: 2px solid #fff;
-  border-radius: 20px;
+  border-radius: 7.5px;
   text-align: center;
   text-transform: uppercase;
   font-size: 14px;
@@ -171,39 +177,47 @@ body {
 }
 
 .card__wish-list--solstice {
-  color: #FFBA00;
-  border-color: #FFBA00;
+  color: #34c033;
+  border-color: #34c033;
+}
+
+.card__wish-list--quebec {
+  color: #003366;
+  border-color: #003366;
 }
 
 .card__wish-list--huarache {
-  color: #26C9F7;
-  border-color: #26C9F7;
+  color: #FF0000;
+  border-color: #FF0000;
 }
 
 .card__category {
   display: block;
-  font-size: 12px;
+  font-size: 18px;
   color: #AEAEAE;
   text-transform: uppercase;
   text-align: center;
 }
 
-.card__will-animate {
+.card__will-animate  {
   will-change: transform;
 }
 
 .cards-placeholder {
   display: block;
-  position: relative;
   margin-bottom: 20px;
   text-align: center;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, 0);
+  bottom: 0;
 }
 
 .cards-placeholder__item {
   opacity: 0.3;
   display: inline-block;
   margin-right: 10px;
-  background-color: #fff;
+  background-color: black;
   width: 30px;
   height: 5px;
   border-radius: 5px;
