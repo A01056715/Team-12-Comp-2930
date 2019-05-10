@@ -37,5 +37,6 @@ urlpatterns = [
     path("login/", authen.views.login, name="login"),
     path("logout/", auth_views.LogoutView.as_view(), name="logout"),
     path('social-auth/', include('social_django.urls', namespace="social")),
-    path('', authen.views.home, name='home'),
+    path('home/', authen.views.home, name='home'),
+    path('', authen.views.splash, name='splash')
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) 
