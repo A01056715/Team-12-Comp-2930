@@ -25,7 +25,7 @@ SECRET_KEY = 'keo8h)ht$ub7!7652)nipmz$bt^3-+c7fa-3)=wya2_3wv4zas'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['conquez.herokuapp.com', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['powerful-beach-95672.herokuapp.com','conquez.herokuapp.com', '127.0.0.1', 'localhost']
 
 
 # Application definition
@@ -48,6 +48,8 @@ INSTALLED_APPS = [
 
 AUTHENTICATION_BACKENDS = [
     'social_core.backends.facebook.FacebookOAuth2',
+    'social_core.backends.open_id.OpenIdAuth',
+    'social_core.backends.google.GoogleOpenId',
     'social_core.backends.google.GoogleOAuth2',
     'django.contrib.auth.backends.ModelBackend'
 ]
@@ -67,7 +69,7 @@ ROOT_URLCONF = 'config.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -75,6 +77,8 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'social_django.context_processors.backends',
+                'social_django.context_processors.login_redirect',
             ],
         },
     },
@@ -91,21 +95,21 @@ LOGOUT_REDIRECT_URL = 'login'
 
 
 
-SOCIAL_AUTH_FACEBOOK_KEY = '2380139345552475'         
-SOCIAL_AUTH_FACEBOOK_SECRET = '86498316b90262a605eda0b0cfd2cc61' 
+SOCIAL_AUTH_FACEBOOK_KEY = '2380139345552475'
+SOCIAL_AUTH_FACEBOOK_SECRET = '86498316b90262a605eda0b0cfd2cc61'
 SOCIAL_AUTH_FACEBOOK_SCOPE = ['email', 'user_link']
-SOCIAL_AUTH_FACEBOOK_PROFILE_EXTRA_PARAMS = {       
+SOCIAL_AUTH_FACEBOOK_PROFILE_EXTRA_PARAMS = {
   'fields': 'id, name, email, picture.type(large), link'
 }
-SOCIAL_AUTH_FACEBOOK_EXTRA_DATA = [                 
+SOCIAL_AUTH_FACEBOOK_EXTRA_DATA = [
     ('name', 'name'),
     ('email', 'email'),
     ('picture', 'picture'),
     ('link', 'profile_url'),
 ]
 
-SOCIAL_AUTH_GOOGLE_OAUTH2_KEY ='346054491258-is7001kfgriboe3nms1liv81lvs5t0ba.apps.googleusercontent.com'  #Paste CLient Key
-SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = 'ifcHI1HC1UTEEvMU-3XVpN_s'
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY ='346054491258-fvcrvr3vta7si363r7db3klf1dvvlrkh.apps.googleusercontent.com'  #Paste CLient Key
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = 'uP2-c65zNVHPQ2o9Zp76KFIY'
 
 SOCIAL_AUTH_URL_NAMESPACE = 'social'
 
@@ -120,10 +124,10 @@ SOCIAL_AUTH_REDIRECT_IS_HTTPS = True
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'conquezdb',
-        'USER': 'postgres', 
-        'PASSWORD': 'django1234',
-        'HOST': 'localhost',
+        'NAME': 'd2vbfk5ab10ub8',
+        'USER': 'sougzewtuqquti',
+        'PASSWORD': 'ca583135cbcfa0da269bb2a117597cbc08e02fd9e99e55a27805e6705d408f16',
+        'HOST': 'ec2-54-225-116-36.compute-1.amazonaws.com',
         'PORT': '5432',
     }
 }
