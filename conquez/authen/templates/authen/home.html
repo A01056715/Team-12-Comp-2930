@@ -10,36 +10,13 @@
     <script src="https://cdn.jsdelivr.net/npm/giojs@2.2.1/build/gio.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="{% static 'authen/css/main.css' %}">
-
-
     <title>Globe</title>
-
 </head>
 <body>
     <div class="row">
         <div class="col-sm-12 mb-3">
             <h4 class="text-center">Welcome Back, {{ user.username }}</h4>
         </div>
-        {% for ass in backends.associated %}
-        {% if ass.provider == 'facebook' %}
-        <div class="col-md-6 text-center">
-            <img src="{{ass.extra_data.picture.data.url}}" alt="" width="150" height="150" style="border-radius: 50%">
-        </div>
-        <div class="col-md-6 social-container my-2">
-            <p> Name: {{ ass.extra_data.name }} </p>
-        </div>
-        {% endif %}
-
-        {% if ass.provider == 'google-oauth2' %}
-        <div class="col-md-6 text-center">
-            <img src="{{ass.extra_data.picture_url}}" alt="" width="150" height="150" style="border-radius: 50%">
-        </div>
-        <div class="col-md-6 social-container my-2">
-            <p> Name: {{ ass.extra_data.name }} </p>
-        </div>
-        {% endif %}
-
-        {% endfor %}
         <header><a href="#">Profile</a> </header>
         <div class="col-sm-12 mt-2 text-center">
             <button class="btn btn-danger">
