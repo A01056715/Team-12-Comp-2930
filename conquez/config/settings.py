@@ -109,6 +109,9 @@ SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = 'ifcHI1HC1UTEEvMU-3XVpN_s'
 
 SOCIAL_AUTH_URL_NAMESPACE = 'social'
 
+SOCIAL_AUTH_REDIRECT_IS_HTTPS = True
+
+
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
@@ -117,10 +120,10 @@ SOCIAL_AUTH_URL_NAMESPACE = 'social'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'd55bakse6kntn4',
-        'USER': 'vgusbiettsfavn', 
-        'PASSWORD': 'e8eec130a581f3db5193ecf005a9e8d7991955fe4b9aa787906ecb780b8c490b',
-        'HOST': 'ec2-174-129-208-118.compute-1.amazonaws.com',
+        'NAME': 'conquezdb',
+        'USER': 'postgres', 
+        'PASSWORD': 'django1234',
+        'HOST': 'localhost',
         'PORT': '5432',
     }
 }
@@ -165,4 +168,9 @@ STATIC_ROOT = os.path.join(BASE_DIR,  'static')
 
 SESSION_COOKIE_SAMESITE = None
 
+# Force https redirect
+SECURE_SSL_REDIRECT = True
+# Honor the 'X-Forwarded-Proto' header for request.is_secure()
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+# Force HTTPS in the final URIs
 SOCIAL_AUTH_REDIRECT_IS_HTTPS = True
