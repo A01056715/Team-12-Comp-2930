@@ -11,6 +11,9 @@ const counter = document.getElementById("counter");
 const timeGauge = document.getElementById("timeGauge");
 const progress = document.getElementById("progress");
 const scoreDiv = document.getElementById("scoreContainer");
+const explanation = document.getElementById("explanation_container");
+const submit_button = document.getElementById("submit_button");
+const progress_circles = document.getElementsByClassName("prog")
 
 // create our questions
 let questions = [
@@ -21,7 +24,8 @@ let questions = [
         choiceB: "pollution",
         choiceC: "friction",
         choiceD: "Supernatural Effects",
-        correct: "A"
+        correct: "A",
+        explanation: "This is the explanation.",
     },{
         question: "Which Letter Comes after B in ALPHABETS?",
         imgSrc: "assets/img/bimg.png",
@@ -29,7 +33,8 @@ let questions = [
         choiceB: "D",
         choiceC: "E",
         choiceD: "F",
-        correct: "C"
+        correct: "C",
+        explanation: "This is the explanation.",
     },{
         question: "Which is the heaviest 1kg of feathers or 1kg of iron?",
         imgSrc: "assets/img/bimg.png",
@@ -37,7 +42,8 @@ let questions = [
         choiceB: "1 kg of iron",
         choiceC: "I give up",
         choiceD: "Equal",
-        correct: "D"
+        correct: "D",
+        explanation: "This is the explanation.",
     },
 ];
 
@@ -54,6 +60,8 @@ let score = 0;
 
 // render a question
 function renderQuestion(){
+    explanation.style.display = "none";
+    quiz.style.display = "block";
     let q = questions[runningQuestion];
 
     question.innerHTML = "<p>"+ q.question +"</p>";
@@ -65,6 +73,7 @@ function renderQuestion(){
 }
 
 start.addEventListener("click",startQuiz);
+submit_button.addEventListener("click", display_explanation);
 
 // start quiz
 function startQuiz(){
@@ -72,9 +81,10 @@ function startQuiz(){
     renderQuestion();
     quiz.style.display = "block";
     renderProgress();
-    renderCounter();
-    TIMER = setInterval(renderCounter,1000); // 1000ms = 1s
+    // renderCounter();
+    // TIMER = setInterval(renderCounter,1000); // 1000ms = 1s
 }
+
 
 // render progress
 function renderProgress(){
@@ -83,8 +93,8 @@ function renderProgress(){
     }
 }
 
-// counter render
 
+// counter render
 function renderCounter(){
     if(count <= questionTime){
         counter.innerHTML = count;
@@ -105,7 +115,7 @@ function renderCounter(){
     }
 }
 
-// checkAnwer
+// check Answer
 
 function checkAnswer(answer){
     if( answer == questions[runningQuestion].correct){
@@ -113,22 +123,33 @@ function checkAnswer(answer){
         score++;
         // change progress color to green
         answerIsCorrect();
+
+        explanation.innerHTML = "Correct" + "<br>"
     }else{
         // answer is wrong
         // change progress color to red
         answerIsWrong();
+
+        explanation.innerHTML = "Incorrect" + "<br>"
     }
     count = 0;
-    if(runningQuestion < lastQuestion){
+}
+
+
+// display explanation
+function display_explanation() {
+    quiz.style.display = "none";
+    explanation.style.display = "block";
+    explanation.innerHTML += questions[runningQuestion].explanation;
+    if (runningQuestion < lastQuestion) {
         runningQuestion++;
-        renderQuestion();
-    }else{
+        setTimeout(renderQuestion, 10000);
+    } else {
         // end the quiz and show the score
         clearInterval(TIMER);
         scoreRender();
     }
 }
-
 // answer is correct
 function answerIsCorrect(){
     document.getElementById(runningQuestion).style.backgroundColor = "#0f0";
