@@ -1,6 +1,6 @@
 let configs = {
     color: {
-        surface:0xFF0000,
+        surface:#0080FF,
         //selected: 2141154,
     }
 };
@@ -106,4 +106,3 @@ function explode() {
     $('#globalArea').toggle('explode')
 
 }
-
