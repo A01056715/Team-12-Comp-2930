@@ -1,6 +1,6 @@
 let configs = {
     color: {
-        surface:0xFF0000,
+        surface:#0080FF,
         //selected: 2141154,
     }
 };
@@ -60,8 +60,22 @@ function callback(selectedCountry) {
     let nameCard = $( "#nameCard" );
     let infoBoard = $( "#infoBoard" );
     if( available_countries.includes(selectedCountry.name)){
-        nameCard.text( controller.getSelectedCountry().name+'\'s' + " EMPIRE" );
-        nameCard.append('<br/><a id="link">Conquer</a>');
+        nameCard.text( selectedCountry.name+'\'s' + " EMPIRE" );
+        if(selectedCountry.name === 'CHINA'){
+            nameCard.append('<br/><a id="link" href="{% url \'china\' %}">Conquer</a>');
+        }
+        if(selectedCountry.name === 'CANADA'){
+            nameCard.append('<br/><a id="link" href="{% url \'canada\' %}">Conquer</a>');
+        }
+        if(selectedCountry.name === 'INDIA'){
+            nameCard.append('<br/><a id="link" href="{% url \'india\' %}">Conquer</a>');
+        }
+        if(selectedCountry.name === 'TURKEY'){
+            nameCard.append('<br/><a id="link" href="{% url \'turkey\' %}">Conquer</a>');
+        }
+        if(selectedCountry.name === 'BRAZIL'){
+            nameCard.append('<br/><a id="link" href="{% url \'brazil\' %}">Conquer</a>');
+        }
         infoBoard.fadeIn( 1000 );
 
         setTimeout( function () {
@@ -92,4 +106,3 @@ function explode() {
     $('#globalArea').toggle('explode')
 
 }
-
