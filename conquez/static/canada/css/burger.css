@@ -133,9 +133,9 @@ body.open:after {
 }
 .b-container {
   height: 60px;
-  left: 30px;
+  left: 10px;
   position: absolute;
-  top: 30px;
+  top: 10px;
 }
 .b-container:hover:not(.open) .bun-top, .b-container:hover:not(.open) .bun-mid, .b-container:hover:not(.open) .bun-bottom {
   background: rgba(255, 255, 255, 1);
