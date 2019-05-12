@@ -9,13 +9,15 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet">
   </head>
   <body>
-
+    <div id="start">
+      Start Quiz!
+    </div>
     <!-- Navigation -->
     <div class="b-nav">
       <li><a class="b-link" href="" target="_blank">Globe</a></li>
       <li><a class="b-link" href="" target="_blank">Profile</a></li>
     </div>
-    
+
     <!-- Burger-Icon -->
     <div class="b-container">
       <div class="b-menu">
@@ -24,6 +26,8 @@
         <div class="b-bun b-bun--bottom"></div>
       </div>
     </div>
+
+    <div id="scoreContainer" style="display: none"></div>
 
     <div class="wrapper">
       <div class="card card--first">
@@ -37,13 +41,15 @@
           <span class="card__subtitle card__will-animate">Which Chinese city is home to the world's biggest air purifier?</span>
 
         </div>
-
         <div class="card__body">
           <div class="card__image card__will-animate"></div>
-          <div class="card__wish-list card__wish-list--19 card__will-animate">Multiple Choice Section</div>
-
+          <div id="A" onclick="checkAnswer('A')" class="card__wish-list card__wish-list--19 card__will-animate">Multiple Choice</div>
+          <div  id="B" onclick="checkAnswer('B')" class="card__wish-list card__wish-list--19 card__will-animate">Multiple Choice Section</div>
+          <div id="C" onclick="checkAnswer('C')" class="card__wish-list card__wish-list--19 card__will-animate">Multiple Choice Section</div>
+          <div id="D" onclick="checkAnswer('D')" class="card__wish-list card__wish-list--19 card__will-animate">Multiple Choice Section</div>
           <span class="card__category card__will-animate"></span>
         </div>
+        <div id="progress"></div>
       </div>
 
       <div class="card card--second">
@@ -91,20 +97,20 @@
       <div class="card card--fourth">
           <div class="card__header card__header--fourth">
             <!-- <div class="card__watermark" data-watermark="ecosystem"></div> -->
-  
+
             <div class="card__logo card__will-animate"></div>
-  
+
             <span class="card__price card__will-animate">Question 4</span>
-  
+
             <h1 class="card__title card__will-animate">3R's</h1>
             <span class="card__subtitle card__will-animate">Which region in China has the most efficient recycling systems in the world?</span>
-  
+
           </div>
-  
+
           <div class="card__body">
             <div class="card__image card__will-animate"></div>
             <div class="card__wish-list card__wish-list--huarache card__will-animate">Multiple Choice Section</div>
-  
+
             <span class="card__category card__will-animate"></span>
           </div>
         </div>
@@ -124,6 +130,6 @@
   <script src="china/js/index.js"></script>
   <script src="china/js/breakpoints.min.js"></script>
   <script src="china/js/burger.js"></script>
-
+  <script src="china/js/multiplechoice.js"></script>
 </body>
 </html>

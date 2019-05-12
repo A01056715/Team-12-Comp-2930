@@ -146,7 +146,7 @@ body {
 
 .card__body {
   position: relative;
-  padding: 40px 30px 20px;
+  padding: 15px 30px 15px;
 }
 
 .card__image {
@@ -165,14 +165,22 @@ body {
 
 .card__wish-list {
   display: block;
-  width: 50%;
-  margin: 0 auto 15px;
+  width: 100%;
+  margin: 0 auto 10px;
   padding: 15px;
   border: 2px solid #fff;
-  border-radius: 20px;
+  border-radius: 5px;
   text-align: center;
-  text-transform: uppercase;
-  font-size: 14px;
+  font-size: 8px;
+}
+
+button {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    color: red;
 }
 
 .card__wish-list--19 {
