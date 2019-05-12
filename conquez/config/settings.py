@@ -115,8 +115,6 @@ SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = 'uP2-c65zNVHPQ2o9Zp76KFIY'
 
 SOCIAL_AUTH_URL_NAMESPACE = 'social'
 
-SOCIAL_AUTH_REDIRECT_IS_HTTPS = True
-
 
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
@@ -175,8 +173,8 @@ STATIC_ROOT = os.path.join(BASE_DIR,  'static')
 SESSION_COOKIE_SAMESITE = None
 
 # Force https redirect
-SECURE_SSL_REDIRECT = True
+SECURE_SSL_REDIRECT = False
 # Honor the 'X-Forwarded-Proto' header for request.is_secure()
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 # Force HTTPS in the final URIs
-SOCIAL_AUTH_REDIRECT_IS_HTTPS = True
+SOCIAL_AUTH_REDIRECT_IS_HTTPS = False
