@@ -39,7 +39,8 @@ let questions = [
         choiceD : "Wrong",
         explanation: "Blah Blah Blah",
         correct : "C"
-    },{
+    },
+    {
         question : "What does JS stand for?",
         choiceA : "Wrong",
         choiceB : "Wrong",
@@ -97,7 +98,7 @@ function renderCounter(){
     if(count <= questionTime){
         counter.innerHTML = count;
         timeGauge.style.width = count * gaugeUnit + "px";
-        count++;
+        count++
     }else{
         count = 0;
         // change progress color to red
