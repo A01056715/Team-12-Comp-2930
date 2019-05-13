@@ -20,20 +20,21 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib.auth import views as auth_views
 
-import china.views
 import brazil.views
 import india.views
 import turkey.views
 import canada.views
 import authen.views
+import country.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('china/', china.views.base, name='china'),
+    path('china/', country.views.china, name='china'),
     path('canada/', canada.views.base, name='canada'),
     path('brazil/', brazil.views.base, name='brazil'),
     path('india/', india.views.base, name='india'),
     path('turkey/', turkey.views.base, name='turkey'),
+    path('antarctica', country.views.antarctica, name='antarctica'),
     path("login/", authen.views.login, name="login"),
     path("logout/", auth_views.LogoutView.as_view(), name="logout"),
     path('profile/', authen.views.profile, name='profile'),
