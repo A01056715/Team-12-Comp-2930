@@ -9,6 +9,9 @@ def login(request):
 def splash(request):
     return render(request, 'authen/splash.html')
 
+def profile(request):
+    return render(request, 'authen/profile.html')
+
 @login_required
 def home(request):
     return render(request, 'authen/home.html')

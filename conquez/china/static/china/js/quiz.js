@@ -15,37 +15,37 @@ const ansDiv = document.getElementById("answerContainer");
 // create our questions
 let questions = [
     {
-        question : "What does HTML stand for?",
-        choiceA : "Correct",
+        question : "What recycling-related thing does China do that heavily influenced the behaviour of other developed countries?",
+        choiceA : "Banned import",
         choiceB : "Wrong",
         choiceC : "Wrong",
         choiceD : "Wrong",
-        explanation: "Blah Blah Blah",
+        explanation: "Explanation comes here",
         correct : "A"
     },{
-        question : "What does CSS stand for?",
+        question : "Which Chinese city is home to the world's biggest air purifier?",
         choiceA : "Wrong",
-        choiceB : "Correct",
+        choiceB : "Xian",
         choiceC : "Wrong",
         choiceD : "Wrong",
-        explanation: "Blah Blah Blah",
+        explanation: "Explanation comes here",
         correct : "B"
     },{
-        question : "What does JS stand for?",
+        question : "What is China's proportion of the global net increase in leaf area? ",
         imgSrc : "img/js.png",
         choiceA : "Wrong",
         choiceB : "Wrong",
-        choiceC : "Correct",
+        choiceC : "25%",
         choiceD : "Wrong",
-        explanation: "Blah Blah Blah",
+        explanation: "Explanation comes here",
         correct : "C"
     },{
-        question : "What does JS stand for?",
+        question : "Which part of China has the most efficient recycling systems in the world?",
         choiceA : "Wrong",
         choiceB : "Wrong",
-        choiceC : "Correct",
+        choiceC : "Taiwan",
         choiceD : "Wrong",
-        explanation: "Blah Blah Blah",
+        explanation: "Explanation comes here",
         correct : "D"
     }
 ];

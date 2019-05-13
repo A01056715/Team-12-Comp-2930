@@ -36,6 +36,7 @@ urlpatterns = [
     path('turkey/', turkey.views.base, name='turkey'),
     path("login/", authen.views.login, name="login"),
     path("logout/", auth_views.LogoutView.as_view(), name="logout"),
+    path('profile/', authen.views.profile, name='profile'),
     path('social-auth/', include('social_django.urls', namespace="social")),
     path('oauth/', include('social_django.urls', namespace="social")),
     path('home/', authen.views.home, name='home'),
