@@ -20,10 +20,6 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib.auth import views as auth_views
 
-import brazil.views
-import india.views
-import turkey.views
-import canada.views
 import authen.views
 import country.views
 
