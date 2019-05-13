@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'brazil',
     'turkey',
     'authen',
+    'country',
     'social_django',
 ]
 
