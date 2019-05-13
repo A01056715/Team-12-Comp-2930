@@ -56,7 +56,7 @@ controller.init();
 controller.onCountryPicked(callback);
 
 function callback(selectedCountry) {
-    let available_countries = [ 'BRAZIL', 'CANADA', 'CHINA', 'INDIA', 'TURKEY'];
+    let available_countries = [ 'BRAZIL', 'CANADA', 'CHINA', 'INDIA', 'TURKEY', 'ANTARCTICA'];
     let nameCard = $( "#nameCard" );
     let infoBoard = $( "#infoBoard" );
     if( available_countries.includes(selectedCountry.name)){
@@ -75,6 +75,9 @@ function callback(selectedCountry) {
         }
         if(selectedCountry.name === 'BRAZIL'){
             nameCard.append('<br/><a id="link" href="https://conquez.herokuapp.com/brazil">Conquer</a>');
+        }
+        if(selectedCountry.name === 'ANTARCTICA'){
+            nameCard.append('<br/><a id="link" href="https://conquez.herokuapp.com/antarctica">Conquer</a>');
         }
         infoBoard.fadeIn( 1000 );
 
