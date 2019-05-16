@@ -15,37 +15,37 @@ const ansDiv = document.getElementById("answerContainer");
 // create our questions
 let questions = [
     {
-        question : "What does HTML stand for? wfffffffffwegg ggggggggggggw elflleflewlflewlfl wqwqrwq wqrwqr wqrqwr qwrq rw",
+        question : "This is question number one.",
         choiceA : "Correct",
         choiceB : "Wrong",
         choiceC : "Wrong",
         choiceD : "Wrong",
-        explanation: "Blah Blah Blah",
+        explanation: "explanation for question 1",
         correct : "A"
     },{
-        question : "What does CSS stand for?",
+        question : "This is question number two.",
         choiceA : "Wrong",
         choiceB : "Correct",
         choiceC : "Wrong",
         choiceD : "Wrong",
-        explanation: "Blah Blah Blah",
+        explanation: "explanation for question 2",
         correct : "B"
     },{
-        question : "What does JS stand for?",
+        question : "This is question number three.",
         imgSrc : "img/js.png",
         choiceA : "Wrong",
         choiceB : "Wrong",
         choiceC : "Correct",
         choiceD : "Wrong",
-        explanation: "Blah Blah Blah",
+        explanation: "explanation for question 3",
         correct : "C"
     },{
-        question : "What does JS stand for?",
+        question : "This is question number four.",
         choiceA : "Wrong",
         choiceB : "Wrong",
         choiceC : "Wrong",
         choiceD : "Correct",
-        explanation: "Blah Blah Blah",
+        explanation: "explanation for question 4",
         correct : "D"
     }
 ];
@@ -84,6 +84,8 @@ function startQuiz(){
     }).fadeOut( function () {
         $("#quiz").fadeIn();
     });
+    // document.getElementById("btimegauge").style.display='block';
+    // document.getElementById("timegauge").style.display='block';
     renderQuestion();
     renderProgress();
     renderCounter();
@@ -158,15 +160,23 @@ function answerIsWrong(){
 
 //Explanation()
 function explanationRender() {
-  let q = questions[runningQuestion];
-  $("#answerContainer").fadeIn("slow")
+    clearInterval(TIMER);
+    let q = questions[runningQuestion];
+  $("#quiz").fadeOut(500,function () {
+      $("#answerContainer").fadeIn();
+  });
+
 
   ansDiv.innerHTML = "<p>"+ q.explanation +"</p>";
   ansDiv.innerHTML += "<button onclick='goNext()'>" + "Go To Next Question" + "</button>"
 }
 
 function goNext() {
-    $("#answerContainer").hide(1000);
+    $("#answerContainer").hide(1000,function () {
+        $("#quiz").fadeIn("slow");
+    });
+    TIMER = setInterval(renderCounter,1000); // 1000ms = 1s
+
     count = 0
 }
 
