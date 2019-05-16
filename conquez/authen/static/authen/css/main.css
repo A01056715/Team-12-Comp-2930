@@ -1,5 +1,5 @@
 body {
-    background-color: white;
+    background-color: black;
     overflow: hidden;
     position: fixed;
     height: 100%;
@@ -7,7 +7,7 @@ body {
 }
 #globalArea {
     height: 93%;
-    width: 93%;
+    width: 94%;
     position: absolute;
 }
 #infoBoard {

@@ -37,17 +37,15 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'china',
-    'india',
-    'canada',
-    'brazil',
-    'turkey',
     'authen',
+    'country',
     'social_django',
 ]
 
 AUTHENTICATION_BACKENDS = [
-    'social_core.backends.facebook.FacebookOAuth2',
+    'social_core.backends.open_id.OpenIdAuth',
+    'social_core.backends.github.GithubOAuth2',
+    'social_core.backends.google.GoogleOpenId',
     'social_core.backends.google.GoogleOAuth2',
     'django.contrib.auth.backends.ModelBackend'
 ]
@@ -67,7 +65,7 @@ ROOT_URLCONF = 'config.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -75,6 +73,8 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'social_django.context_processors.backends',
+                'social_django.context_processors.login_redirect',
             ],
         },
     },
@@ -89,25 +89,27 @@ LOGIN_REDIRECT_URL = 'home'
 LOGOUT_URL = 'logout'
 LOGOUT_REDIRECT_URL = 'login'
 
+SOCIAL_AUTH_GITHUB_KEY = '3cdffce98e99f50ad8ea'
+SOCIAL_AUTH_GITHUB_SECRET = '81d21b960f04d7d31beb05ea937b4dca149a4cf7'
 
+# SOCIAL_AUTH_FACEBOOK_KEY = '2380139345552475'
+# SOCIAL_AUTH_FACEBOOK_SECRET = '86498316b90262a605eda0b0cfd2cc61'
+# SOCIAL_AUTH_FACEBOOK_SCOPE = ['email', 'user_link']
+# SOCIAL_AUTH_FACEBOOK_PROFILE_EXTRA_PARAMS = {
+#   'fields': 'id, name, email, picture.type(large), link'
+# }
+# SOCIAL_AUTH_FACEBOOK_EXTRA_DATA = [
+#     ('name', 'name'),
+#     ('email', 'email'),
+#     ('picture', 'picture'),
+#     ('link', 'profile_url'),
+# ]
 
-SOCIAL_AUTH_FACEBOOK_KEY = '2380139345552475'         
-SOCIAL_AUTH_FACEBOOK_SECRET = '86498316b90262a605eda0b0cfd2cc61' 
-SOCIAL_AUTH_FACEBOOK_SCOPE = ['email', 'user_link']
-SOCIAL_AUTH_FACEBOOK_PROFILE_EXTRA_PARAMS = {       
-  'fields': 'id, name, email, picture.type(large), link'
-}
-SOCIAL_AUTH_FACEBOOK_EXTRA_DATA = [                 
-    ('name', 'name'),
-    ('email', 'email'),
-    ('picture', 'picture'),
-    ('link', 'profile_url'),
-]
-
-SOCIAL_AUTH_GOOGLE_OAUTH2_KEY ='346054491258-is7001kfgriboe3nms1liv81lvs5t0ba.apps.googleusercontent.com'  #Paste CLient Key
-SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = 'ifcHI1HC1UTEEvMU-3XVpN_s'
+SOCIAL_AUTH_GOOGLE_OAUTH2_KEY ='346054491258-fvcrvr3vta7si363r7db3klf1dvvlrkh.apps.googleusercontent.com'  #Paste CLient Key
+SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = 'uP2-c65zNVHPQ2o9Zp76KFIY'
 
 SOCIAL_AUTH_URL_NAMESPACE = 'social'
+
 
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
@@ -117,10 +119,10 @@ SOCIAL_AUTH_URL_NAMESPACE = 'social'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'd55bakse6kntn4',
-        'USER': 'vgusbiettsfavn', 
-        'PASSWORD': 'e8eec130a581f3db5193ecf005a9e8d7991955fe4b9aa787906ecb780b8c490b',
-        'HOST': 'ec2-174-129-208-118.compute-1.amazonaws.com',
+        'NAME': 'd8gqas12vasuu4',
+        'USER': 'wfgdfpzavopxgi',
+        'PASSWORD': 'a0dd058bcb2455187955819608e48b0dc0e76e6533540baac725fdc3c3c0baf0',
+        'HOST': 'ec2-54-235-208-103.compute-1.amazonaws.com',
         'PORT': '5432',
     }
 }
@@ -165,4 +167,9 @@ STATIC_ROOT = os.path.join(BASE_DIR,  'static')
 
 SESSION_COOKIE_SAMESITE = None
 
-SOCIAL_AUTH_REDIRECT_IS_HTTPS = True
+# Force https redirect
+SECURE_SSL_REDIRECT = False
+# Honor the 'X-Forwarded-Proto' header for request.is_secure()
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+# Force HTTPS in the final URIs
+SOCIAL_AUTH_REDIRECT_IS_HTTPS = False

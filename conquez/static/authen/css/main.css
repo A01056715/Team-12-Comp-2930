@@ -1,5 +1,5 @@
 body {
-    background-color: white;
+    background-color: black;
     overflow: hidden;
     position: fixed;
     height: 100%;
@@ -7,16 +7,17 @@ body {
 }
 #globalArea {
     height: 93%;
-    width: 93%;
+    width: 94%;
     position: absolute;
 }
 #infoBoard {
 
     position: absolute;
-    left: 35%;
-    top: 40%;
-    width: 400px;
-    height: 100px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 20em;
+    height: 6em;
     line-height: 50px;
     text-align: center;
     color: white;
@@ -32,7 +33,8 @@ body {
     height: 50%;
 
 }
-#quizLink {
-    color: lightblue;
+#link {
+    color: darkgreen;
+    cursor: pointer;
 
 }
