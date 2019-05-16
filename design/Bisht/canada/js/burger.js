@@ -5,7 +5,12 @@ const ques_1_B = document.getElementById('1B');
 const ques_1_C = document.getElementById('1C');
 const ques_1_D = document.getElementById('1D');
 
-ques_1_A.addEventListener("click", checkAnswer1('A'));
+ques_1_A.addEventListener('click', function answer() {
+  checkAnswer1('A')
+});
+
+
+// ques_1_A.addEventListener("click", checkAnswer1('A'));
 ques_1_B.addEventListener("click", checkAnswer1('B'));
 ques_1_C.addEventListener("click", checkAnswer1('C'));
 ques_1_D.addEventListener("click", checkAnswer1('D'));

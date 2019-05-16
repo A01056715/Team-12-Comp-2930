@@ -118,13 +118,14 @@ function renderCounter(){
 // check Answer
 
 function checkAnswer(answer){
-    if( answer == questions[runningQuestion].correct){
+    if( answer === questions[runningQuestion].correct){
         // answer is correct
         score++;
         // change progress color to green
         answerIsCorrect();
 
         explanation.innerHTML = "Correct" + "<br>"
+        console.log(score)
     }else{
         // answer is wrong
         // change progress color to red

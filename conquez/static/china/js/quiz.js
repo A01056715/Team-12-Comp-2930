@@ -15,37 +15,37 @@ const ansDiv = document.getElementById("answerContainer");
 // create our questions
 let questions = [
     {
-        question : "What recycling-related thing does China do that heavily influenced the behaviour of other developed countries?",
-        choiceA : "Banned import",
+        question : "What does HTML stand for?",
+        choiceA : "Correct",
         choiceB : "Wrong",
         choiceC : "Wrong",
         choiceD : "Wrong",
-        explanation: "Explanation comes here",
+        explanation: "Blah Blah Blah",
         correct : "A"
     },{
-        question : "Which Chinese city is home to the world's biggest air purifier?",
+        question : "What does CSS stand for?",
         choiceA : "Wrong",
-        choiceB : "Xian",
+        choiceB : "Correct",
         choiceC : "Wrong",
         choiceD : "Wrong",
-        explanation: "Explanation comes here",
+        explanation: "Blah Blah Blah",
         correct : "B"
     },{
-        question : "What is China's proportion of the global net increase in leaf area? ",
+        question : "What does JS stand for?",
         imgSrc : "img/js.png",
         choiceA : "Wrong",
         choiceB : "Wrong",
-        choiceC : "25%",
+        choiceC : "Correct",
         choiceD : "Wrong",
-        explanation: "Explanation comes here",
+        explanation: "Blah Blah Blah",
         correct : "C"
     },{
-        question : "Which part of China has the most efficient recycling systems in the world?",
+        question : "What does JS stand for?",
         choiceA : "Wrong",
         choiceB : "Wrong",
-        choiceC : "Taiwan",
-        choiceD : "Wrong",
-        explanation: "Explanation comes here",
+        choiceC : "Wrong",
+        choiceD : "Correct",
+        explanation: "Blah Blah Blah",
         correct : "D"
     }
 ];
@@ -60,6 +60,7 @@ const gaugeWidth = 150; // 150px
 const gaugeUnit = gaugeWidth / questionTime;
 let TIMER;
 let score = 0;
+let scorePerCent;
 
 // render a question
 function renderQuestion(){
@@ -76,12 +77,18 @@ start.addEventListener("click",startQuiz);
 
 // start quiz
 function startQuiz(){
-    start.style.display = "none";
+    $("#start").animate({
+        top: '0',
+        fontSize: '10px',
+        width: '75px',
+        height: '25px'
+    }).fadeOut( function () {
+        $("#quiz").fadeIn();
+    });
     renderQuestion();
-    quiz.style.display = "block";
     renderProgress();
     renderCounter();
-    TIMER = setInterval(renderCounter,2000); // 1000ms = 1s
+    TIMER = setInterval(renderCounter,1000); // 1000ms = 1s
 }
 
 // render progress
@@ -103,8 +110,8 @@ function renderCounter(){
         // change progress color to red
         answerIsWrong();
         if(runningQuestion < lastQuestion){
-            runningQuestion++;
-            renderQuestion();
+            explanationRender();
+            runningQuestion++
         }else{
             // end the quiz and show the score
             clearInterval(TIMER);
@@ -116,9 +123,11 @@ function renderCounter(){
 // checkAnwer
 
 function checkAnswer(answer){
-    if( answer == questions[runningQuestion].correct){
+    if( answer === questions[runningQuestion].correct){
         // answer is correct
-        score++;
+        increasescore();
+        console.log(score);
+
         // change progress color to green
         answerIsCorrect();
     } else {
@@ -143,35 +152,61 @@ function answerIsCorrect(){
     document.getElementById(runningQuestion).style.backgroundColor = "#0f0";
 }
 
+// answer is Wrong
+function answerIsWrong(){
+    document.getElementById(runningQuestion).style.backgroundColor = "#f00";
+}
+
 //Explanation()
 function explanationRender() {
   let q = questions[runningQuestion];
-  ansDiv.style.display = "block";
+  $("#answerContainer").fadeIn("slow")
 
   ansDiv.innerHTML = "<p>"+ q.explanation +"</p>";
   ansDiv.innerHTML += "<button onclick='goNext()'>" + "Go To Next Question" + "</button>"
 }
 
 function goNext() {
-  ansDiv.style.display = "none";
-  return;
+    $("#answerContainer").hide(1000);
+    count = 0
 }
 
-// answer is Wrong
-function answerIsWrong(){
-    document.getElementById(runningQuestion).style.backgroundColor = "#f00";
-}
+
 
 // score render
-function scoreRender(){
+function scoreRender() {
     scoreDiv.style.display = "block";
-
+    console.log(score)
     // calculate the amount of question percent answered by the user
-    const scorePerCent = Math.round(100 * score/questions.length);
-    scoreDiv.innerHTML = "<p>"+ scorePerCent +"%</p>";
-    scoreDiv.innerHTML += "<a href='https://conquez.herokuapp.com/home'>"+"Go Back" + "</a>";
+    scorePerCent = Math.round(100 * score / questions.length);
+    scoreDiv.innerHTML = "<p>" + scorePerCent + "%</p>";
+    scoreDiv.innerHTML += "<a href='https://conquez.herokuapp.com/home'>" + "Go Back" + "</a>";
+    scoreDiv.innerHTML += "<a href='javascript:validateScore()'>" + "Validate" + "</a>";
 }
 
+function increasescore() {
+    score++;
+}
+
+//AJAX for Retrieving Score
+function validateScore() {
+    console.log("sucessfully validating score");
+    $.ajax({
+        type:"GET",
+        url: "/get_score/",
+        data: { 
+            the_score: scorePerCent, country_id: 1 
+        },
+        dataType: 'json',
+        success: function(json) {
+            console.log(json);
+            window.location.href = "http://conquez.herokuapp.com";
+        },
+        error: function(xhr, errmsg, err) {
+            console.log('Cannot Validate Score');
+        }
+    });
+}
 
 
 
