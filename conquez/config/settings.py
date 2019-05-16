@@ -25,7 +25,7 @@ SECRET_KEY = 'keo8h)ht$ub7!7652)nipmz$bt^3-+c7fa-3)=wya2_3wv4zas'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['powerful-beach-95672.herokuapp.com','conquez.herokuapp.com', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['conquez.herokuapp.com', '127.0.0.1', 'localhost']
 
 
 # Application definition
@@ -43,7 +43,6 @@ INSTALLED_APPS = [
 ]
 
 AUTHENTICATION_BACKENDS = [
-    'social_core.backends.facebook.FacebookOAuth2',
     'social_core.backends.open_id.OpenIdAuth',
     'social_core.backends.github.GithubOAuth2',
     'social_core.backends.google.GoogleOpenId',
@@ -120,10 +119,10 @@ SOCIAL_AUTH_URL_NAMESPACE = 'social'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'd2vbfk5ab10ub8',
-        'USER': 'sougzewtuqquti',
-        'PASSWORD': 'ca583135cbcfa0da269bb2a117597cbc08e02fd9e99e55a27805e6705d408f16',
-        'HOST': 'ec2-54-225-116-36.compute-1.amazonaws.com',
+        'NAME': 'd8gqas12vasuu4',
+        'USER': 'wfgdfpzavopxgi',
+        'PASSWORD': 'a0dd058bcb2455187955819608e48b0dc0e76e6533540baac725fdc3c3c0baf0',
+        'HOST': 'ec2-54-235-208-103.compute-1.amazonaws.com',
         'PORT': '5432',
     }
 }
