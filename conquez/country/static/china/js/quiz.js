@@ -200,7 +200,7 @@ function validateScore() {
         dataType: 'json',
         success: function(json) {
             console.log(json);
-            window.location.href = "http://conquez.herokuapp.com/home";
+            // window.location.href = "http://conquez.herokuapp.com/home";
         },
         error: function(xhr, errmsg, err) {
             console.log('Cannot Validate Score');
