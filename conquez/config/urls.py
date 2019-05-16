@@ -37,5 +37,6 @@ urlpatterns = [
     path('social-auth/', include('social_django.urls', namespace="social")),
     path('oauth/', include('social_django.urls', namespace="social")),
     path('home/', authen.views.home, name='home'),
-    path('', authen.views.splash, name='splash')
+    path('', authen.views.splash, name='splash'),
+    path('get_score/', country.views.get_score, name='score'),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

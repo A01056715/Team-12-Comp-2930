@@ -1,38 +1,9 @@
+{% extends "base.html" %}
 {% load staticfiles %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Quiz</title>
+{% block css %}
+<link rel="stylesheet" href="{% static 'china/css/style.css' %}">
+{% endblock %}
+{% block javascript %}
+<script src="{% static 'china/js/quiz.js' %}"></script>
+{% endblock %}
 
-  <!-- CSS Import  -->
-  <link rel="stylesheet" href="{% static 'china/css/style.css' %}">
-</head>
-<body>
-  <!-- Card Container -->
-  <div id="container">
-    <div id="start"><p>Start Quiz!</p></div>
-    <div id="quiz" style="display: none">
-    <div id="question"></div>
-    <div id="choices">
-      <div class="choice" id="A" onclick="checkAnswer('A')"></div>
-      <div class="choice" id="B" onclick="checkAnswer('B')"></div>
-      <div class="choice" id="C" onclick="checkAnswer('C')"></div>
-      <div class="choice" id="D" onclick="checkAnswer('D')"></div>
-    </div>
-    <div id="timer">
-        <div id="counter"></div>
-        <div id="btimeGauge"></div>
-        <div id="timeGauge"></div>
-    </div>
-    <div class="myProgress">
-      <div  id="progress"></div>
-    </div>
-    <div id="answerContainer" style="display: none"></div>
-    <div id="scoreContainer" style="display: none"></div>
-  </div>
-
-  <script src="{% static 'china/js/quiz.js' %}"></script>
-</body>
-</html>
