@@ -192,21 +192,17 @@ function increasescore() {
 function validateScore() {
     console.log("sucessfully validating score");
     $.ajax({
-        type:"GET",
-        url: "/get_score/",
+        type:'POST',
+        url: '/update_score/',
         data: { 
-            the_score: scorePerCent, country_id: 1 
+            'user_score': scorePerCent,
+            'country_id': 1 
         },
-        dataType: 'json',
-        success: function(json) {
-            console.log('success');
-            // window.location.href = "http://conquez.herokuapp.com/home";
-        },
-        error: function(xhr, errmsg, err) {
-            console.log('Cannot Validate Score');
-        }
+    }).done(function(response){
+        console.log(response);
     });
 }
+
 
 
 

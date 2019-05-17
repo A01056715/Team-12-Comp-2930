@@ -193,7 +193,7 @@ function validateScore() {
     console.log("sucessfully validating score");
     $.ajax({
         type:"GET",
-        url: "/get_score/",
+        url: "/update_score/",
         data: { 
             the_score: scorePerCent,
             country_id: 5 

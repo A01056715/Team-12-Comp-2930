@@ -14,15 +14,18 @@
   <div id="container">
     <div id="start"><p>Start Quiz!</p></div>
     <div id="quiz" style="display: none">
-      {% for country_question %}
-    <div id="question">{{ country_question.question }}</div>
+    <div id="question"></div>
     <div id="choices">
-      <div class="choice" id="A" onclick="checkAnswer('A')">{{ country_question.choice1}}</div>
+      <div class="choice" id="A" onclick="checkAnswer('A')"></div>
       <div class="choice" id="B" onclick="checkAnswer('B')"></div>
       <div class="choice" id="C" onclick="checkAnswer('C')"></div>
       <div class="choice" id="D" onclick="checkAnswer('D')"></div>
     </div>
-    {% end for %}
+    <div>
+        {% for question in question1 %}
+        <p>{{ question.question }}</p>
+        {% endfor %}
+    </div>
     <div id="timer">
         <div id="counter"></div>
         <div id="btimeGauge"></div>
