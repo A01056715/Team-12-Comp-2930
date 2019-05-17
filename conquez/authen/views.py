@@ -15,3 +15,5 @@ def profile(request):
 @login_required
 def home(request):
     return render(request, 'authen/home.html')
+
+

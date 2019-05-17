@@ -180,7 +180,7 @@ function scoreRender() {
     // calculate the amount of question percent answered by the user
     scorePerCent = Math.round(100 * score / questions.length);
     scoreDiv.innerHTML = "<p>" + scorePerCent + "%</p>";
-    scoreDiv.innerHTML += "<a href='https://conquez.herokuapp.com/home'>" + "Back" + "</a>";
+    scoreDiv.innerHTML += "<a href='https://conquez.herokuapp.com/home'>" + "Go Back" + "</a>";
     scoreDiv.innerHTML += "<a href='javascript:validateScore()'>" + "Validate" + "</a>";
 }
 
@@ -192,18 +192,35 @@ function increasescore() {
 function validateScore() {
     console.log("sucessfully validating score");
     $.ajax({
-        type:"GET",
-        url: "/get_score/",
-        data: {
-            the_score: scorePerCent, country_id: 1
+        type:'POST',
+        url: '/update_score/',
+        data: { 
+            'user_score': scorePerCent,
+            'country_id': 1 
         },
-        dataType: 'json',
-        success: function(json) {
-            console.log(json);
-            window.location.href = "http://conquez.herokuapp.com";
-        },
-        error: function(xhr, errmsg, err) {
-            console.log('Cannot Validate Score');
-        }
+    }).done(function(response){
+        console.log(response);
     });
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

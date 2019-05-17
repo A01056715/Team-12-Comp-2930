@@ -1,0 +1,48 @@
+body{
+    background-color: #57B99D;
+    font-family: Verdana;
+}
+div{
+    color: white;
+}
+ul{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-size: 1.4em;
+    width: 14em;
+    line-height: 1.5em;
+}
+p{
+    text-align: center;
+    font-size: 2em;
+    top: 3em;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+#headline{
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+    position: absolute;
+}
+img{
+    height: 7.5em;
+    width: 7.5em;
+    top: 10%;
+    left: 50%;
+    transform: translate( -50%, 0);
+    position: absolute;
+}
+#btn{
+    border: 2px solid white;
+    border-radius: 0.2em;
+    padding: 0.3em;
+    position: absolute;
+    top: 77%;
+    left: 50%;
+    transform: translate(-50%, -75%);
+}

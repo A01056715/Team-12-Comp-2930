@@ -15,15 +15,15 @@ const ansDiv = document.getElementById("answerContainer");
 // create our questions
 let questions = [
     {
-        question : "What does HTML stand for?",
+        question : "This is question number one.",
         choiceA : "Correct",
         choiceB : "Wrong",
         choiceC : "Wrong",
         choiceD : "Wrong",
-        explanation: "Blah Blah Blah",
+        explanation: "explanation for question 1",
         correct : "A"
     },{
-        question : "What does CSS stand for?",
+        question : "This is question number two.",
         choiceA : "Wrong",
         choiceB : "Correct",
         choiceC : "Wrong",
@@ -31,7 +31,7 @@ let questions = [
         explanation: "Blah Blah Blah",
         correct : "B"
     },{
-        question : "What does JS stand for?",
+        question : "This is question number three.",
         imgSrc : "img/js.png",
         choiceA : "Wrong",
         choiceB : "Wrong",
@@ -40,11 +40,11 @@ let questions = [
         explanation: "Blah Blah Blah",
         correct : "C"
     },{
-        question : "What does JS stand for?",
+        question : "This is question number four.",
         choiceA : "Wrong",
         choiceB : "Wrong",
-        choiceC : "Correct",
-        choiceD : "Wrong",
+        choiceC : "Wrong",
+        choiceD : "Correct",
         explanation: "Blah Blah Blah",
         correct : "D"
     }
@@ -61,6 +61,8 @@ const gaugeUnit = gaugeWidth / questionTime;
 let TIMER;
 let score = 0;
 
+
+
 // render a question
 function renderQuestion(){
     let q = questions[runningQuestion];
@@ -72,16 +74,28 @@ function renderQuestion(){
     choiceD.innerHTML = q.choiceD;
 }
 
+
+
 start.addEventListener("click",startQuiz);
+
+
 
 // start quiz
 function startQuiz(){
-    start.style.display = "none";
+    $("#start").animate({
+        top: '0',
+        fontSize: '10px',
+        width: '75px',
+        height: '25px'
+    }).fadeOut( function () {
+        $("#quiz").fadeIn();
+    });
+    // document.getElementById("btimegauge").style.display='block';
+    // document.getElementById("timegauge").style.display='block';
     renderQuestion();
-    quiz.style.display = "block";
     renderProgress();
     renderCounter();
-    TIMER = setInterval(renderCounter,2000); // 1000ms = 1s
+    TIMER = setInterval(renderCounter,1000); // 1000ms = 1s
 }
 
 // render progress
@@ -103,8 +117,8 @@ function renderCounter(){
         // change progress color to red
         answerIsWrong();
         if(runningQuestion < lastQuestion){
-            runningQuestion++;
-            renderQuestion();
+            explanationRender();
+            runningQuestion++
         }else{
             // end the quiz and show the score
             clearInterval(TIMER);
@@ -116,9 +130,11 @@ function renderCounter(){
 // checkAnwer
 
 function checkAnswer(answer){
-    if( answer == questions[runningQuestion].correct){
+    if( answer === questions[runningQuestion].correct){
         // answer is correct
-        score++;
+        increasescore();
+        console.log(score);
+
         // change progress color to green
         answerIsCorrect();
     } else {
@@ -130,7 +146,6 @@ function checkAnswer(answer){
     if(runningQuestion < lastQuestion){
         explanationRender();
         runningQuestion++;
-        renderQuestion();
     }else{
         // end the quiz and show the score
         clearInterval(TIMER);
@@ -143,38 +158,49 @@ function answerIsCorrect(){
     document.getElementById(runningQuestion).style.backgroundColor = "#0f0";
 }
 
-//Explanation()
-function explanationRender() {
-  let q = questions[runningQuestion];
-  ansDiv.style.display = "block";
-
-  ansDiv.innerHTML = "<p>"+ q.explanation +"</p>";
-  ansDiv.innerHTML += "<button onclick='goNext()'>" + "Go To Next Question" + "</button>"
-}
-
-function goNext() {
-  ansDiv.style.display = "none";
-}
-
 // answer is Wrong
 function answerIsWrong(){
     document.getElementById(runningQuestion).style.backgroundColor = "#f00";
 }
 
-// score render
-function scoreRender(){
-    scoreDiv.style.display = "block";
+//Explanation()
+function explanationRender() {
+    clearInterval(TIMER);
+    let q = questions[runningQuestion];
+    $("#quiz").fadeOut(500,function () {
+        $("#answerContainer").fadeIn();
+    });
 
-    // calculate the amount of question percent answered by the user
-    const scorePerCent = Math.round(100 * score/questions.length);
-    scoreDiv.innerHTML = "<p>"+ scorePerCent +"%</p>";
-    scoreDiv.innerHTML += "<a href='https://conquez.herokuapp.com/home'>"+"Go Back" + "</a>";
+
+    ansDiv.innerHTML = "<p>"+ q.explanation +"</p>";
+    ansDiv.innerHTML += "<button onclick='goNext()'>" + "Go To Next Question" + "</button>"
+}
+
+function goNext() {
+    renderQuestion();
+    $("#answerContainer").hide(1000,function () {
+        $("#quiz").fadeIn("slow");
+    });
+    TIMER = setInterval(renderCounter,1000); // 1000ms = 1s
+
+    count = 0
 }
 
 
 
+// score render
+function scoreRender() {
+    scoreDiv.style.display = "block";
+    console.log(score);
+    // calculate the amount of question percent answered by the user
+    const scorePerCent = Math.round(100 * score / questions.length);
+    scoreDiv.innerHTML = "<p>" + scorePerCent + "%</p>";
+    scoreDiv.innerHTML += "<a href='https://conquez.herokuapp.com/home'>" + "Go Back" + "</a>";
+}
 
-
+function increasescore() {
+    score++
+}
 
 
 
