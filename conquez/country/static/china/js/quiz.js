@@ -189,24 +189,24 @@ function increasescore() {
 }
 
 //AJAX for Retrieving Score
-function validateScore() {
-    console.log("sucessfully validating score");
-    $.ajax({
-        type:"GET",
-        url: "/get_score/",
-        data: { 
-            the_score: scorePerCent, country_id: 1 
-        },
-        dataType: 'json',
-        success: function(json) {
-            console.log(json);
-            // window.location.href = "http://conquez.herokuapp.com/home";
-        },
-        error: function(xhr, errmsg, err) {
-            console.log('Cannot Validate Score');
-        }
-    });
-}
+$(document).ready(function() {
+    function validateScore() {
+        console.log("sucessfully validating score");
+        $.ajax({
+            type:'POST',
+            url: '/update_score/',
+            data: { 
+                'user_score': scorePerCent,
+                'username': username,
+                'country_id': 1 
+            },
+            dataType: 'json'
+        }).done(function(response){
+            console.log(response);
+        });
+    }
+});
+
 
 
 
