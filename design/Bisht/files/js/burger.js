@@ -1,6 +1,3 @@
-
-
-
 'use strict';
 
 (function() {
@@ -14,19 +11,4 @@
       el.classList.toggle('open');
     });
   }, false);
-
-
-
-
-
-
-// ques_1_A.addEventListener('click', function answer() {
-//   checkAnswer1('A')
-// });
-
-
-
-  var newdiv = document.getElementById('newdiv');
-  newdiv.addEventListener("click", function testing() {console.log("hi");});
-
 })();

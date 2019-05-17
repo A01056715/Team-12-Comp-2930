@@ -3,19 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Quiz - 1</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-    <script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js'></script>
+    <title>Quiz</title>
 
-        <!-- CSS Import  -->
-  <link rel="stylesheet" href="css/style.css">
+  <!-- CSS Import  -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet">
 </head>
-<body>
+
+<body onload="startQuiz()">
+<div id="timer">
+    <div id="counter"></div>
+    <div id="btimeGauge"></div>
+    <div id="timeGauge"></div>
+</div>
   <!-- Card Container -->
-  <div id="container" >
-    <div id="start"><p>Start Quiz!</p></div>
-    <div id="quiz" style="display: none">
-    <div id="question"></div>
+  <div id="container">
+
+      <div id="quiz" style="display: none">
+
+      <div class ="header">
+          <div id="question"></div>
+      </div>
+
     <div id="choices">
       <div class="choice" id="A" onclick="checkAnswer('A')"></div>
       <div class="choice" id="B" onclick="checkAnswer('B')"></div>
@@ -23,19 +34,16 @@
       <div class="choice" id="D" onclick="checkAnswer('D')"></div>
     </div>
 
-    <div id="timer">
-        <div id="counter"></div>
-        <div id="btimeGauge"></div>
-        <div id="timeGauge"></div>
-    </div>
-    </div>
-    <div class="myProgress">
-      <div  id="progress"></div>
-    </div>
+
     <div id="answerContainer" style="display: none"></div>
     <div id="scoreContainer" style="display: none"></div>
   </div>
+  </div>
 
-  <script src="js/quiz.js"></script>
+      <div class="myProgress">
+          <div  id="progress"></div>
+      </div>
+
+      <script src="js/quiz.js"></script>
 </body>
 </html>
