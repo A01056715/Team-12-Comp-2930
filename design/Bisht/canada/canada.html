@@ -27,29 +27,34 @@
     </div>
 
     <div class="wrapper">
-      <div class="card card--first">
+      <div id="answerContainer1" style="display: none">This is the hardcoded explanation of question 1.</div>
+      <div class="card card--first" id="first_card">
         <div class="card__header card__header--first">
           <!-- <div class="card__watermark" data-watermark="Plt"></div> -->
           <div class="card__logo card__will-animate"></div>
 
-          <span class="card__price card__will-animate">Question 1</span>
+          <span class="card__price card__will-animate" >Question 1</span>
 
-          <h1 class="card__title card__will-animate">Pollution</h1>
+          <h1  id="heading1" class="card__title card__will-animate">Pollution</h1>
           <span class="card__subtitle card__will-animate">Which of the following is not is a pollution source for the Great Lakes?</span>
 
         </div>
 
-        <div class="card__body">
+        <div class="card__body" id="first_card_body">
           <div class="card__image card__will-animate"></div>
-          <div class="card__wish-list card__wish-list--19 card__will-animate"><button class="choices" id="1A">Volcanic Mountains</button></div>
-          <div class="card__wish-list card__wish-list--19 card__will-animate"><button class="choices" id="1B"> Dumping</button></div>
-          <div class="card__wish-list card__wish-list--19 card__will-animate"><button class="choices" id="1C"> Pollution from factories</button></div>
-          <div class="card__wish-list card__wish-list--19 card__will-animate"><button class="choices" id="1D"> Other</button></div>
-          <span class="card__category card__will-animate"></span>
+          <div class="card__wish-list card__wish-list--19 card__will-animate" id="buttons1">
+          <div><button class="choices" id="1A">Volcanic Mountains</button></div>
+          <div><button class="choices" id="1B"> Dumping</button></div>
+          <div><button class="choices" id="1C"> Pollution from factories</button></div>
+          <div><button class="choices" id="1D"> Other</button></div>
+          </div>
+            <span class="card__category card__will-animate"></span>
         </div>
       </div>
 
       <div class="card card--second">
+        <div id="answerContainer2" style="display: none">Explanation of question 2</div>
+
         <div class="card__header card__header--second">
           <!-- <div class="card__watermark" data-watermark="3r's"></div> -->
 
@@ -57,63 +62,73 @@
 
           <span class="card__price card__will-animate">Question 2</span>
 
-          <h1 class="card__title card__will-animate">The Three R's</h1>
+          <h1 id="heading2" class="card__title card__will-animate">The Three R's</h1>
           <span class="card__subtitle card__will-animate">Which item belongs in a Torontonian blue bin?</span>
 
         </div>
 
         <div class="card__body">
           <div class="card__image card__will-animate"></div>
-          <div class="card__wish-list card__wish-list--19 card__will-animate"><button class="choices" id="2A">Volcanic Mountains</button></div>
-          <div class="card__wish-list card__wish-list--19 card__will-animate"><button class="choices" id="2B"> Dumping</button></div>
-          <div class="card__wish-list card__wish-list--19 card__will-animate"><button class="choices" id="2C"> Pollution from factories</button></div>
-          <div class="card__wish-list card__wish-list--19 card__will-animate"><button class="choices" id="2D"> Other</button></div>
+          <div class="card__wish-list card__wish-list--19 card__will-animate" id="buttons2">
+            <div><button class="choices" id="2A">Volcanic Mountains</button></div>
+            <div><button class="choices" id="2B"> Dumping</button></div>
+            <div><button class="choices" id="2C"> Pollution from factories</button></div>
+            <div><button class="choices" id="2D"> Other</button></div>
+          </div>
           <span class="card__category card__will-animate"></span>
         </div>
       </div>
 
       <div class="card card--third">
+        <div id="answerContainer3" style="display: none"></div>
+
         <div class="card__header card__header--third">
           <!-- <div class="card__watermark" data-watermark="r&w"></div> -->
 
           <div class="card__logo card__will-animate"></div>
 
-          <span class="card__price card__will-animate">Question 3</span>
+          <span class="card__price card__will-animate" >Question 3</span>
 
-          <h1 class="card__title card__will-animate">Resources & Waste</h1>
+          <h1 class="card__title card__will-animate" id="heading3">Resources & Waste</h1>
           <span class="card__subtitle card__will-animate">The leader of this newly industrialized Southeast Asian country threatened to declare war on Canada over an illegal trash shipment sent to the capital of that country.</span>
 
         </div>
 
         <div class="card__body">
           <div class="card__image card__will-animate"></div>
-          <div class="card__wish-list card__wish-list--19 card__will-animate"><button class="choices" id="3A">Volcanic Mountains</button></div>
-          <div class="card__wish-list card__wish-list--19 card__will-animate"><button class="choices" id="3B"> Dumping</button></div>
-          <div class="card__wish-list card__wish-list--19 card__will-animate"><button class="choices" id="3C"> Pollution from factories</button></div>
-          <div class="card__wish-list card__wish-list--19 card__will-animate"><button class="choices" id="3D"> Other</button></div>
+          <div class="card__wish-list card__wish-list--19 card__will-animate" id="buttons3">
+            <div><button class="choices" id="3A">Volcanic Mountains</button></div>
+            <div><button class="choices" id="3B"> Dumping</button></div>
+            <div><button class="choices" id="3C"> Pollution from factories</button></div>
+            <div><button class="choices" id="3D"> Other</button></div>
+          </div>
           <span class="card__category card__will-animate"></span>
         </div>
       </div>
 
       <div class="card card--fourth">
-          <div class="card__header card__header--fourth">
+        <div id="answerContainer4" style="display: none"></div>
+
+        <div class="card__header card__header--fourth">
             <!-- <div class="card__watermark" data-watermark="ecosystem"></div> -->
   
             <div class="card__logo card__will-animate"></div>
   
             <span class="card__price card__will-animate">Question 4</span>
   
-            <h1 class="card__title card__will-animate">Ecosystem</h1>
+            <h1 class="card__title card__will-animate" id="heading4">Ecosystem</h1>
             <span class="card__subtitle card__will-animate">How many islands combined are in the Great Lakes?</span>
   
           </div>
   
           <div class="card__body">
             <div class="card__image card__will-animate"></div>
-            <div class="card__wish-list card__wish-list--19 card__will-animate"><buttonclass="choices" id="4A">Volcanic Mountains</button></div>
-            <div class="card__wish-list card__wish-list--19 card__will-animate"><buttonclass="choices" id="4B"> Dumping</button></div>
-            <div class="card__wish-list card__wish-list--19 card__will-animate"><button class="choices" id="4C"> Pollution from factories</button></div>
-            <div class="card__wish-list card__wish-list--19 card__will-animate"><buttonclass="choices" id="4D"> Other</button></div>
+            <div class="card__wish-list card__wish-list--19 card__will-animate" id="buttons4">
+              <div><button class="choices" id="4A">Volcanic Mountains</button></div>
+              <div><button class="choices" id="4B"> Dumping</button></div>
+              <div><button class="choices" id="4C"> Pollution from factories</button></div>
+              <div><button class="choices" id="4D"> Other</button></div>
+            </div>
             <span class="card__category card__will-animate"></span>
           </div>
         </div>
@@ -129,9 +144,6 @@
       <div class="cards-placeholder__item"></div>
       <div class="cards-placeholder__item"></div>
       <div class="cards-placeholder__item"></div>
-    </div>
-    <div id="newdiv">
-      Click me.
     </div>
   <script
     src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
