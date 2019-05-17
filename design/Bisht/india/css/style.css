@@ -18,6 +18,11 @@ body{
     cursor: pointer;
 
 }
+
+.choices{
+    background-color: transparent;
+}
+
 #img{
     background-image: url("taj-mahal.jpg");
     background-repeat: no-repeat;
