@@ -189,23 +189,19 @@ function increasescore() {
 }
 
 //AJAX for Retrieving Score
-$(document).ready(function() {
-    function validateScore() {
-        console.log("sucessfully validating score");
-        $.ajax({
-            type:'POST',
-            url: '/update_score/',
-            data: { 
-                'user_score': scorePerCent,
-                'username': username,
-                'country_id': 1 
-            },
-            dataType: 'json'
-        }).done(function(response){
-            console.log(response);
-        });
-    }
-});
+function validateScore() {
+    console.log("sucessfully validating score");
+    $.ajax({
+        type:'POST',
+        url: '/update_score/',
+        data: { 
+            'user_score': scorePerCent,
+            'country_id': 1 
+        },
+    }).done(function(response){
+        console.log(response);
+    });
+}
 
 
 

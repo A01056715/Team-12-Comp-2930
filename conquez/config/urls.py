@@ -7,7 +7,6 @@ from django.contrib.auth import views as auth_views
 
 import authen.views
 import country.views
-from country.views import update_score
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -24,5 +23,5 @@ urlpatterns = [
     path('oauth/', include('social_django.urls', namespace="social")),
     path('home/', authen.views.home, name='home'),
     path('', authen.views.splash, name='splash'),
-    path('update_score/', update_score),
+    path('update_score/', country.views.update_score),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
