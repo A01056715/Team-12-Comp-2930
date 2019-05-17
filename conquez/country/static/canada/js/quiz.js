@@ -193,9 +193,10 @@ function validateScore() {
     console.log("sucessfully validating score");
     $.ajax({
         type:"GET",
-        url: "/get_score/",
+        url: "/update_score/",
         data: { 
-            the_score: scorePerCent, country_id: 5 
+            the_score: scorePerCent,
+            country_id: 5 
         },
         dataType: 'json',
         success: function(json) {
@@ -205,5 +206,6 @@ function validateScore() {
         error: function(xhr, errmsg, err) {
             console.log('Cannot Validate Score');
         }
+        
     });
 }
