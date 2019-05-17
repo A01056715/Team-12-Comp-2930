@@ -113,9 +113,14 @@ function checkAnswer4(answer){
 }
 
 function explanationRender4() {
-    document.getElementById('buttons4').innerText = "This is the explanation of qus1"
+    document.getElementById('buttons4').innerText = "This is the explanation of qus1";
+    document.getElementById('check_score').innerHTML = "<button onclick='scoreRender()'>Click Here To Check Score</button>"
 }
 
+function scoreRender(){
+    document.getElementById('ques_body').style.display='none'
+    document.getElementById('score_container').innerHTML = (parseFloat(score/4))*100 + '%<br><button id="globe">Go Back to Globe</button>'
+}
 ques_4_A.addEventListener("click", function checkIt12() {checkAnswer4('A')});
 ques_4_B.addEventListener("click", function checkIt13() {checkAnswer4('B')});
 ques_4_C.addEventListener("click", function checkIt14() {checkAnswer4('C')});
