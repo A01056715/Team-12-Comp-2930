@@ -5,5 +5,9 @@
 {% endblock %}
 {% block javascript %}
 <script src="{% static 'china/js/quiz.js' %}"></script>
+<script type="text/javascript">
+    var data = "{{ js_object|escapejs }}";
+    console.log(JSON.parse(data))
+</script>
 {% endblock %}
 

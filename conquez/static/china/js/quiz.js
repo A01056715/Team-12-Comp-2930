@@ -12,6 +12,8 @@ const progress = document.getElementById("progress");
 const scoreDiv = document.getElementById("scoreContainer");
 const ansDiv = document.getElementById("answerContainer");
 
+var country;
+
 // create our questions
 let questions = [
     {
