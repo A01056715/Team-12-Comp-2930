@@ -273,5 +273,5 @@
 })();
 
 $( document ).ready(function() {
-  $('.card--first').fadeIn(300);
+  $('.card--first').fadeIn(150);
 });
