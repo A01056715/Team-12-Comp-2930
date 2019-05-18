@@ -35,7 +35,7 @@ function checkAnswer1(answer){
         document.getElementById("heading1").innerHTML = "INCORRECT";
 
     }
-    explanationRender1()
+    explanationRender1();
 }
 
 function explanationRender1() {
@@ -58,7 +58,7 @@ function checkAnswer2(answer){
         document.getElementById("heading2").innerHTML = "INCORRECT"
 
     }
-    explanationRender2()
+    explanationRender2();
 }
 
 function explanationRender2() {
@@ -109,7 +109,7 @@ function checkAnswer4(answer){
         document.getElementById("heading4").innerHTML = "INCORRECT";
 
     }
-    explanationRender4()
+    explanationRender4();
 }
 
 function explanationRender4() {
