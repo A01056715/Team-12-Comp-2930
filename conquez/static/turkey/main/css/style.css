@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700&display=swap');
+
 html,
 body {
   width: 100%;
   margin: 0;
   padding: 0;
 
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Quicksand', sans-serif;
 
   transition: background-color 0.2s;
   will-change: background-color;
@@ -49,7 +51,8 @@ body {
 }
 
 .card {
-  display: block;
+  /* change */
+  display: none;
   position: absolute;
   top: 10%;
   margin: 0 auto;
@@ -160,8 +163,8 @@ body {
 
 .card__subtitle {
   display: block;
-  font-size: 13px;
-  font-weight: 300;
+  font-size: 20px;
+  font-weight: medium;
 }
 
 .card__body {

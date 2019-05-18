@@ -271,3 +271,7 @@
   var slider = new Slider();
 
 })();
+
+$( document ).ready(function() {
+  $('.card--first').fadeIn();
+});
