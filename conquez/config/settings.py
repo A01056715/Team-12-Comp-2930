@@ -92,19 +92,6 @@ LOGOUT_REDIRECT_URL = 'login'
 SOCIAL_AUTH_GITHUB_KEY = '3cdffce98e99f50ad8ea'
 SOCIAL_AUTH_GITHUB_SECRET = '81d21b960f04d7d31beb05ea937b4dca149a4cf7'
 
-# SOCIAL_AUTH_FACEBOOK_KEY = '2380139345552475'
-# SOCIAL_AUTH_FACEBOOK_SECRET = '86498316b90262a605eda0b0cfd2cc61'
-# SOCIAL_AUTH_FACEBOOK_SCOPE = ['email', 'user_link']
-# SOCIAL_AUTH_FACEBOOK_PROFILE_EXTRA_PARAMS = {
-#   'fields': 'id, name, email, picture.type(large), link'
-# }
-# SOCIAL_AUTH_FACEBOOK_EXTRA_DATA = [
-#     ('name', 'name'),
-#     ('email', 'email'),
-#     ('picture', 'picture'),
-#     ('link', 'profile_url'),
-# ]
-
 SOCIAL_AUTH_GOOGLE_OAUTH2_KEY ='346054491258-fvcrvr3vta7si363r7db3klf1dvvlrkh.apps.googleusercontent.com'  #Paste CLient Key
 SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = 'uP2-c65zNVHPQ2o9Zp76KFIY'
 

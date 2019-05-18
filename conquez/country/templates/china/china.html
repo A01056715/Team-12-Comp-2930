@@ -1,13 +1,16 @@
 {% extends "base.html" %}
 {% load staticfiles %}
+{% block title %}
+<title>China</title>
+{% endblock %}
 {% block css %}
 <link rel="stylesheet" href="{% static 'china/css/style.css' %}">
+<link rel="stylesheet" href="{% static 'china/css/burger.css' %}">
 {% endblock %}
 {% block javascript %}
+<script src="{% static 'china/js/index.js' %}"></script>
+<script src="{% static 'china/js/breakpoints.min.js' %}"></script>
+<script src="{% static 'china/js/burger.js' %}"></script>
 <script src="{% static 'china/js/quiz.js' %}"></script>
-<script type="text/javascript">
-    var data = "{{ js_object|escapejs }}";
-    console.log(JSON.parse(data))
-</script>
 {% endblock %}
 

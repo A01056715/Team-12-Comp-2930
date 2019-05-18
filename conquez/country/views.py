@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect, render_to_response
 import json
-from country.models import Question
+from country.models import Question, Country
 from authen.models import Conquered
 from django.views.decorators.csrf import csrf_exempt
 
@@ -31,17 +31,17 @@ def india(request):
         return render(request, 'india/india.html', { 'question1': question1, 'question2': question2, 'question3': question3, 'question4': question4 })
 
 def turkey(request):
-        question1 = Question.objects.filter(question_id=17)
-        question2 = Question.objects.filter(question_id=18)
-        question3 = Question.objects.filter(question_id=19)
-        question4 = Question.objects.filter(question_id=20)
+        question1 = Question.objects.filter(id=17)
+        question2 = Question.objects.filter(id=18)
+        question3 = Question.objects.filter(id=19)
+        question4 = Question.objects.filter(id=20)
         return render(request, 'turkey/turkey.html', { 'question1': question1, 'question2': question2, 'question3': question3, 'question4': question4 })
 
 def brazil(request):
-        question1 = Question.objects.filter(question_id=5)
-        question2 = Question.objects.filter(question_id=6)
-        question3 = Question.objects.filter(question_id=7)
-        question4 = Question.objects.filter(question_id=8)
+        question1 = Question.objects.filter(id=5)
+        question2 = Question.objects.filter(id=6)
+        question3 = Question.objects.filter(id=7)
+        question4 = Question.objects.filter(id=8)
         return render(request, 'brazil/brazil.html', { 'question1': question1, 'question2': question2, 'question3': question3, 'question4': question4 })
 
 @csrf_exempt
