@@ -1,8 +1,15 @@
 {% extends "base.html" %}
 {% load staticfiles %}
+{% block title %}
+<title>Brazil</title>
+{% endblock %}
 {% block css %}
 <link rel="stylesheet" href="{% static 'brazil/css/style.css' %}">
+<link rel="stylesheet" href="{% static 'brazil/css/burger.css' %}">
 {% endblock %}
 {% block javascript %}
+<script src="{% static 'brazil/js/index.js' %}"></script>
+<script src="{% static 'brazil/js/breakpoints.min.js' %}"></script>
+<script src="{% static 'brazil/js/burger.js' %}"></script>
 <script src="{% static 'brazil/js/quiz.js' %}"></script>
 {% endblock %}

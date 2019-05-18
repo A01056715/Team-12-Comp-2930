@@ -1,226 +1,129 @@
-// select all elements
-const start = document.getElementById("start");
-const quiz = document.getElementById("quiz");
-const question = document.getElementById("question");
-const choiceA = document.getElementById("A");
-const choiceB = document.getElementById("B");
-const choiceC = document.getElementById("C");
-const choiceD = document.getElementById("D");
-const counter = document.getElementById("counter");
-const timeGauge = document.getElementById("timeGauge");
-const progress = document.getElementById("progress");
-const scoreDiv = document.getElementById("scoreContainer");
-const ansDiv = document.getElementById("answerContainer");
+const explain = document.getElementById('explanation');
+const question = document.getElementsByClassName('wrapper');
+const ques_1_A = document.getElementById('1A');
+const ques_1_B = document.getElementById('1B');
+const ques_1_C = document.getElementById('1C');
+const ques_1_D = document.getElementById('1D');
+const ques_2_A = document.getElementById('2A');
+const ques_2_B = document.getElementById('2B');
+const ques_2_C = document.getElementById('2C');
+const ques_2_D = document.getElementById('2D');
+const ques_3_A = document.getElementById('3A');
+const ques_3_B = document.getElementById('3B');
+const ques_3_C = document.getElementById('3C');
+const ques_3_D = document.getElementById('3D');
+const ques_4_A = document.getElementById('4A');
+const ques_4_B = document.getElementById('4B');
+const ques_4_C = document.getElementById('4C');
+const ques_4_D = document.getElementById('4D');
+const ansDiv1 = document.getElementById('answerContainer1');
+const ansDiv2 = document.getElementById('answerContainer2');
+const ansDiv3 = document.getElementById('answerContainer3');
+const ansDiv4 = document.getElementById('answerContainer4');
 
-// create our questions
-let questions = [
-    {
-        question : "What does HTML stand for?",
-        choiceA : "Correct",
-        choiceB : "Wrong",
-        choiceC : "Wrong",
-        choiceD : "Wrong",
-        explanation: "Blah Blah Blah",
-        correct : "A"
-    },{
-        question : "What does CSS stand for?",
-        choiceA : "Wrong",
-        choiceB : "Correct",
-        choiceC : "Wrong",
-        choiceD : "Wrong",
-        explanation: "Blah Blah Blah",
-        correct : "B"
-    },{
-        question : "What does JS stand for?",
-        imgSrc : "img/js.png",
-        choiceA : "Wrong",
-        choiceB : "Wrong",
-        choiceC : "Correct",
-        choiceD : "Wrong",
-        explanation: "Blah Blah Blah",
-        correct : "C"
-    },{
-        question : "What does JS stand for?",
-        choiceA : "Wrong",
-        choiceB : "Wrong",
-        choiceC : "Wrong",
-        choiceD : "Correct",
-        explanation: "Blah Blah Blah",
-        correct : "D"
-    }
-];
-
-// create some variables
-
-const lastQuestion = questions.length - 1;
-let runningQuestion = 0;
-let count = 0;
-const questionTime = 10; // 10s
-const gaugeWidth = 150; // 150px
-const gaugeUnit = gaugeWidth / questionTime;
-let TIMER;
+// variables
 let score = 0;
-let scorePerCent;
 
-// render a question
-function renderQuestion(){
-    let q = questions[runningQuestion];
-
-    question.innerHTML = "<p>"+ q.question +"</p>";
-    choiceA.innerHTML = q.choiceA;
-    choiceB.innerHTML = q.choiceB;
-    choiceC.innerHTML = q.choiceC;
-    choiceD.innerHTML = q.choiceD;
-}
-
-start.addEventListener("click",startQuiz);
-
-// start quiz
-function startQuiz(){
-    $("#start").animate({
-        top: '0',
-        fontSize: '10px',
-        width: '75px',
-        height: '25px'
-    }).fadeOut( function () {
-        $("#quiz").fadeIn();
-    });
-    renderQuestion();
-    renderProgress();
-    renderCounter();
-    TIMER = setInterval(renderCounter,1000); // 1000ms = 1s
-}
-
-// render progress
-function renderProgress(){
-    for(let qIndex = 0; qIndex <= lastQuestion; qIndex++){
-        progress.innerHTML += "<div class='prog' id="+ qIndex +"></div>";
+function checkAnswer1(answer){
+    if (answer === 'A'){
+        console.log('Correct');
+        score++;
+        document.getElementById("heading1").innerHTML = "CORRECT";
     }
-}
+    else {
+        console.log('Incorrect');
+        document.getElementById("heading1").innerHTML = "INCORRECT";
 
-// counter render
-
-function renderCounter(){
-    if(count <= questionTime){
-        counter.innerHTML = count;
-        timeGauge.style.width = count * gaugeUnit + "px";
-        count++;
-    }else{
-        count = 0;
-        // change progress color to red
-        answerIsWrong();
-        if(runningQuestion < lastQuestion){
-            explanationRender();
-            runningQuestion++
-        }else{
-            // end the quiz and show the score
-            clearInterval(TIMER);
-            scoreRender();
-        }
     }
+    explanationRender1();
 }
 
-// checkAnwer
+function explanationRender1() {
+    document.getElementById('buttons1').innerHTML = "This is the explanation of qus1"
+}
+ques_1_A.addEventListener("click", function checkIt0() {checkAnswer1('A');});
+ques_1_B.addEventListener("click", function checkIt1() {checkAnswer1('B');});
+ques_1_C.addEventListener("click", function checkIt2() {checkAnswer1('C');});
+ques_1_D.addEventListener("click", function checkIt3() {checkAnswer1('D');});
 
-function checkAnswer(answer){
-    if( answer === questions[runningQuestion].correct){
-        // answer is correct
-        increasescore();
-        console.log(score);
 
-        // change progress color to green
-        answerIsCorrect();
-    } else {
-        // answer is wrong
-        // change progress color to red
-        answerIsWrong();
+function checkAnswer2(answer){
+    if (answer === 'B'){
+        console.log('Correct');
+        score++;
+        document.getElementById("heading2").innerHTML = "CORRECT"
     }
-    count = 0;
-    if(runningQuestion < lastQuestion){
-        explanationRender();
-        runningQuestion++;
-        renderQuestion();
-    }else{
-        // end the quiz and show the score
-        clearInterval(TIMER);
-        scoreRender();
+    else {
+        console.log('Incorrect');
+        document.getElementById("heading2").innerHTML = "INCORRECT"
+
     }
+    explanationRender2();
 }
 
-// answer is correct
-function answerIsCorrect(){
-    document.getElementById(runningQuestion).style.backgroundColor = "#0f0";
+function explanationRender2() {
+    document.getElementById('buttons2').innerText = "This is the explanation of qus1";
+    }
+
+ques_2_A.addEventListener("click", function checkIt4() {checkAnswer2('A');});
+ques_2_B.addEventListener("click", function checkIt5() {checkAnswer2('B');});
+ques_2_C.addEventListener("click", function checkIt6() {checkAnswer2('C');});
+ques_2_D.addEventListener("click", function checkIt7() {checkAnswer2('D');});
+
+
+
+
+
+function checkAnswer3(answer){
+    if (answer === 'C'){
+        console.log('Correct');
+        score++;
+        document.getElementById("heading3").innerHTML = "CORRECT"
+    }
+    else {
+        console.log('Incorrect');
+        document.getElementById("heading3").innerHTML = "INCORRECT"
+
+    }
+    explanationRender3()
 }
 
-// answer is Wrong
-function answerIsWrong(){
-    document.getElementById(runningQuestion).style.backgroundColor = "#f00";
+function explanationRender3() {
+    document.getElementById('buttons3').innerText = "This is the explanation of qus1";
 }
 
-//Explanation()
-function explanationRender() {
-  let q = questions[runningQuestion];
-  $("#answerContainer").fadeIn("slow")
+ques_3_A.addEventListener("click", function checkIt8() {checkAnswer3('A');});
+ques_3_B.addEventListener("click", function checkIt9() {checkAnswer3('B');});
+ques_3_C.addEventListener("click", function checkIt10() {checkAnswer3('C');});
+ques_3_D.addEventListener("click", function checkIt11() {checkAnswer3('D');});
 
-  ansDiv.innerHTML = "<p>"+ q.explanation +"</p>";
-  ansDiv.innerHTML += "<button onclick='goNext()'>" + "Go To Next Question" + "</button>"
+
+function checkAnswer4(answer){
+    if (answer === 'D'){
+        console.log('Correct');
+        score++;
+        document.getElementById("heading4").innerHTML = "CORRECT";
+    }
+    else {
+        console.log('Incorrect');
+        document.getElementById("heading4").innerHTML = "INCORRECT";
+
+    }
+    explanationRender4();
 }
 
-function goNext() {
-    $("#answerContainer").hide(1000);
-    count = 0
+function explanationRender4() {
+    document.getElementById('buttons4').innerText = "This is the explanation of qus1";
+    document.getElementById('check_score').innerHTML = "<button onclick='scoreRender()'>Click Here To Check Score</button>";
 }
 
-
-
-// score render
-function scoreRender() {
-    scoreDiv.style.display = "block";
-    console.log(score)
-    // calculate the amount of question percent answered by the user
-    scorePerCent = Math.round(100 * score / questions.length);
-    scoreDiv.innerHTML = "<p>" + scorePerCent + "%</p>";
-    scoreDiv.innerHTML += "<a href='https://conquez.herokuapp.com/home'>" + "Go Back" + "</a>";
-    scoreDiv.innerHTML += "<a href='javascript:validateScore()'>" + "Validate" + "</a>";
+function scoreRender(){
+    document.getElementById('ques_body').style.display='none';
+    scorePercent = (parseFloat(score/4))*100;
+    document.getElementById('score_container').innerHTML = scorePercent + '%<br>';
+    document.getElementById('score_container').innerHTML += '<a href="https://conquez.herokuapp.com/home">Go Back to Globe</a>';
 }
-
-function increasescore() {
-    score++;
-}
-
-//AJAX for Retrieving Score
-function validateScore() {
-    console.log("sucessfully validating score");
-    $.ajax({
-        type:'POST',
-        url: '/update_score/',
-        data: { 
-            'user_score': scorePerCent,
-            'country_id': 1 
-        },
-    }).done(function(response){
-        console.log(response);
-    });
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ques_4_A.addEventListener("click", function checkIt12() {checkAnswer4('A');});
+ques_4_B.addEventListener("click", function checkIt13() {checkAnswer4('B');});
+ques_4_C.addEventListener("click", function checkIt14() {checkAnswer4('C');});
+ques_4_D.addEventListener("click", function checkIt15() {checkAnswer4('D');});

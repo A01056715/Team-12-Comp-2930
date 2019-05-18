@@ -1,8 +1,15 @@
 {% extends "base.html" %}
 {% load staticfiles %}
+{% block title %}
+<title>Canada</title>
+{% endblock %}
 {% block css %}
 <link rel="stylesheet" href="{% static 'canada/css/style.css' %}">
+<link rel="stylesheet" href="{% static 'canada/css/burger.css' %}">
 {% endblock %}
 {% block javascript %}
+<script src="{% static 'canada/js/index.js' %}"></script>
+<script src="{% static 'canada/js/breakpoints.min.js' %}"></script>
+<script src="{% static 'canada/js/burger.js' %}"></script>
 <script src="{% static 'canada/js/quiz.js' %}"></script>
 {% endblock %}

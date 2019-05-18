@@ -270,4 +270,6 @@
   // create slider
   var slider = new Slider();
 
+  
+
 })();
