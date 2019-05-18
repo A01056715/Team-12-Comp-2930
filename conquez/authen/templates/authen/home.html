@@ -19,8 +19,9 @@
 <body>
         <nav>
                 <ul class="cd-primary-nav">
-                    <li><a href="{% static 'home' %}">Globe</a></li>
-                    <li><a href="{% static 'profile' %}">Profile</a></li>
+                    <li><a href="{% url 'profile' %}">Profile</a></li>
+                    <li><a href="{% url 'aboutus' %}">About Us</a></li>
+                    <li><a href="{% url 'howtoplay' %}">How To Play</a></li>
                 </ul>
             </nav>
         

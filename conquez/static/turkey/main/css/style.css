@@ -210,14 +210,15 @@ body {
   left: 50%;
   transform: translate(-50%, 0);
   bottom: 0;
+  width: 200px;
 }
 
 .cards-placeholder__item {
   opacity: 0.3;
   display: inline-block;
-  margin-right: 10px;
+  margin-right: 5px;
   background-color: black;
-  width: 30px;
+  width: 40px;
   height: 5px;
   border-radius: 5px;
 
