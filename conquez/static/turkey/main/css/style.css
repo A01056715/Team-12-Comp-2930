@@ -1,13 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700&display=swap');
-
 html,
 body {
   width: 100%;
   margin: 0;
   padding: 0;
-
   font-family: 'Quicksand', sans-serif;
-
   transition: background-color 0.2s;
   will-change: background-color;
   overflow: hidden;
@@ -51,8 +47,6 @@ body {
 }
 
 .card {
-  /* change */
-  display: none;
   position: absolute;
   top: 10%;
   margin: 0 auto;
@@ -75,12 +69,14 @@ body {
 }
 
 .card--first {
+  display: none;
   left: 50%;
 }
 
 .card--second,
 .card--third,
 .card--fourth {
+  display: block;
   left: 150%;
 }
 
