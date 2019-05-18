@@ -9,22 +9,31 @@
     <script src="https://threejs.org/build/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/giojs@2.2.1/build/gio.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="{% static 'authen/css/main.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'authen/main/css/main.css' %}">
+
+    <link rel="stylesheet" href="{% static 'authen/burger/css/reset.css' %}"> <!-- CSS reset -->
+	<link rel="stylesheet" href="{% static 'authen/burger/css/style.css' %}"> <!-- Resource style -->
+	<script src="{% static 'authen/burger/js/modernizr.js' %}"></script>
     <title>Globe</title>
 </head>
 <body>
-    <div class="row">
-<!--        <div class="col-sm-12 mb-3">-->
-<!--            <h4 class="text-center">Welcome Back, {{ user.username }}</h4>-->
-<!--        </div>-->
-        <header><a href="{% url 'profile' %}">Profile</a> </header>
-        <div class="col-sm-12 mt-2 text-center">
-            <button class="btn btn-danger">
-                <a href="{% url 'logout' %}">Logout</a>
-            </button>
-        </div>
-    </div>
-    <div>
+        <nav>
+                <ul class="cd-primary-nav">
+                    <li><a href="{% static 'home' %}">Globe</a></li>
+                    <li><a href="{% static 'profile' %}">Profile</a></li>
+                </ul>
+            </nav>
+        
+            <div class="cd-overlay-nav">
+                <span></span>
+            </div>
+        
+            <div class="cd-overlay-content">
+                <span></span>
+            </div>
+        
+            <a href="#0" class="cd-nav-trigger">Menu<span class="cd-icon"></span></a>
+        <div>
         <!-- container to draw 3D Gio globe-->
         <div id="globalArea"></div>
         <!-- container for selected country -->
@@ -32,6 +41,9 @@
             <div id="nameCard"></div>
         </div>
     </div>
-    <script src="{% static 'authen/js/main.js' %}"></script>
-    <script src="{% static 'authen/js/home_2.js' %}"></script>
+    <script src="{% static 'authen/main/js/main.js' %}"></script>
+    <script src="{% static 'authen/main/js/home_2.js' %}"></script>
+    <script src="{% static 'authen/burger/js/velocity.min.js' %}"></script>
+    <script src="{% static 'authen/burger/js/main.js' %}"></script>
+
 </body>
