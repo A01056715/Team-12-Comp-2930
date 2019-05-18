@@ -16,7 +16,6 @@ Primary style
 body {
   font-size: 100%;
   color: #091d23;
-  background-color: #ffb441;
 }
 
 a {
@@ -325,7 +324,7 @@ header {
   z-index: 4;
 }
 .cd-overlay-content span {
-  background-color: #ffb441;
+  background-color: #091d23;
 }
 
 .cd-content {
