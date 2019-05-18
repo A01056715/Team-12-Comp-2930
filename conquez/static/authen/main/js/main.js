@@ -1,7 +1,6 @@
 let configs = {
     color: {
-        surface:0xFF0000,
-        //selected: 2141154,
+        surface:0xFFF2CC,
     }
 };
 let container = document.getElementById( "globalArea" );
@@ -51,7 +50,7 @@ let data = [
 
 ];
 controller.addData(data);
-controller.setInitCountry('CA').adjustOceanBrightness( 2 ).setTransparentBackground( true ).addHalo(0xFF0000);
+controller.setInitCountry('CA').adjustOceanBrightness( 2 ).setTransparentBackground( true ).addHalo(0xFFF2CC);
 controller.init();
 controller.onCountryPicked(callback);
 
@@ -106,6 +105,6 @@ function callback(selectedCountry) {
 
 }
 function explode() {
-    $('#globalArea').toggle('explode')
+    $('#globalArea').toggle('explode');
 
 }

@@ -24,4 +24,8 @@ urlpatterns = [
     path('home/', authen.views.home, name='home'),
     path('', authen.views.splash, name='splash'),
     path('update_score/', country.views.update_score),
+    path('aboutus/', authen.views.aboutus, name='aboutus'),
+    path('howtoplay/', authen.views.howtoplay, name='howtoplay')
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+
+handler404 = 'authen.views.handler404'
