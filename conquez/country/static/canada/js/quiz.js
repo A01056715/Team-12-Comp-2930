@@ -39,7 +39,7 @@ function checkAnswer1(answer){
 }
 
 function explanationRender1() {
-    document.getElementById('buttons1').innerText = "This is the explanation of qus1"
+    document.getElementById('buttons1').innerHTML = "This is the explanation of qus1"
 }
 ques_1_A.addEventListener("click", function checkIt0() {checkAnswer1('A');});
 ques_1_B.addEventListener("click", function checkIt1() {checkAnswer1('B');});
