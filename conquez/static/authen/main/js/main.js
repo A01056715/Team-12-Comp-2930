@@ -1,6 +1,6 @@
 let configs = {
     color: {
-        surface:0xFFF2CC,
+        surface:0xFFFFFF,
     }
 };
 let container = document.getElementById( "globalArea" );
