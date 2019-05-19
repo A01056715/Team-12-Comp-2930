@@ -83,8 +83,8 @@ body {
 
 .card__header {
   position: relative;
-  height: 170px;
-  padding: 30px 30px 300px;
+  height: 100px;
+  padding: 20px 20px 250px;
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
   color: #fff;
@@ -153,15 +153,15 @@ body {
 
 .card__title {
   margin: 35px 0 20px;
-  font-size: 30px;
+  font-size: 37px;
   line-height: 1.1em;
-  font-weight: semi-bold;
+  font-weight: bold;
 }
 
 .card__subtitle {
   display: block;
-  font-size: 13px;
-  font-weight: 300;
+  font-size: 17px;
+  font-weight: 400;
 }
 
 .card__body {
