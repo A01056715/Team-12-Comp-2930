@@ -215,3 +215,11 @@ body {
 .cards-placeholder__item--active {
   opacity: 1;
 }
+
+.choices {
+  border-color: #E8112D;
+  border-style: solid;
+  border-width: 1px;
+  padding: 1px 7px 2px;
+  color: red;
+}
