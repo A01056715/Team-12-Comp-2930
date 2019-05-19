@@ -20,7 +20,7 @@ body {
 }
 
 a {
-  color: #e9e9e9;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -214,7 +214,7 @@ header {
   top: 0;
   height: 100%;
   width: 100%;
-  padding: 80px 5%;
+  padding: 50px 50px;
   z-index: 3;
   background-color: #091d23;
   overflow: auto;
