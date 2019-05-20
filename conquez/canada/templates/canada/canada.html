@@ -1,113 +1,162 @@
-{% load staticfiles %}
-<!DOCTYPE HTML>
-<!--
-	Paradigm Shift by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+<!DOCTYPE html>
 <html>
-	<head>
-		<title>Canada</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<meta name="description" content="" />
-		<meta name="keywords" content="" />
-		<link rel="stylesheet" href="{% static 'china/css/main.css' %}"/>
-	</head>
-	<body class="is-preload">
+  <head>
+    <meta charset="utf-8">
+    <title>Canada</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!---->
+    <link rel="stylesheet" href="css/burger.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=0.7">
+  </head>
+  <body>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+    <!-- Navigation -->
+    <div class="b-nav">
+      <li><a class="b-link" href="" target="_blank" onclick="">Globe</a></li>
+      <li><a class="b-link" href="" target="_blank">Profile</a></li>
+    </div>
+    
+    <!-- Burger-Icon -->
+    <div class="b-container">
+      <div class="b-menu">
+        <div class="b-bun b-bun--top"></div>
+        <div class="b-bun b-bun--mid"></div>
+        <div class="b-bun b-bun--bottom"></div>
+      </div>
+    </div>
 
-				<!-- Intro -->
-					<section class="intro">
-						<header>
-							<h1>Canada</h1>
-							<h2>One phrase of Canada</h2>
-							<ul class="actions">
-								<li><a href="#first" class="arrow scrolly"><span class="label">Next</span></a></li>
-							</ul>
-						</header>
-						<div class="content">
-							<span class="image fill" data-position="center"><img src="images/pic01.jpg" alt="" /></span>
-						</div>
-					</section>
+    <div class="wrapper">
+      <div id="answerContainer1" style="display: none">This is the hardcoded explanation of question 1.</div>
+      <div class="card card--first" id="first_card">
+        <div class="card__header card__header--first">
+          <!-- <div class="card__watermark" data-watermark="Plt"></div> -->
+          <div class="card__logo card__will-animate"></div>
 
-                <!-- Section -->
-                {% for question in questions.all %}
-					<section id="first">
-						<header>
-                            <div>
-                                <h1>{{ forloop.counter }}</h1>
-                                <h3>Explaination</h3>
-								<p>{{ question.explanation }}</p>
-                            </div>
+          <span class="card__price card__will-animate" >Question 1</span>
 
-						</header>
-						<div class="content">
-							<h2>{{ question.question }}</h2>
-							<img src="{{ question.image.url }}" alt="">
-                            <ul class="actions">
-                                <li><a href="#" class="button">Default</a></li>
-                                <li><a href="#" class="button">Default</a></li>
-                                <li><a href="#" class="button">Default</a></li>
-                                <li><a href="#" class="button">Default</a></li>
-                            </ul>
+          <h1  id="heading1" class="card__title card__will-animate">Pollution</h1>
+          <span class="card__subtitle card__will-animate">Which of the following is not is a pollution source for the Great Lakes?</span>
 
-						</div>
-                    </section>
-                {% endfor %}
+        </div>
 
-				<!-- Elements -->
-				
-					<section>
-						<header>
-							<h2>Elements</h2>
-						</header>
-						<div class="content">
+        <div class="card__body" id="first_card_body">
+          <div class="card__image card__will-animate"></div>
+          <div class="card__wish-list card__wish-list--19 card__will-animate" id="buttons1">
+          <div><button class="choices" id="1A">Volcanic Mountains</button></div>
+          <div><button class="choices" id="1B"> Dumping</button></div>
+          <div><button class="choices" id="1C"> Pollution from factories</button></div>
+          <div><button class="choices" id="1D"> Other</button></div>
+          </div>
+            <span class="card__category card__will-animate"></span>
+        </div>
+      </div>
 
-							
+      <div class="card card--second">
+        <div id="answerContainer2" style="display: none">Explanation of question 2</div>
 
-							<section>
-								<header>
-									<h3>Buttons</h3>
-								</header>
-								<div class="content">
-									<ul class="actions">
-										<li><a href="#" class="button primary">Primary</a></li>
-										<li><a href="#" class="button">Default</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button large">Large</a></li>
-										<li><a href="#" class="button">Default</a></li>
-										<li><a href="#" class="button small">Small</a></li>
-									</ul>
-									<ul class="actions">
-										<li><a href="#" class="button primary icon fa-download">Icon</a></li>
-										<li><a href="#" class="button icon fa-download">Icon</a></li>
-									</ul>
-									<ul class="actions">
-										<li><span class="button primary disabled">Disabled</span></li>
-										<li><span class="button disabled">Disabled</span></li>
-									</ul>
-								</div>
-							</section>
+        <div class="card__header card__header--second">
+          <!-- <div class="card__watermark" data-watermark="3r's"></div> -->
 
-						</div>
-					</section>
+          <div class="card__logo card__will-animate"></div>
 
-				<!-- Copyright -->
-					<div class="copyright">&copy; Untitled. All rights reserved. </div>
+          <span class="card__price card__will-animate">Question 2</span>
 
-			</div>
+          <h1 id="heading2" class="card__title card__will-animate">The Three R's</h1>
+          <span class="card__subtitle card__will-animate">Which item belongs in a Torontonian blue bin?</span>
 
-		<!-- Scripts -->
-			<script src="{% static 'china/js/jquery.min.js' %}"></script>
-			<script src="{% static 'china/js/jquery.scrolly.min.js' %}"></script>
-			<script src="{% static 'china/js/browser.min.js' %}"></script>
-			<script src="{% static 'china/js/breakpoints.min.js' %}"></script>
-			<script src="{% static 'china/js/util.js' %}"></script>
-			<script src="{% static 'china/js/main.js' %}"></script>
+        </div>
 
-	</body>
+        <div class="card__body">
+          <div class="card__image card__will-animate"></div>
+          <div class="card__wish-list card__wish-list--19 card__will-animate" id="buttons2">
+            <div><button class="choices" id="2A">Volcanic Mountains</button></div>
+            <div><button class="choices" id="2B"> Dumping</button></div>
+            <div><button class="choices" id="2C"> Pollution from factories</button></div>
+            <div><button class="choices" id="2D"> Other</button></div>
+          </div>
+          <span class="card__category card__will-animate"></span>
+        </div>
+      </div>
+
+      <div class="card card--third">
+        <div id="answerContainer3" style="display: none"></div>
+
+        <div class="card__header card__header--third">
+          <!-- <div class="card__watermark" data-watermark="r&w"></div> -->
+
+          <div class="card__logo card__will-animate"></div>
+
+          <span class="card__price card__will-animate" >Question 3</span>
+
+          <h1 class="card__title card__will-animate" id="heading3">Resources & Waste</h1>
+          <span class="card__subtitle card__will-animate">The leader of this newly industrialized Southeast Asian country threatened to declare war on Canada over an illegal trash shipment sent to the capital of that country.</span>
+
+        </div>
+
+        <div class="card__body">
+          <div class="card__image card__will-animate"></div>
+          <div class="card__wish-list card__wish-list--19 card__will-animate" id="buttons3">
+            <div><button class="choices" id="3A">Volcanic Mountains</button></div>
+            <div><button class="choices" id="3B"> Dumping</button></div>
+            <div><button class="choices" id="3C"> Pollution from factories</button></div>
+            <div><button class="choices" id="3D"> Other</button></div>
+          </div>
+          <span class="card__category card__will-animate"></span>
+        </div>
+      </div>
+
+      <div class="card card--fourth">
+        <div id="score_container"></div>
+        <div id="ques_body">
+        <div id="answerContainer4" style="display: none"></div>
+
+        <div class="card__header card__header--fourth">
+            <!-- <div class="card__watermark" data-watermark="ecosystem"></div> -->
+  
+            <div class="card__logo card__will-animate"></div>
+  
+            <span class="card__price card__will-animate" id="check_score">Question 4</span>
+  
+            <h1 class="card__title card__will-animate" id="heading4">Ecosystem</h1>
+            <span class="card__subtitle card__will-animate">How many islands combined are in the Great Lakes?</span>
+  
+          </div>
+  
+          <div class="card__body">
+            <div class="card__image card__will-animate"></div>
+            <div class="card__wish-list card__wish-list--19 card__will-animate" id="buttons4">
+              <div><button class="choices" id="4A">Volcanic Mountains</button></div>
+              <div><button class="choices" id="4B"> Dumping</button></div>
+              <div><button class="choices" id="4C"> Pollution from factories</button></div>
+              <div><button class="choices" id="4D"> Other</button></div>
+            </div>
+            <span class="card__category card__will-animate"></span>
+          </div>
+        </div>
+        </div>
+
+    </div> <!-- /wrapper -->
+
+    <div id="explanation" style="display: none">
+      <div id="A_explain">This is the explanation for question 1.</div>
+    </div>
+
+    <div class="cards-placeholder">
+      <div class="cards-placeholder__item"></div>
+      <div class="cards-placeholder__item"></div>
+      <div class="cards-placeholder__item"></div>
+      <div class="cards-placeholder__item"></div>
+    </div>
+  <script
+    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+    crossorigin="anonymous"></script>
+  <script src="js/index.js"></script>
+  <script src="js/breakpoints.min.js"></script>
+  <script src="js/burger.js"></script>
+    <script src="js/quiz.js"></script>
+
+
+  </body>
 </html>
