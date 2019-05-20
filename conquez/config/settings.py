@@ -87,7 +87,7 @@ WSGI_APPLICATION = 'config.wsgi.application'
 LOGIN_URL = 'login'
 LOGIN_REDIRECT_URL = 'home'
 LOGOUT_URL = 'logout'
-LOGOUT_REDIRECT_URL = 'login'
+LOGOUT_REDIRECT_URL = 'splash'
 
 SOCIAL_AUTH_GITHUB_KEY = '3cdffce98e99f50ad8ea'
 SOCIAL_AUTH_GITHUB_SECRET = '81d21b960f04d7d31beb05ea937b4dca149a4cf7'
