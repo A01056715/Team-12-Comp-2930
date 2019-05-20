@@ -4,13 +4,20 @@
 <title>China</title>
 {% endblock %}
 {% block css %}
-<link rel="stylesheet" href="{% static 'china/css/style.css' %}">
-<link rel="stylesheet" href="{% static 'china/css/burger.css' %}">
+<style>
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700&display=swap');
+</style>
+<link rel="stylesheet" href="{% static 'china/main/css/style.css' %}">
+
+<link rel="stylesheet" href="{% static 'china/burger/css/reset.css' %}"> <!-- CSS reset -->
+<link rel="stylesheet" href="{% static 'china/burger/css/style.css' %}"> <!-- Resource style -->
 {% endblock %}
 {% block javascript %}
-<script src="{% static 'china/js/index.js' %}"></script>
-<script src="{% static 'china/js/breakpoints.min.js' %}"></script>
-<script src="{% static 'china/js/burger.js' %}"></script>
-<script src="{% static 'china/js/quiz.js' %}"></script>
-{% endblock %}
+<script src="{% static 'china/main/js/index.js' %}"></script>
+<script src="{% static 'china/main/js/quiz.js' %}"></script>
 
+<script src="{% static 'china/burger/js/velocity.min.js' %}"></script>
+<script src="{% static 'china/burger/js/main.js' %}"></script>
+<script src="{% static 'china/burger/js/modernizr.js' %}"></script>
+
+{% endblock %}
