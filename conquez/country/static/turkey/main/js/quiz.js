@@ -126,6 +126,17 @@ function scoreRender(){
     scorePercent = (parseFloat(score/4))*100;
     document.getElementById('buttons4').innerHTML = '<div id="score"><h1>Score:</h1><br></div>';
     document.getElementById('buttons4').innerHTML += '<div id="score_percent"><h1>' + scorePercent + '%</h1><br></div>';
+    if (scorePercent === 0) {
+      document.getElementById('buttons4').innerHTML += '<div id="score_message"><h1>Retreat! <br>Try Again...</h1><br></div>';
+    } else if (scorePercent == 25) {
+        document.getElementById('buttons4').innerHTML += '<div id="score_message"><h1>Nice try! <br>Maybe next time...</h1><br></div>';
+    } else if (scorePercent == 50) {
+        document.getElementById('buttons4').innerHTML += '<div id="score_message"><h1>Half way there!</h1><br></div>';
+    } else if (scorePercent == 75) {
+      document.getElementById('buttons4').innerHTML += '<div id="score_message"><h1>Almost! <br>That was so close!</h1><br></div>';
+    } else {
+      document.getElementById('buttons4').innerHTML += '<div id="score_message"><h1>Congratulations! <br>You made it!</h1><br></div>';
+    }
     document.getElementById('buttons4').innerHTML += '<div id="link"><a href="https://conquez.herokuapp.com/home">Go Back</a></div>';
 }
 ques_4_A.addEventListener("click", function checkIt12() {checkAnswer4('A');});
