@@ -296,13 +296,12 @@ body {
     font-size: 20px;;
     margin: 0 auto;
     border: none !important;
-    bottom: 20px;
 }
 
 #checkscore_button {
   margin: 0 auto;
   text-align: center;
-  padding-top: 80px;
+  padding-top: 20px;
 }
 
 
@@ -321,13 +320,23 @@ background-color: green;
 #score_percent {
   text-align: center;
   margin-top: 10px;
-  margin-bottom: 120px;
+  margin-bottom: 20px;
   font-size: 40px;
   padding-top: 10px;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
 }
 
+#score_message {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 60px;
+  line-height: 35px;
+  font-size: 25px;
+  padding-top: 10px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
 #link {
   margin: 0 auto;
   text-align: center;
@@ -335,7 +344,6 @@ background-color: green;
   font-size: 20px;
   padding: 10px;
   width: 150px;
-
   border: white solid 2px;
   border-radius: 2em;
 }
