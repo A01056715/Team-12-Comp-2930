@@ -1,10 +1,11 @@
+{% load staticfiles %}
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     {% block title %}
     {% endblock %}
-    {% block css %}
+    {% block css%}
     {% endblock %}
     <meta name="viewport" content="width=device-width, initial-scale=1 s">
   </head>
@@ -18,15 +19,15 @@
             <li><a href="{% url 'howtoplay' %}">How To Play</a></li>
           </ul>
         </nav>
-      
+
         <div class="cd-overlay-nav">
           <span></span>
         </div>
-      
+
         <div class="cd-overlay-content">
           <span></span>
         </div>
-      
+
         <a href="#0" class="cd-nav-trigger">Menu
           <span class="cd-icon"></span>
         </a>
@@ -47,8 +48,8 @@
 
         <div class="card__body" id="first_card_body">
           <div class="card__image card__will-animate"></div>
-          <div class="card__wish-list card__will-animate" id="buttons1">
-          <div><button class="choices" id="1A">{{ question.choice1 }}</button></div>
+          <div class="card__wish-list card__wish-list--19 card__will-animate" id="buttons1">
+          <div><button class="choices" id="1A">{{ question.choice1}}</button></div>
           <div><button class="choices" id="1B">{{ question.choice2 }}</button></div>
           <div><button class="choices" id="1C">{{ question.choice3 }}</button></div>
           <div><button class="choices" id="1D">{{ question.choice4 }}</button></div>
@@ -75,16 +76,16 @@
         <div class="card__body">
           <div class="card__image card__will-animate"></div>
           <div class="card__wish-list card__wish-list--19 card__will-animate" id="buttons2">
-            <button class="choices" id="2A">{{ question.choice1 }}</button>
-            <button class="choices" id="2B">{{ question.choice2 }}</button>
-            <button class="choices" id="2C">{{ question.choice3 }}</button>
-            <button class="choices" id="2D">{{ question.choice4 }}</button>
+            <div><button class="choices" id="2A">{{ question.choice1 }}</button></div>
+            <div><button class="choices" id="2B">{{ question.choice2 }}</button></div>
+            <div><button class="choices" id="2C">{{ question.choice3 }}</button></div>
+            <div><button class="choices" id="2D">{{ question.choice4 }}</button></div>
           </div>
           <span class="card__category card__will-animate"></span>
         </div>
       </div>
       {% endfor %}
-      
+
       {% for question in question3 %}
       <div class="card card--third">
         <div id="answerContainer3" style="display: none"></div>
@@ -116,36 +117,35 @@
 
       {% for question in question4 %}
       <div class="card card--fourth">
-        <div id="score_container"></div>
-        <div id="ques_body">
         <div id="answerContainer4" style="display: none"></div>
 
-        <div class="card__header card__header--fourth">
+        <div class="card__header card__header--fourth" style="display: block">
             <div class="card__watermark" data-watermark="Q4"></div>
-  
+
             <div class="card__logo card__will-animate"></div>
-  
-            <span class="card__price card__will-animate" id="check_score"></span>
-  
+
+            <span class="card__price card__will-animate"></span>
+
             <h1 class="card__title card__will-animate" id="heading4">Ecosystem</h1>
             <span class="card__subtitle card__will-animate">{{ question.question }}</span>
-  
+
           </div>
-  
+
           <div class="card__body">
             <div class="card__image card__will-animate"></div>
             <div class="card__wish-list card__wish-list--19 card__will-animate" id="buttons4">
               <div><button class="choices" id="4A">{{ question.choice1 }}</button></div>
               <div><button class="choices" id="4B">{{ question.choice2 }}</button></div>
               <div><button class="choices" id="4C">{{ question.choice3 }}</button></div>
-              <div><button class="choices" id="4D">{{ question.choice4 }}</button></div>
+              <div><button class="choices" id="4D">{{ quesiton.choice4 }}</button></div>
+            </div>
+            <div class="card__wish-list card__wish-list--19 card__will-animate" id="checkscore_button">
             </div>
             <span class="card__category card__will-animate"></span>
           </div>
         </div>
-        </div>
-        {% endfor %}
     </div> <!-- /wrapper -->
+    {% endfor %}
 
     <div class="cards-placeholder">
       <div class="cards-placeholder__item"></div>
