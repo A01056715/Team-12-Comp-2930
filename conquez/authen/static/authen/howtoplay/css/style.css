@@ -1310,3 +1310,7 @@ nav.navbar.bootsnav.footer-menu ul li a:hover{
     background-color: blueviolet;
     color:#fff;
 }
+
+#steps {
+    font-size: 60px;
+}
