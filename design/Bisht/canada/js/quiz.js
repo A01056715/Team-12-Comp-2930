@@ -26,18 +26,26 @@ let score = 0;
 
 function checkAnswer1(answer){
     if (answer === 'A'){
-        console.log('Correct');
-        score++;
-        document.getElementById("heading1").innerHTML = "CORRECT"
+        is_correct1();
+        explanationRender1();
+        return true
     }
     else {
-        console.log('Incorrect');
-        document.getElementById("heading1").innerHTML = "INCORRECT"
-
+        is_wrong1();
+        explanationRender1();
+        return false
     }
-    explanationRender1()
 }
 
+function is_correct1() {
+    console.log('Correct');
+    score++;
+    document.getElementById("heading1").innerHTML = "CORRECT";
+}
+function is_wrong1() {
+    console.log('Incorrect');
+    document.getElementById("heading1").innerHTML = "INCORRECT";
+}
 function explanationRender1() {
     document.getElementById('buttons1').innerText = "This is the explanation of qus1"
 }
@@ -49,21 +57,29 @@ ques_1_D.addEventListener("click", function checkIt3() {checkAnswer1('D');});
 
 function checkAnswer2(answer){
     if (answer === 'B'){
-        console.log('Correct');
-        score++;
-        document.getElementById("heading2").innerHTML = "CORRECT"
+        is_correct2();
+        explanationRender2();
+        return true
     }
     else {
-        console.log('Incorrect');
-        document.getElementById("heading2").innerHTML = "INCORRECT"
-
+        is_wrong2();
+        explanationRender2();
+        return false
     }
-    explanationRender2()
 }
 
+function is_correct2() {
+    console.log('Correct');
+    score++;
+    document.getElementById("heading2").innerHTML = "CORRECT";
+}
+function is_wrong2() {
+    console.log('Incorrect');
+    document.getElementById("heading2").innerHTML = "INCORRECT";
+}
 function explanationRender2() {
-    document.getElementById('buttons2').innerText = "This is the explanation of qus1"
-    }
+    document.getElementById('buttons2').innerText = "This is the explanation of qus2"
+}
 
 ques_2_A.addEventListener("click", function checkIt4() {checkAnswer2('A');});
 ques_2_B.addEventListener("click", function checkIt5() {checkAnswer2('B');});
