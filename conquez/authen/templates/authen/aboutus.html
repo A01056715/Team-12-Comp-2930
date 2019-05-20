@@ -42,6 +42,7 @@
         <nav>
             <ul class="cd-primary-nav">
                 <li><a href="{% url 'home' %}">Globe</a></li>
+                <li><a href="{% url 'profile' %}">Profile</a></li>
                 <li><a href="{% url 'howtoplay' %}">How To Play</a></li>
                 <li><a href="{% url 'logout' %}">Logout</a></li>
             </ul>
@@ -56,6 +57,18 @@
         <a href="#0" class="cd-nav-trigger">Menu<span class="cd-icon"></span></a>
         <div class="culmn">
             <!--Home page style-->
+
+        <!-- Preloader -->
+        <div id="loading">
+            <div id="loading-center">
+                <div id="loading-center-absolute">
+                    <div class="object" id="object_one"></div>
+                    <div class="object" id="object_two"></div>
+                    <div class="object" id="object_three"></div>
+                    <div class="object" id="object_four"></div>
+                </div>
+            </div>
+        </div><!--End off Preloader -->
 
 
             <!-- Burger Button Here -->

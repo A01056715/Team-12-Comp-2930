@@ -1,8 +1,8 @@
 
 
 /*
-Author: Bootstrap Themes
-Author URI: http://bootstrapthemes.co
+Author: Xpeedstudio
+Author URI: http://xpeedstudio.com
 */
 
 /*==========================================
@@ -29,7 +29,7 @@ Author URI: http://bootstrapthemes.co
 html,
 body {
     /*background:url(../images/bodybg.png) repayet-y;*/
-    /* background-image: url("../images/homebg.png"); */
+    background-image: url("../images/bodybg.png");
     background-repeat: repeat-y;
     font-size: 16px;
     color: #797979;
@@ -225,7 +225,7 @@ h5,
 h6 {
     margin: 0;
     font-family: 'Ubuntu', sans-serif;
-    color:#1a1a1a;
+    color:#383838;
     margin-bottom: 10px;
 }
 
@@ -234,8 +234,10 @@ h1 {
     line-height: 4rem;
 }
 h2 {
+    font-weight: bold;
     font-size: 2.5rem;
     line-height: 3rem;
+    text-align: center;
 }
 h3 {
     font-size: 1.500rem;
@@ -266,6 +268,7 @@ p span{
 
 p {
     line-height: 1.5rem;
+    text-align: center;
 }
 p:last-child {
     margin-bottom: 0px;
@@ -751,7 +754,7 @@ textarea::-ms-input-placeholder{
 .head_title h2{
     font-weight: 700;
     font-size:2.250rem;
-    color:#444444;
+    color:#648cff;
 }
 .head_title h5{
     font-weight: 400;
@@ -765,7 +768,7 @@ textarea::-ms-input-placeholder{
 
 /*Preloader*/
 #loading{
-    background-color: #444444;
+    background-color: #648cff;
     height: 100%;
     width: 100%;
     position: absolute;
@@ -919,7 +922,7 @@ Home Section style
 ==================*/
 
 .home{
-    background: url(../images/splashwallpaper.jpg) no-repeat top center;
+    background: url(../images/instructionbg.jpg) no-repeat top center;
     background-size: cover;
     position: relative;
 }
@@ -968,7 +971,6 @@ Featured section style
     width:20%;
     display: inline-block;
     margin-right: 15px;
-    text-align: center
 }
 .features_item .f_item_icon i{
     font-size:4rem;

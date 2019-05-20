@@ -751,7 +751,7 @@ textarea::-ms-input-placeholder{
 .head_title h2{
     font-weight: 700;
     font-size:2.250rem;
-    color:#648cff;
+    color:#444444;
 }
 .head_title h5{
     font-weight: 400;
@@ -765,7 +765,7 @@ textarea::-ms-input-placeholder{
 
 /*Preloader*/
 #loading{
-    background-color: #fc6a42;
+    background-color: #444444;
     height: 100%;
     width: 100%;
     position: absolute;
