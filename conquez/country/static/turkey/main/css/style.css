@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Quicksand', sans-serif;
-  transition: background-color 0.2s;
+  transition: background-color 0.7s;
   will-change: background-color;
   overflow: hidden;
   position: fixed;
@@ -161,6 +161,7 @@ body {
   display: block;
   font-size: 20px;
   font-weight: medium;
+
 }
 
 .card__body {
@@ -183,11 +184,11 @@ body {
 }
 
 .card__wish-list {
-  width: 50%;
+  width: 320px;
   margin: 0 auto;
-  padding: 15px;
+  padding: 5px;
   text-align: center;
-  font-size: 17px;
+  margin-top: 20px;
 }
 
 .card__category {
@@ -231,39 +232,117 @@ body {
 }
 
 .choices {
-  /* display:inline-block; */
+  margin: 0 auto;
+  display:inline-block;
   padding:0.3em 4em;
-  border:0.25em solid rgb(116, 116, 116);
   margin-bottom: 0.5em;
-  border-radius:0.4em;
-  /* box-sizing: border-box; */
+  border-radius:0.5em;
+  box-sizing: border-box;
   text-decoration:none;
   font-family:'Roboto',sans-serif;
   font-weight:bold;
-  color:rgb(116, 116, 116);
   text-align:center;
   transition: all 0.2s;
   white-space: nowrap;
+  width: 310px;
+  height: 50px;
+  border:  3px grey solid !important;
+  border-width: 3px;
+  color: grey;
+  font-size: 20px;
+  background-color: white !important;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  -ms-transition: none;
+  transition: none;
+
 }
 
 .choices:hover{
-  color: rgb(116, 116, 116);
+  /* color: rgb(116, 116, 116); */
   background-color:#FFFFFF;
 
 }
 
 #score_container {
-  text-align: center;
-  font-weight: 500;
-  font-size: 40px;
-  top: 50px;
+  display: none;
+  /* text-align: center;
+  font-weight: 500; */
+  background-color: black;
+  /* margin: 0 auto;
+  height: auto; */
+  position: fixed;
+  top: 0px;
+  left: 175px;
 }
 
-#score_container a {
+/* #score_container a {
   font-weight: 400;
   font-size: 30px;
   background-color: grey;
   color: white;
   padding: 20px 20px;
   border-radius: 10px;
+} */
+
+
+#checkscore {
+    background: #76B3FA;
+    border-radius: 1em;
+    padding: 10px 50px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;;
+    margin: 0 auto;
+    border: none !important;
+    bottom: 20px;
+}
+
+#checkscore_button {
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 80px;
+}
+
+
+.button:hover {
+background-color: green;
+}
+
+#score {
+  text-align: center;
+  font-size: 40px;
+  padding-top: 50px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#score_percent {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 120px;
+  font-size: 40px;
+  padding-top: 10px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#link {
+  margin: 0 auto;
+  text-align: center;
+  color: black;
+  font-size: 20px;
+  padding: 10px;
+  width: 150px;
+
+  border: white solid 2px;
+  border-radius: 2em;
+}
+
+
+#buttons1, #buttons2, #buttons3, #buttons4 {
+  color: grey;
+  font-weight: bold;
+  font-size: 20px;
 }

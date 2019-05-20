@@ -39,7 +39,7 @@ function checkAnswer1(answer){
 }
 
 function explanationRender1() {
-    document.getElementById('buttons1').innerHTML = "This is the explanation of qus1"
+    document.getElementById('buttons1').innerHTML = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.";
 }
 ques_1_A.addEventListener("click", function checkIt0() {checkAnswer1('A');});
 ques_1_B.addEventListener("click", function checkIt1() {checkAnswer1('B');});
@@ -62,7 +62,7 @@ function checkAnswer2(answer){
 }
 
 function explanationRender2() {
-    document.getElementById('buttons2').innerText = "This is the explanation of qus1";
+    document.getElementById('buttons2').innerText = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.";
     }
 
 ques_2_A.addEventListener("click", function checkIt4() {checkAnswer2('A');});
@@ -89,7 +89,7 @@ function checkAnswer3(answer){
 }
 
 function explanationRender3() {
-    document.getElementById('buttons3').innerText = "This is the explanation of qus1";
+    document.getElementById('buttons3').innerText = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.";
 }
 
 ques_3_A.addEventListener("click", function checkIt8() {checkAnswer3('A');});
@@ -113,15 +113,20 @@ function checkAnswer4(answer){
 }
 
 function explanationRender4() {
-    document.getElementById('buttons4').innerText = "This is the explanation of qus1";
-    document.getElementById('check_score').innerHTML = "<button onclick='scoreRender()'>Click Here To Check Score</button>";
+    document.getElementById('buttons4').innerText = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.";
+    document.getElementById('checkscore_button').innerHTML = "<button id='checkscore' onclick='scoreRender()'>Check Score</button>";
 }
 
 function scoreRender(){
-    document.getElementById('ques_body').style.display='none';
+    document.getElementsByClassName('card__header--fourth')[0].style.display = "none";
+    document.getElementsByClassName('card--fourth')[0].style.background = "#3494e6";
+    document.getElementsByClassName('card--fourth')[0].style.background = "-webkit-linear-gradient(to bottom, #3494e6, #ec6ead)";
+    document.getElementsByClassName('card--fourth')[0].style.background = "linear-gradient(to bottom, #3494e6, #ec6ead)";
+    document.getElementById('checkscore_button').style.display = "none";
     scorePercent = (parseFloat(score/4))*100;
-    document.getElementById('score_container').innerHTML = scorePercent + '%<br>';
-    document.getElementById('score_container').innerHTML += '<a href="https://conquez.herokuapp.com/home">Go Back to Globe</a>';
+    document.getElementById('buttons4').innerHTML = '<div id="score"><h1>Score:</h1><br></div>';
+    document.getElementById('buttons4').innerHTML += '<div id="score_percent"><h1>' + scorePercent + '%</h1><br></div>';
+    document.getElementById('buttons4').innerHTML += '<div id="link"><a href="https://conquez.herokuapp.com/home">Go Back</a></div>';
 }
 ques_4_A.addEventListener("click", function checkIt12() {checkAnswer4('A');});
 ques_4_B.addEventListener("click", function checkIt13() {checkAnswer4('B');});

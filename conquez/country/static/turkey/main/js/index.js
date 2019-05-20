@@ -253,17 +253,6 @@
     var cardCategory = card.querySelector('.card__category');
     var cardWillAnimate = card.querySelectorAll('.card__will-animate');
 
-    cardLogo.style.transform = 'translateX(' + (diff / this.ratio) + 'px)';
-    cardPrice.style.transform = 'translateX(' + (diff / this.ratio) + 'px)';
-
-    cardTitle.style.transform = 'translateX(' + (diff / (this.ratio * 0.90)) + 'px)';
-    cardSubtitle.style.transform = 'translateX(' + (diff / (this.ratio * 0.85)) + 'px)';
-
-    cardImage.style.transform = 'translateX(' + (diff / (this.ratio * 0.35)) + 'px)';
-
-    cardWishList.style.transform = 'translateX(' + (diff / (this.ratio * 0.85)) + 'px)';
-    cardCategory.style.transform = 'translateX(' + (diff / (this.ratio * 0.65)) + 'px)';
-
   };
 
 
