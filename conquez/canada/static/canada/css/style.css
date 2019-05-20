@@ -1,3 +1,14 @@
+:root {
+  --card-1-color: #E8112D;
+  --card-1-secondary: #FF0000;
+  --card-2-color: #3D9B35;
+  --card-2-secondary: #34c033;
+  --card-3-color: #003366;
+  --card-3-secondary: #003399;
+  --card-4-color: #FF0000;
+  --card-4-secondary: #FFF0F5;
+}
+
 html,
 body {
   width: 100%;
@@ -19,6 +30,34 @@ body {
   width: 100%;
   height: 100%;
 }
+#answerContainer1{
+  position: relative;
+  margin: 30px;
+  width: 250px;
+  background-color: lightgreen;
+  height: 250px;
+}
+#answerContainer2{
+  position: relative;
+  margin: 30px;
+  width: 250px;
+  background-color: lightgreen;
+  height: 250px;
+}
+#answerContainer3{
+  position: relative;
+  margin: 30px;
+  width: 250px;
+  background-color: lightgreen;
+  height: 250px;
+}
+#answerContainer4{
+  position: relative;
+  margin: 30px;
+  width: 250px;
+  background-color: lightgreen;
+  height: 250px;
+}
 
 .card {
   display: block;
@@ -29,7 +68,6 @@ body {
   background-color: #fff;
   border-radius: 15px;
   height: 600px;
-  text-align: center;
 
   box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.2);
 
@@ -61,39 +99,38 @@ body {
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
   color: #fff;
-  font-size: 24px;
 }
 
 .card__header--first {
-  background-color: #E8112D;
-  background-image: linear-gradient(#E8112D, #FF0000);
+  background-color: var(--card-1-color);
+  background-image: linear-gradient(var(--card-1-color), var(--card-1-secondary));
 
-  background: #E8112D;
-  background: linear-gradient(#E8112D, #FF0000);
+  background: var(--card-1-color);
+  background: linear-gradient(var(--card-1-color), var(--card-1-secondary));;
 }
 
 .card__header--second {
-  background-color: #3D9B35;
-  background-image: linear-gradient(#3D9B35, #34c033);
+  background-color: var(--card-2-color);
+  background-image: linear-gradient(var(--card-2-color), var(--card-2-secondary));
 
-  background: #3D9B35;
-  background: linear-gradient(#3D9B35, #34c033);
+  background: var(--card-2-color);
+  background: linear-gradient(var(--card-2-color), var(--card-2-secondary));
 }
 
 .card__header--third {
-  background-color: #003366;
-  background-image: linear-gradient(#003366, #003399);
+  background-color:  var(--card-3-color);
+  background-image: linear-gradient(var(--card-3-color), var(--card-3-secondary));
 
-  background: #003366;
-  background: linear-gradient(#003366, #003399);
+  background: var(--card-3-color);
+  background: linear-gradient(var(--card-3-color), var(--card-3-secondary));
 }
 
 .card__header--fourth {
-  background-color: #FF0000;
-  background-image: linear-gradient(#FF0000, #FFF0F5);
+  background-color: var(--card-4-color);
+  background-image: linear-gradient(var(--card-4-color), var(--card-4-secondary));
 
-  background: #FF0000;
-  background: linear-gradient(#FF0000, #FFF0F5);
+  background: var(--card-4-color);
+  background: linear-gradient(var(--card-4-color), var(--card-4-secondary));
 }
 
 .card__watermark {
@@ -121,28 +158,26 @@ body {
 
 .card__price {
   float: right;
+  font-size: 16px;
   font-weight: 300;
-  font-size: 16px
 }
 
 .card__title {
   margin: 35px 0 20px;
   font-size: 30px;
   line-height: 1.1em;
-  font-weight: bolder;
+  font-weight: semi-bold;
 }
 
 .card__subtitle {
   display: block;
-  font-size: 24px;
+  font-size: 13px;
   font-weight: 300;
-  line-height: normal;
-  vert-align: middle;
 }
 
 .card__body {
   position: relative;
-  padding: 30px 30px 20px;
+  padding: 40px 30px 20px;
 }
 
 .card__image {
@@ -161,45 +196,43 @@ body {
 
 .card__wish-list {
   display: block;
-  width: 80%;
-  margin: 0 auto 14px;
-  padding: 10px;
-  border: 2px solid #fff;
-  border-radius: 7.5px;
+  margin: 0 auto 15px;
+  padding: 15px;
+  border-radius: 20px;
   text-align: center;
   text-transform: uppercase;
   font-size: 14px;
 }
 
-.card__wish-list--19 {
-  color: #E8112D;
-  border-color: #E8112D;
+#buttons1 {
+  color: var(--card-1-color);
+  border-color: var(--card-1-color);
 }
 
-.card__wish-list--solstice {
-  color: #34c033;
-  border-color: #34c033;
+#buttons2 {
+  color: var(--card-2-color);
+  border-color: var(--card-2-color);
 }
 
-.card__wish-list--quebec {
-  color: #003366;
-  border-color: #003366;
+#buttons3 {
+  color: var(--card-3-color);
+  border-color: var(--card-3-color);
 }
 
-.card__wish-list--huarache {
-  color: #FF0000;
-  border-color: #FF0000;
+#buttons4 {
+  color: var(--card-4-color);
+  border-color: var(--card-4-color);
 }
 
 .card__category {
   display: block;
-  font-size: 18px;
+  font-size: 12px;
   color: #AEAEAE;
   text-transform: uppercase;
   text-align: center;
 }
 
-.card__will-animate  {
+.card__will-animate {
   will-change: transform;
 }
 
@@ -228,4 +261,60 @@ body {
 
 .cards-placeholder__item--active {
   opacity: 1;
+}
+
+.choices {
+  display: block;
+  margin: 0 auto 15px;
+  border-radius: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 14px;
+  width: 90%;
+  padding: 5px;
+}
+
+#buttons1 button {
+  color: var(--card-1-color);
+  border: 2px solid var(--card-1-color);
+}
+
+#buttons2 button {
+  color: var(--card-2-color);
+  border: 2px solid var(--card-2-color);
+}
+
+#buttons3 button {
+  color: var(--card-3-color);
+  border: 2px solid var(--card-3-color);
+}
+
+#buttons4 button {
+  color: var(--card-4-color);
+  border: 2px solid var(--card-4-color);
+}
+
+#buttons1 button, #buttons2 button, #buttons3 button, #buttons4 button {
+  transition: background-color 0.5s, color 0.5s;
+  -webkit-transition: background-color 0.5s, color 0.5s;
+}
+
+#buttons1 button:hover, #buttons2 button:hover, #buttons3 button:hover, #buttons4 button:hover {
+  color: white;
+}
+
+#buttons1 button:hover {
+   background-color: var(--card-1-color)
+}
+
+#buttons2 button:hover {
+  background-color: var(--card-2-color)
+}
+
+#buttons3 button:hover {
+  background-color: var(--card-3-color)
+}
+
+#buttons4 button:hover {
+  background-color: var(--card-4-color)
 }
