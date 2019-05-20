@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block title %}
+<title>Turkey</title>
+{% endblock %}
+{% block css %}
+<style>
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700&display=swap');
+</style>
+<link rel="stylesheet" href="{% static 'turkey/main/css/style.css' %}">
+
+<link rel="stylesheet" href="{% static 'turkey/burger/css/reset.css' %}"> <!-- CSS reset -->
+<link rel="stylesheet" href="{% static 'turkey/burger/css/style.css' %}"> <!-- Resource style -->
+{% endblock %}
+{% block javascript %}
+<script src="{% static 'turkey/main/js/index.js' %}"></script>
+<script src="{% static 'turkey/main/js/quiz.js' %}"></script>
+
+<script src="{% static 'turkey/burger/js/velocity.min.js' %}"></script>
+<script src="{% static 'turkey/burger/js/main.js' %}"></script>
+<script src="{% static 'turkey/burger/js/modernizr.js' %}"></script>
+
+{% endblock %}

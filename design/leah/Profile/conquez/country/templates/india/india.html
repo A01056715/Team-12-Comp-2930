@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% block title %}
+<title>India</title>
+{% endblock %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'india/css/style.css' %}">
+<link rel="stylesheet" href="{% static 'india/css/burger.css' %}">
+{% endblock %}
+{% block javascript %}
+<script src="{% static 'india/js/index.js' %}"></script>
+<script src="{% static 'india/js/breakpoints.min.js' %}"></script>
+<script src="{% static 'india/js/burger.js' %}"></script>
+<script src="{% static 'india/js/quiz.js' %}"></script>
+{% endblock %}
