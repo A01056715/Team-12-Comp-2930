@@ -2,6 +2,9 @@ from django.shortcuts import render, render_to_response
 from django.contrib.auth.decorators import login_required
 from django.views.decorators.cache import never_cache
 from django.template import RequestContext
+import random
+
+title = ['Noble', 'Armorer', 'Armorer', 'Warrior', 'Merchant']
 
 # Create your views here.
 def login(request):
@@ -11,7 +14,8 @@ def splash(request):
     return render(request, 'authen/splash.html')
 
 def profile(request):
-    return render(request, 'authen/profile.html')
+    randomTitle = random.choice(title);
+    return render(request, 'authen/profile.html', {'title': randomTitle})
 
 @login_required
 def home(request):
@@ -23,9 +27,5 @@ def aboutus(request):
 def howtoplay(request):
     return render(request, 'authen/howtoplay.html')
 
-def handler404(request, *args, **argv):
-    response = render_to_response('authen/404.html', {}, context_instance=RequestContext(request))
-    response.status_code = 404
-    return response
-
-
+def view_404(request, exception):
+    return render(request, 'authen/404.html', status = 404)

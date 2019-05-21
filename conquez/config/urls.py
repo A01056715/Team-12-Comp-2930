@@ -4,6 +4,7 @@ from django.contrib.auth import views as auth_views
 from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib.auth import views as auth_views
+from django.conf.urls import handler404
 
 import authen.views
 import country.views
@@ -20,7 +21,7 @@ urlpatterns = [
     path("logout/", auth_views.LogoutView.as_view(), name="logout"),
     path('profile/', authen.views.profile, name='profile'),
     path('social-auth/', include('social_django.urls', namespace="social")),
-    path('oauth/', include('social_django.urls', namespace="social")),
+    path('oauth/', include('social_django.urls', namespace="social_django")),
     path('home/', authen.views.home, name='home'),
     path('', authen.views.splash, name='splash'),
     path('update_score/', country.views.update_score),
@@ -28,4 +29,4 @@ urlpatterns = [
     path('howtoplay/', authen.views.howtoplay, name='howtoplay')
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
-handler404 = 'authen.views.handler404'
+handler404 = 'authen.views.view_404'
