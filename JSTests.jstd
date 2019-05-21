@@ -1,0 +1,4 @@
+load:
+  - design/Bisht/canada/js/quiz.js
+test:
+  - design/Bisht/canada/test/tests.js

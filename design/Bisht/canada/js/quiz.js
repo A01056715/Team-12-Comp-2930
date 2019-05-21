@@ -49,11 +49,14 @@ function is_wrong1() {
 function explanationRender1() {
     document.getElementById('buttons1').innerText = "This is the explanation of qus1"
 }
+
 ques_1_A.addEventListener("click", function checkIt0() {checkAnswer1('A');});
 ques_1_B.addEventListener("click", function checkIt1() {checkAnswer1('B');});
 ques_1_C.addEventListener("click", function checkIt2() {checkAnswer1('C');});
 ques_1_D.addEventListener("click", function checkIt3() {checkAnswer1('D');});
 
+
+// for question 2
 
 function checkAnswer2(answer){
     if (answer === 'B'){
@@ -87,7 +90,7 @@ ques_2_C.addEventListener("click", function checkIt6() {checkAnswer2('C');});
 ques_2_D.addEventListener("click", function checkIt7() {checkAnswer2('D');});
 
 
-
+// for question 3
 
 
 function checkAnswer3(answer){
@@ -114,6 +117,8 @@ ques_3_C.addEventListener("click", function checkIt10() {checkAnswer3('C');});
 ques_3_D.addEventListener("click", function checkIt11() {checkAnswer3('D');});
 
 
+// for question 4
+
 function checkAnswer4(answer){
     if (answer === 'D'){
         console.log('Correct');
@@ -123,19 +128,18 @@ function checkAnswer4(answer){
     else {
         console.log('Incorrect');
         document.getElementById("heading4").innerHTML = "INCORRECT"
-
     }
     explanationRender4()
 }
 
 function explanationRender4() {
     document.getElementById('buttons4').innerText = "This is the explanation of qus1";
-    document.getElementById('check_score').innerHTML = "<button onclick='scoreRender()'>Click Here To Check Score</button>"
+    document.getElementById('buttons4').innerHTML += "</br></br><button onclick='scoreRender()'>Click Here To Check Score</button>"
 }
 
 function scoreRender(){
-    document.getElementById('ques_body').style.display='none'
-    document.getElementById('score_container').innerHTML = (parseFloat(score/4))*100 + '%<br><button id="globe">Go Back to Globe</button>'
+    document.getElementById('ques_body').style.display='none';
+    document.getElementById('score_container').innerHTML =(score/4)*100 + '%<br><button id="globe">Go Back to Globe</button>'
 }
 ques_4_A.addEventListener("click", function checkIt12() {checkAnswer4('A')});
 ques_4_B.addEventListener("click", function checkIt13() {checkAnswer4('B')});
