@@ -27,5 +27,8 @@ def aboutus(request):
 def howtoplay(request):
     return render(request, 'authen/howtoplay.html')
 
-def view_404(request, exception):
-    return render(request, 'authen/404.html', status = 404)
+def view_404(request, exceptionpy):
+    return render(request, 'authen/404.html', status=404)
+
+def view_500(request):
+    return render(request, 'authen/500.html', status=500)

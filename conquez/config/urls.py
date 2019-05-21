@@ -4,7 +4,7 @@ from django.contrib.auth import views as auth_views
 from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib.auth import views as auth_views
-from django.conf.urls import handler404
+from django.conf.urls import handler404, handler500
 
 import authen.views
 import country.views
@@ -30,3 +30,4 @@ urlpatterns = [
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
 handler404 = 'authen.views.view_404'
+handler500 = 'authen.views.view_500'
