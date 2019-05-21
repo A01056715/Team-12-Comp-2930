@@ -3,13 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="ae609c42-010f-44c4-9127-5a91774aca24" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/design/Bisht/canada/JSTests.jstd" beforeDir="false" afterPath="$PROJECT_DIR$/JSTests.jstd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design/Bisht/JSTests.jstd" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/design/Bisht/canada/canada.html" beforeDir="false" afterPath="$PROJECT_DIR$/design/Bisht/canada/canada.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/design/Bisht/canada/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/design/Bisht/canada/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/design/Bisht/canada/js/quiz.js" beforeDir="false" afterPath="$PROJECT_DIR$/design/Bisht/canada/js/quiz.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/design/Bisht/canada/test/tests.js" beforeDir="false" afterPath="$PROJECT_DIR$/design/Bisht/canada/test/tests.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/design/m/sliderpage/banff.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/design/m/sliderpage/india/js/niagra.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/design/Bisht/india - Copy/js/quiz.js" beforeDir="false" afterPath="$PROJECT_DIR$/design/Bisht/india - Copy/js/quiz.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -26,19 +24,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/design/Bisht/canada/test/tests.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/JSTests.jstd">
+        <entry file="file://$PROJECT_DIR$/design/Bisht/canada/JSTests.jstd">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
-              <caret line="3" column="37" lean-forward="true" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
+              <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -46,8 +35,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/design/Bisht/canada/canada.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="348">
-              <caret line="133" column="18" lean-forward="true" selection-start-line="133" selection-start-column="18" selection-end-line="133" selection-end-column="18" />
+            <state relative-caret-position="891">
+              <caret line="103" column="81" selection-start-line="103" selection-start-column="81" selection-end-line="103" selection-end-column="81" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -57,20 +46,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/design/Bisht/canada/css/style.css">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/design/Bisht/canada/test/tests.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="35" column="1" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
+            <state relative-caret-position="187">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/design/Bisht/canada/js/quiz.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="49" column="28" lean-forward="true" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="28" />
+            <state relative-caret-position="478">
+              <caret line="92" column="26" lean-forward="true" selection-start-line="92" selection-start-column="26" selection-end-line="92" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -96,6 +85,7 @@
       <find>timer</find>
       <find>renderQuestion</find>
       <find>click</find>
+      <find>heading1</find>
     </findStrings>
     <replaceStrings>
       <replace>%</replace>
@@ -125,7 +115,6 @@
         <option value="$PROJECT_DIR$/conquez/static/india/js/quiz.js" />
         <option value="$PROJECT_DIR$/design/Bisht/quiz/assets/js/main.js" />
         <option value="$PROJECT_DIR$/design/Bisht/india - Copy/css/style.css" />
-        <option value="$PROJECT_DIR$/design/Bisht/india - Copy/js/quiz.js" />
         <option value="$PROJECT_DIR$/design/Bisht/india/js/quiz.js" />
         <option value="$PROJECT_DIR$/../files/canada.html" />
         <option value="$PROJECT_DIR$/design/Bisht/files/canada.html" />
@@ -140,12 +129,13 @@
         <option value="$PROJECT_DIR$/design/Bisht/about_us/style.css" />
         <option value="$PROJECT_DIR$/design/Bisht/about_us/main.js" />
         <option value="$PROJECT_DIR$/design/Bisht/about_us/about_us.html" />
-        <option value="$PROJECT_DIR$/design/Bisht/canada/JSTests.jstd" />
-        <option value="$PROJECT_DIR$/design/Bisht/canada/canada.html" />
         <option value="$PROJECT_DIR$/design/Bisht/canada/css/style.css" />
         <option value="$PROJECT_DIR$/JSTests.jstd" />
-        <option value="$PROJECT_DIR$/design/Bisht/canada/test/tests.js" />
+        <option value="$PROJECT_DIR$/design/Bisht/canada/JSTests.jstd" />
+        <option value="$PROJECT_DIR$/design/Bisht/india - Copy/js/quiz.js" />
+        <option value="$PROJECT_DIR$/design/Bisht/canada/canada.html" />
         <option value="$PROJECT_DIR$/design/Bisht/canada/js/quiz.js" />
+        <option value="$PROJECT_DIR$/design/Bisht/canada/test/tests.js" />
       </list>
     </option>
   </component>
@@ -159,7 +149,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -191,12 +180,13 @@
               <item name="design" type="462c0819:PsiDirectoryNode" />
               <item name="Bisht" type="462c0819:PsiDirectoryNode" />
               <item name="canada" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -217,6 +207,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Kshitiz Bisht\Desktop\BCIT\Project 2\team-12-comp-2930\design\Bisht\canada" />
+      <recent name="C:\Users\Kshitiz Bisht\Desktop\BCIT\Project 2\team-12-comp-2930\design\Bisht" />
       <recent name="C:\Users\Kshitiz Bisht\Desktop\BCIT\Project 2\team-12-comp-2930" />
       <recent name="C:\Users\Kshitiz Bisht\Desktop\BCIT\Project 2\team-12-comp-2930\design\Bisht\india\css" />
       <recent name="C:\Users\Kshitiz Bisht\Desktop\BCIT\Project 2\team-12-comp-2930\design\Bisht\india" />
@@ -243,7 +235,7 @@
     </configuration>
     <configuration name="JSTests.jstd" type="JsTestDriver-test-runner" factoryName="JsTestDriver" nameIsGenerated="true">
       <setting name="configLocationType" value="CONFIG_FILE" />
-      <setting name="settingsFile" value="$PROJECT_DIR$/JSTests.jstd" />
+      <setting name="settingsFile" value="$PROJECT_DIR$/design/Bisht/canada/JSTests.jstd" />
       <setting name="serverType" value="INTERNAL" />
       <setting name="preferredDebugBrowser" value="Chrome" />
       <method v="2" />
@@ -251,14 +243,19 @@
     <configuration name="quiz.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="quiz.js" working-dir="$PROJECT_DIR$/design/Bisht/canada/js">
       <method v="2" />
     </configuration>
+    <configuration name="tests.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="tests.js" working-dir="$PROJECT_DIR$/design/Bisht/canada/test">
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="JavaScript Debug.about_us.html" />
       <item itemvalue="JavaScript Debug.canada.html" />
       <item itemvalue="JsTestDriver.JSTests.jstd" />
       <item itemvalue="Node.js.quiz.js" />
+      <item itemvalue="Node.js.tests.js" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.tests.js" />
         <item itemvalue="JavaScript Debug.canada.html" />
         <item itemvalue="Node.js.quiz.js" />
         <item itemvalue="JavaScript Debug.about_us.html" />
@@ -297,51 +294,52 @@
       <workItem from="1558330165214" duration="662000" />
       <workItem from="1558330894729" duration="4309000" />
       <workItem from="1558386535477" duration="2059000" />
-      <workItem from="1558463733878" duration="5518000" />
+      <workItem from="1558463733878" duration="8485000" />
+      <workItem from="1558474141122" duration="4941000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="JSTests_jstd - 2019.05.21 at 12h 02m 31s.xml">
+    <history-entry file="JSTests_jstd - 2019.05.21 at 14h 45m 01s.xml">
       <configuration name="JSTests.jstd" configurationId="JsTestDriver-test-runner" />
     </history-entry>
-    <history-entry file="JSTests_jstd - 2019.05.21 at 12h 07m 01s.xml">
+    <history-entry file="JSTests_jstd - 2019.05.21 at 14h 52m 36s.xml">
       <configuration name="JSTests.jstd" configurationId="JsTestDriver-test-runner" />
     </history-entry>
-    <history-entry file="JSTests_jstd - 2019.05.21 at 12h 07m 18s.xml">
+    <history-entry file="JSTests_jstd - 2019.05.21 at 14h 54m 07s.xml">
       <configuration name="JSTests.jstd" configurationId="JsTestDriver-test-runner" />
     </history-entry>
-    <history-entry file="JSTests_jstd - 2019.05.21 at 12h 16m 21s.xml">
+    <history-entry file="JSTests_jstd - 2019.05.21 at 14h 55m 43s.xml">
       <configuration name="JSTests.jstd" configurationId="JsTestDriver-test-runner" />
     </history-entry>
-    <history-entry file="JSTests_jstd - 2019.05.21 at 12h 21m 45s.xml">
+    <history-entry file="JSTests_jstd - 2019.05.21 at 14h 57m 56s.xml">
       <configuration name="JSTests.jstd" configurationId="JsTestDriver-test-runner" />
     </history-entry>
-    <history-entry file="JSTests_jstd - 2019.05.21 at 12h 23m 51s.xml">
+    <history-entry file="JSTests_jstd - 2019.05.21 at 15h 09m 54s.xml">
       <configuration name="JSTests.jstd" configurationId="JsTestDriver-test-runner" />
     </history-entry>
-    <history-entry file="JSTests_jstd - 2019.05.21 at 12h 24m 15s.xml">
+    <history-entry file="JSTests_jstd - 2019.05.21 at 15h 09m 56s.xml">
       <configuration name="JSTests.jstd" configurationId="JsTestDriver-test-runner" />
     </history-entry>
-    <history-entry file="JSTests_jstd - 2019.05.21 at 12h 24m 23s.xml">
+    <history-entry file="JSTests_jstd - 2019.05.21 at 15h 41m 41s.xml">
       <configuration name="JSTests.jstd" configurationId="JsTestDriver-test-runner" />
     </history-entry>
-    <history-entry file="JSTests_jstd - 2019.05.21 at 12h 29m 49s.xml">
+    <history-entry file="JSTests_jstd - 2019.05.21 at 15h 47m 04s.xml">
       <configuration name="JSTests.jstd" configurationId="JsTestDriver-test-runner" />
     </history-entry>
-    <history-entry file="JSTests_jstd - 2019.05.21 at 12h 31m 43s.xml">
+    <history-entry file="JSTests_jstd - 2019.05.21 at 15h 47m 55s.xml">
       <configuration name="JSTests.jstd" configurationId="JsTestDriver-test-runner" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94606000" />
+    <option name="totallyTimeSpent" value="102514000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" sideWeight="0.5042194" side_tool="true" weight="0.20026438" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.4957806" visible="true" weight="0.20026438" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.4957806" visible="true" weight="0.20026438" />
       <window_info id="Structure" order="2" sideWeight="0.5042194" side_tool="true" weight="0.20026438" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="1" />
@@ -349,7 +347,7 @@
       <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.61004627" side_tool="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.38995373" weight="0.3512748" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" sideWeight="0.38995373" visible="true" weight="0.3512748" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -364,7 +362,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/design/ken/sliderpage/china/js/burger.js" />
     <entry file="file://$PROJECT_DIR$/design/ken/sliderpage/china/js/index.js" />
     <entry file="file://$PROJECT_DIR$/design/ken/sliderpage/china/js/breakpoints.min.js" />
     <entry file="file://$PROJECT_DIR$/design/Bisht/sliderpage/china/js/quiz.js" />
@@ -397,26 +394,14 @@
     <entry file="file://$PROJECT_DIR$/design/leah/canada/templates/canada/canada.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/conquez/static/china/js/quiz.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" selection-start-column="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/conquez/static/china/js/quiz.js" />
     <entry file="file://$PROJECT_DIR$/design/leah/canada/static/canada/js/index.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/get-pip.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/conquez/static/india/js/quiz.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-158">
-          <caret line="153" lean-forward="true" selection-start-line="153" selection-end-line="153" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/conquez/static/india/js/quiz.js" />
     <entry file="file://$PROJECT_DIR$/design/Bisht/quiz/assets/css/main.css" />
     <entry file="file://$PROJECT_DIR$/design/Bisht/india/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -452,18 +437,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/design/Bisht/quiz/assets/js/main.js" />
-    <entry file="file://$PROJECT_DIR$/design/Bisht/india - Copy/india.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="96" selection-start-line="7" selection-start-column="96" selection-end-line="7" selection-end-column="96" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/design/Bisht/files/js/quiz.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="624">
@@ -543,13 +516,6 @@
     <entry file="file://$PROJECT_DIR$/design/Bisht/india - Copy/js/util.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/design/Bisht/india - Copy/js/quiz.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="78" column="25" selection-start-line="78" selection-start-column="25" selection-end-line="78" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/design/Bisht/india/india.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -564,31 +530,50 @@
     <entry file="file://$PROJECT_DIR$/design/Bisht/about_us/about_us.html" />
     <entry file="file://$PROJECT_DIR$/design/Bisht/about_us/style.css" />
     <entry file="file://$PROJECT_DIR$/design/Bisht/about_us/main.js" />
-    <entry file="file://$PROJECT_DIR$/JSTests.jstd">
+    <entry file="file://$USER_HOME$/WebstormProjects/about_us/about_us.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="37" lean-forward="true" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/design/Bisht/canada/test/tests.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="4" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="4" />
+        <state relative-caret-position="153">
+          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/design/Bisht/canada/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
+        <state relative-caret-position="595">
           <caret line="35" column="1" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/design/Bisht/india - Copy/js/quiz.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/design/Bisht/india - Copy/india.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="25" lean-forward="true" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/design/Bisht/canada/JSTests.jstd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/design/Bisht/canada/canada.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="133" column="18" lean-forward="true" selection-start-line="133" selection-start-column="18" selection-end-line="133" selection-end-column="18" />
+        <state relative-caret-position="891">
+          <caret line="103" column="81" selection-start-line="103" selection-start-column="81" selection-end-line="103" selection-end-column="81" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -599,8 +584,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/design/Bisht/canada/js/quiz.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="49" column="28" lean-forward="true" selection-start-line="49" selection-start-column="28" selection-end-line="49" selection-end-column="28" />
+        <state relative-caret-position="478">
+          <caret line="92" column="26" lean-forward="true" selection-start-line="92" selection-start-column="26" selection-end-line="92" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/design/Bisht/canada/test/tests.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
