@@ -1,4 +1,0 @@
-load:
-  - js/quiz.js
-test:
-  - test/tests.js
