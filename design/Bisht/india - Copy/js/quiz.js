@@ -13,42 +13,7 @@ const scoreDiv = document.getElementById("scoreContainer");
 const ansDiv = document.getElementById("answerContainer");
 
 // create our questions
-let questions = [
-    {
-        question : "This is question number one.",
-        choiceA : "Correct",
-        choiceB : "Wrong",
-        choiceC : "Wrong",
-        choiceD : "Wrong",
-        explanation: "explanation for question 1",
-        correct : "A"
-    },{
-        question : "This is question number two.",
-        choiceA : "Wrong",
-        choiceB : "Correct",
-        choiceC : "Wrong",
-        choiceD : "Wrong",
-        explanation: "explanation for question 2",
-        correct : "B"
-    },{
-        question : "This is question number three.",
-        imgSrc : "img/js.png",
-        choiceA : "Wrong",
-        choiceB : "Wrong",
-        choiceC : "Correct",
-        choiceD : "Wrong",
-        explanation: "explanation for question 3",
-        correct : "C"
-    },{
-        question : "This is question number four.",
-        choiceA : "Wrong",
-        choiceB : "Wrong",
-        choiceC : "Wrong",
-        choiceD : "Correct",
-        explanation: "explanation for question 4",
-        correct : "D"
-    }
-];
+
 
 // create some variables
 
@@ -128,7 +93,6 @@ function checkAnswer(answer){
         // answer is correct
         increasescore();
         console.log(score);
-
         // change progress color to green
         answerIsCorrect();
     } else {
