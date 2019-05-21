@@ -29,3 +29,6 @@ def howtoplay(request):
 
 def view_404(request, exception):
     return render(request, 'authen/404.html', status = 404)
+
+def view_500(request, exception):
+    return render(request, 'authen/500.html', status = 500)
