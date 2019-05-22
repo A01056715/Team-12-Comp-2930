@@ -74,16 +74,16 @@ function validator(bool, question) {
 
 function explanationRender(question) {
     if (question===1){
-        document.getElementById('buttons1').innerText = " Water pollution is one of the biggest issues facing India right now. As may be evident, untreated sewage is the biggest source of such form of pollution in India.";
+        document.getElementById('buttons1').innerText = "Water pollution is one of the biggest issues facing India right now. As may be evident, untreated sewage is the biggest source of such form of pollution in India.";
     }
     else if (question === 2){
         document.getElementById('buttons2').innerText = "The rate of urbanization has only gone up at a fast pace in the last decade or so, but even then, it has left an indelible mark on India’s aquatic resources.";
     }
     else if (question === 3){
-        document.getElementById('buttons3').innerText = "ndia around 15 years ago in response to the growing problem of plastic litter. Adopted the idea of making roads with the help of plastic.";
+        document.getElementById('buttons3').innerText = "India around 15 years ago in response to the growing problem of plastic litter. Adopted the idea of making roads with the help of plastic.";
     }
     else {
-        document.getElementById('buttons4').innerText = "ndia around 15 years ago in response to the growing problem of plastic litter. Adopted the idea of making roads with the help of plastic.";
+        document.getElementById('buttons4').innerText = "Ganges River is the most polluted River in India due to industrial waste and Human dumping";
         document.getElementById('buttons4').innerHTML += "</br></br><button onclick='scoreRender()'>Click Here To Check Score</button>";
 
 

@@ -74,7 +74,7 @@ function validator(bool, question) {
 
 function explanationRender(question) {
     if (question===1){
-        document.getElementById('buttons1').innerText = "air pollution from the burning of fossil fuels, principally coal, is causing people to die on average 5.5 years sooner than they otherwise might.";
+        document.getElementById('buttons1').innerText = "Air pollution from the burning of fossil fuels, principally coal, is causing people to die on average 5.5 years sooner than they otherwise might.";
     }
     else if (question === 2){
         document.getElementById('buttons2').innerText = "China has seen a sharp rise in the incidence of lung cancer in the past 10 years, with long-term exposure to air pollution a possible culprit";
