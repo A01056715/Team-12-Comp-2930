@@ -1,7 +1,3 @@
-/*
-After discussions with Flynn. We came to a solution that to execute onclick events on the globe we have to make
-all of it Global so the script below initializes the globe with all off its configurations.
- */
 let configs = {
     color: {
         surface:0xFFFFFF,
@@ -56,12 +52,8 @@ let data = [
 controller.addData(data);
 controller.setInitCountry('CA').adjustOceanBrightness( 2 ).setTransparentBackground( true ).addHalo(0xFFF2CC);
 controller.init();
-// This method lets us set callback functions for onclick events on the globe.
 controller.onCountryPicked(callback);
-/*
-On selecting a country callback appends a banner to the screen with the status of that country and appends a link
-to the quiz page if country has an available quiz
- */
+
 function callback(selectedCountry) {
     let available_countries = [ 'BRAZIL', 'CANADA', 'CHINA', 'INDIA', 'TURKEY', 'ANTARCTICA'];
     let nameCard = $( "#nameCard" );
@@ -86,20 +78,27 @@ function callback(selectedCountry) {
         if(selectedCountry.name === 'ANTARCTICA'){
             nameCard.append('<br/><a id="link" href="https://conquez.herokuapp.com/antarctica">Conquer</a>');
         }
+        infoBoard.fadeIn( 1000 );
+
+        setTimeout( function () {
+
+            $( "#infoBoard" ).fadeOut( 1000 );
+
+        }, 3500 );
 
     }
 
     else{
         nameCard.text( controller.getSelectedCountry().name+'\'s' + ' quiz is not available' );
+        infoBoard.fadeIn( 1000 );
+
+        setTimeout( function () {
+
+            $( "#infoBoard" ).fadeOut( 1000 );
+
+        }, 3500 );
 
     }
-    infoBoard.fadeIn( 1000 );
-
-    setTimeout( function () {
-
-        $( "#infoBoard" ).fadeOut( 1000 );
-
-    }, 3500 );
 
 
     console.log(controller.getSelectedCountry().name);

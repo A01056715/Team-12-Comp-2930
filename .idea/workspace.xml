@@ -2,12 +2,45 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ae609c42-010f-44c4-9127-5a91774aca24" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/conquez/country/static/antarctica/css/stylesheet.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/conquez/authen/static/authen/css/errror404.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/conquez/authen/static/authen/images/404img.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/conquez/authen/static/authen/images/bisht1profile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/conquez/authen/static/authen/images/dhruvprofile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/conquez/authen/static/authen/images/leahprofile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/conquez/authen/static/authen/images/michelleprofile.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/conquez/static/authen/images/splashphone.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/conquez/static/authen/js/home_2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/conquez/static/authen/js/home_main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/design/ken/ken.sketch" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conquez/authen/static/authen/css/home_main.css" beforeDir="false" afterPath="$PROJECT_DIR$/conquez/authen/static/authen/css/home_main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conquez/authen/static/authen/css/splash_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/conquez/authen/static/authen/css/splash_style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conquez/authen/static/authen/images/kenprofile.png" beforeDir="false" afterPath="$PROJECT_DIR$/conquez/authen/static/authen/images/kenprofile.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conquez/authen/static/authen/images/screen03.png" beforeDir="false" afterPath="$PROJECT_DIR$/conquez/authen/static/authen/images/screen03.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conquez/authen/static/authen/images/splashphone.png" beforeDir="false" afterPath="$PROJECT_DIR$/conquez/authen/static/authen/images/splashphone.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conquez/authen/static/authen/js/home_2.js" beforeDir="false" afterPath="$PROJECT_DIR$/conquez/authen/static/authen/js/home_2.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conquez/authen/static/authen/js/home_main.js" beforeDir="false" afterPath="$PROJECT_DIR$/conquez/authen/static/authen/js/home_main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conquez/authen/templates/authen/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/conquez/authen/templates/authen/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conquez/authen/templates/authen/500.html" beforeDir="false" afterPath="$PROJECT_DIR$/conquez/authen/templates/authen/500.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conquez/authen/templates/authen/aboutus.html" beforeDir="false" afterPath="$PROJECT_DIR$/conquez/authen/templates/authen/aboutus.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conquez/authen/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/conquez/authen/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conquez/config/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/conquez/config/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conquez/country/static/main/js/base_quiz.js" beforeDir="false" afterPath="$PROJECT_DIR$/conquez/country/static/main/js/base_quiz.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conquez/country/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/conquez/country/templates/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conquez/static/authen/fonts/fontawesome-webfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/conquez/static/authen/fonts/fontawesome-webfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/conquez/static/authen/fonts/fontawesome-webfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/conquez/static/authen/images/kenprofile.png" beforeDir="false" afterPath="$PROJECT_DIR$/conquez/static/authen/images/kenprofile.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conquez/static/authen/images/phone01.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/conquez/static/authen/images/screen03.png" beforeDir="false" afterPath="$PROJECT_DIR$/conquez/static/authen/images/screen03.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/design/Bisht/canada/canada.html" beforeDir="false" afterPath="$PROJECT_DIR$/design/Bisht/canada/canada.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/design/Bisht/canada/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/design/Bisht/canada/js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/design/m/authen/static/authen/css/freelancer.css" beforeDir="false" afterPath="$PROJECT_DIR$/design/m/authen/static/authen/css/freelancer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/design/m/authen/templates/authen/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/design/m/authen/templates/authen/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design/Bisht/canada/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/design/Bisht/canada/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design/Bisht/canada/js/quiz.js" beforeDir="false" afterPath="$PROJECT_DIR$/design/Bisht/canada/js/quiz.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design/Bisht/canada/test/tests.js" beforeDir="false" afterPath="$PROJECT_DIR$/design/Bisht/canada/test/tests.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design/Bisht/india - Copy/js/quiz.js" beforeDir="false" afterPath="$PROJECT_DIR$/design/Bisht/india - Copy/js/quiz.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design/ken/Profile-Modal.sketch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/design/m/sliderpage/banff.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/design/m/sliderpage/india/js/niagra.jpg" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,13 +51,64 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="team-12-comp-2930" />
+  </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/conquez/country/templates/canada/canada.html">
+        <entry file="file://$PROJECT_DIR$/conquez/country/static/turkey/css/style.css">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/conquez/country/static/canada/main/css/style.css">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/conquez/country/static/main/css/base_style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="13" column="90" lean-forward="true" selection-start-line="13" selection-start-column="90" selection-end-line="13" selection-end-column="90" />
+            <state relative-caret-position="503">
+              <caret line="217" column="14" lean-forward="true" selection-start-line="217" selection-start-column="14" selection-end-line="217" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/conquez/authen/templates/authen/aboutus.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="540">
+              <caret line="36" column="14" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/conquez/authen/templates/authen/home.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/conquez/authen/templates/authen/500.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/conquez/authen/templates/authen/404.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/conquez/authen/templates/authen/splash.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/conquez/authen/static/authen/css/splash_style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="757">
+              <caret line="1311" selection-start-line="1311" selection-end-line="1311" />
             </state>
           </provider>
         </entry>
@@ -32,31 +116,9 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/conquez/country/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="225">
+              <caret line="15" column="57" lean-forward="true" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/conquez/country/templates/china/china.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/conquez/country/static/canada/css/style.css">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/conquez/country/templates/turkey/turkey.html">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/conquez/country/static/turkey/css/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-113" />
           </provider>
         </entry>
       </file>
@@ -81,6 +143,8 @@
       <find>timer</find>
       <find>renderQuestion</find>
       <find>click</find>
+      <find>heading1</find>
+      <find>choices</find>
     </findStrings>
     <replaceStrings>
       <replace>%</replace>
@@ -110,7 +174,6 @@
         <option value="$PROJECT_DIR$/conquez/static/india/js/quiz.js" />
         <option value="$PROJECT_DIR$/design/Bisht/quiz/assets/js/main.js" />
         <option value="$PROJECT_DIR$/design/Bisht/india - Copy/css/style.css" />
-        <option value="$PROJECT_DIR$/design/Bisht/india - Copy/js/quiz.js" />
         <option value="$PROJECT_DIR$/design/Bisht/india/js/quiz.js" />
         <option value="$PROJECT_DIR$/../files/canada.html" />
         <option value="$PROJECT_DIR$/design/Bisht/files/canada.html" />
@@ -122,28 +185,35 @@
         <option value="$PROJECT_DIR$/design/Bisht/india/css/style.css" />
         <option value="$PROJECT_DIR$/design/Bisht/canada/css/burger.css" />
         <option value="$PROJECT_DIR$/design/Bisht/canada/js/burger.js" />
-        <option value="$PROJECT_DIR$/design/Bisht/canada/css/style.css" />
-        <option value="$PROJECT_DIR$/design/Bisht/canada/canada.html" />
         <option value="$PROJECT_DIR$/design/Bisht/about_us/style.css" />
         <option value="$PROJECT_DIR$/design/Bisht/about_us/main.js" />
         <option value="$PROJECT_DIR$/design/Bisht/about_us/about_us.html" />
-        <option value="$PROJECT_DIR$/design/Bisht/canada/test/tests.js" />
+        <option value="$PROJECT_DIR$/design/Bisht/canada/css/style.css" />
+        <option value="$PROJECT_DIR$/JSTests.jstd" />
         <option value="$PROJECT_DIR$/design/Bisht/canada/JSTests.jstd" />
-        <option value="$PROJECT_DIR$/design/Bisht/canada/js/quiz.js" />
+        <option value="$PROJECT_DIR$/design/Bisht/india - Copy/js/quiz.js" />
+        <option value="$PROJECT_DIR$/design/Bisht/canada/canada.html" />
         <option value="$PROJECT_DIR$/conquez/country/templates/base.html" />
+        <option value="$PROJECT_DIR$/conquez/country/static/main/js/base_quiz.js" />
+        <option value="$PROJECT_DIR$/design/Bisht/canada/js/quiz.js" />
+        <option value="$PROJECT_DIR$/design/Bisht/canada/test/tests.js" />
+        <option value="$PROJECT_DIR$/conquez/country/static/main/css/base_style.css" />
+        <option value="$PROJECT_DIR$/conquez/authen/templates/authen/aboutus.html" />
+        <option value="$PROJECT_DIR$/conquez/authen/static/authen/css/splash_style.css" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="950" />
-    <option name="width" value="980" />
-    <option name="height" value="1040" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1680" />
+    <option name="height" value="957" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -160,62 +230,52 @@
               <item name="Team-12-Comp-2930" type="b2602c69:ProjectViewProjectNode" />
               <item name="Team-12-Comp-2930" type="462c0819:PsiDirectoryNode" />
               <item name="conquez" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
+              <item name="authen" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Team-12-Comp-2930" type="b2602c69:ProjectViewProjectNode" />
               <item name="Team-12-Comp-2930" type="462c0819:PsiDirectoryNode" />
               <item name="conquez" type="462c0819:PsiDirectoryNode" />
-              <item name="country" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Team-12-Comp-2930" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Team-12-Comp-2930" type="462c0819:PsiDirectoryNode" />
-              <item name="conquez" type="462c0819:PsiDirectoryNode" />
-              <item name="country" type="462c0819:PsiDirectoryNode" />
+              <item name="authen" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Team-12-Comp-2930" type="b2602c69:ProjectViewProjectNode" />
               <item name="Team-12-Comp-2930" type="462c0819:PsiDirectoryNode" />
               <item name="conquez" type="462c0819:PsiDirectoryNode" />
-              <item name="country" type="462c0819:PsiDirectoryNode" />
+              <item name="authen" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="burger" type="462c0819:PsiDirectoryNode" />
+              <item name="authen" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Team-12-Comp-2930" type="b2602c69:ProjectViewProjectNode" />
               <item name="Team-12-Comp-2930" type="462c0819:PsiDirectoryNode" />
               <item name="conquez" type="462c0819:PsiDirectoryNode" />
-              <item name="country" type="462c0819:PsiDirectoryNode" />
+              <item name="authen" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="canada" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Team-12-Comp-2930" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Team-12-Comp-2930" type="462c0819:PsiDirectoryNode" />
-              <item name="conquez" type="462c0819:PsiDirectoryNode" />
-              <item name="country" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="canada" type="462c0819:PsiDirectoryNode" />
+              <item name="authen" type="462c0819:PsiDirectoryNode" />
               <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Team-12-Comp-2930" type="b2602c69:ProjectViewProjectNode" />
               <item name="Team-12-Comp-2930" type="462c0819:PsiDirectoryNode" />
               <item name="conquez" type="462c0819:PsiDirectoryNode" />
-              <item name="country" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="turkey" type="462c0819:PsiDirectoryNode" />
+              <item name="authen" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Team-12-Comp-2930" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Team-12-Comp-2930" type="462c0819:PsiDirectoryNode" />
+              <item name="conquez" type="462c0819:PsiDirectoryNode" />
+              <item name="authen" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="authen" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Team-12-Comp-2930" type="b2602c69:ProjectViewProjectNode" />
               <item name="Team-12-Comp-2930" type="462c0819:PsiDirectoryNode" />
               <item name="conquez" type="462c0819:PsiDirectoryNode" />
               <item name="country" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="turkey" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Team-12-Comp-2930" type="b2602c69:ProjectViewProjectNode" />
@@ -227,24 +287,12 @@
             <path>
               <item name="Team-12-Comp-2930" type="b2602c69:ProjectViewProjectNode" />
               <item name="Team-12-Comp-2930" type="462c0819:PsiDirectoryNode" />
-              <item name="conquez" type="462c0819:PsiDirectoryNode" />
-              <item name="country" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="china" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Team-12-Comp-2930" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Team-12-Comp-2930" type="462c0819:PsiDirectoryNode" />
-              <item name="conquez" type="462c0819:PsiDirectoryNode" />
-              <item name="country" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="turkey" type="462c0819:PsiDirectoryNode" />
+              <item name="design" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -265,6 +313,9 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Kshitiz Bisht\Desktop\BCIT\Project 2\team-12-comp-2930\design\Bisht\canada" />
+      <recent name="C:\Users\Kshitiz Bisht\Desktop\BCIT\Project 2\team-12-comp-2930\design\Bisht" />
+      <recent name="C:\Users\Kshitiz Bisht\Desktop\BCIT\Project 2\team-12-comp-2930" />
       <recent name="C:\Users\Kshitiz Bisht\Desktop\BCIT\Project 2\team-12-comp-2930\design\Bisht\india\css" />
       <recent name="C:\Users\Kshitiz Bisht\Desktop\BCIT\Project 2\team-12-comp-2930\design\Bisht\india" />
     </key>
@@ -288,7 +339,7 @@
     <configuration name="canada.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/team-12-comp-2930/design/Bisht/canada/canada.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="Unnamed" type="JsTestDriver-test-runner" factoryName="JsTestDriver" nameIsGenerated="true">
+    <configuration name="JSTests.jstd" type="JsTestDriver-test-runner" factoryName="JsTestDriver" nameIsGenerated="true">
       <setting name="configLocationType" value="CONFIG_FILE" />
       <setting name="settingsFile" value="$PROJECT_DIR$/design/Bisht/canada/JSTests.jstd" />
       <setting name="serverType" value="INTERNAL" />
@@ -298,13 +349,19 @@
     <configuration name="quiz.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="quiz.js" working-dir="$PROJECT_DIR$/design/Bisht/canada/js">
       <method v="2" />
     </configuration>
+    <configuration name="tests.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="tests.js" working-dir="$PROJECT_DIR$/design/Bisht/canada/test">
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="JavaScript Debug.about_us.html" />
       <item itemvalue="JavaScript Debug.canada.html" />
+      <item itemvalue="JsTestDriver.JSTests.jstd" />
       <item itemvalue="Node.js.quiz.js" />
+      <item itemvalue="Node.js.tests.js" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Node.js.tests.js" />
         <item itemvalue="JavaScript Debug.canada.html" />
         <item itemvalue="Node.js.quiz.js" />
         <item itemvalue="JavaScript Debug.about_us.html" />
@@ -343,44 +400,68 @@
       <workItem from="1558330165214" duration="662000" />
       <workItem from="1558330894729" duration="4309000" />
       <workItem from="1558386535477" duration="2059000" />
+      <workItem from="1558463733878" duration="8485000" />
+      <workItem from="1558474141122" duration="7344000" />
+      <workItem from="1558555100042" duration="947000" />
     </task>
-    <task id="LOCAL-00001" summary="changing viewport">
-      <created>1558477915323</created>
+    <task id="LOCAL-00001" summary="padding issue">
+      <created>1558555306419</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1558477915323</updated>
+      <updated>1558555306419</updated>
     </task>
     <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unnamed - 2019.05.20 at 14h 38m 43s.xml">
-      <configuration name="Unnamed" configurationId="JsTestDriver-test-runner" />
+    <history-entry file="JSTests_jstd - 2019.05.21 at 15h 47m 55s.xml">
+      <configuration name="JSTests.jstd" configurationId="JsTestDriver-test-runner" />
     </history-entry>
-    <history-entry file="Unnamed - 2019.05.20 at 14h 39m 55s.xml">
-      <configuration name="Unnamed" configurationId="JsTestDriver-test-runner" />
+    <history-entry file="JSTests_jstd - 2019.05.22 at 01h 22m 56s.xml">
+      <configuration name="JSTests.jstd" configurationId="JsTestDriver-test-runner" />
     </history-entry>
-    <history-entry file="Unnamed - 2019.05.20 at 14h 40m 24s.xml">
-      <configuration name="Unnamed" configurationId="JsTestDriver-test-runner" />
+    <history-entry file="JSTests_jstd - 2019.05.22 at 01h 22m 59s.xml">
+      <configuration name="JSTests.jstd" configurationId="JsTestDriver-test-runner" />
+    </history-entry>
+    <history-entry file="JSTests_jstd - 2019.05.22 at 01h 23m 30s.xml">
+      <configuration name="JSTests.jstd" configurationId="JsTestDriver-test-runner" />
+    </history-entry>
+    <history-entry file="JSTests_jstd - 2019.05.22 at 01h 23m 40s.xml">
+      <configuration name="JSTests.jstd" configurationId="JsTestDriver-test-runner" />
+    </history-entry>
+    <history-entry file="JSTests_jstd - 2019.05.22 at 01h 23m 57s.xml">
+      <configuration name="JSTests.jstd" configurationId="JsTestDriver-test-runner" />
+    </history-entry>
+    <history-entry file="JSTests_jstd - 2019.05.22 at 01h 24m 17s.xml">
+      <configuration name="JSTests.jstd" configurationId="JsTestDriver-test-runner" />
+    </history-entry>
+    <history-entry file="JSTests_jstd - 2019.05.22 at 01h 24m 37s.xml">
+      <configuration name="JSTests.jstd" configurationId="JsTestDriver-test-runner" />
+    </history-entry>
+    <history-entry file="JSTests_jstd - 2019.05.22 at 01h 24m 40s.xml">
+      <configuration name="JSTests.jstd" configurationId="JsTestDriver-test-runner" />
+    </history-entry>
+    <history-entry file="JSTests_jstd - 2019.05.22 at 01h 26m 19s.xml">
+      <configuration name="JSTests.jstd" configurationId="JsTestDriver-test-runner" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89894000" />
+    <option name="totallyTimeSpent" value="105864000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="956" extended-state="6" />
     <layout>
-      <window_info id="Favorites" order="0" sideWeight="0.50141644" side_tool="true" weight="0.14474554" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49858356" visible="true" weight="0.24954791" />
-      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="0" sideWeight="0.5042194" side_tool="true" weight="0.20026438" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.4957806" visible="true" weight="0.20012055" />
+      <window_info id="Structure" order="2" sideWeight="0.5042194" side_tool="true" weight="0.20026438" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="1" visible="true" weight="0.3298611" />
+      <window_info anchor="bottom" id="Version Control" order="1" />
       <window_info anchor="bottom" id="Terminal" order="2" />
-      <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.61004627" side_tool="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.3286119" />
-      <window_info anchor="bottom" id="Run" order="6" weight="0.3286119" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" sideWeight="0.38995373" visible="true" weight="0.3512748" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -390,56 +471,16 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
-    <layout-to-restore>
-      <window_info id="Favorites" order="0" sideWeight="0.50141644" side_tool="true" weight="0.14474554" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49858356" visible="true" weight="0.20026438" />
-      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" auto_hide="true" id="JsTestDriver Server" order="0" side_tool="true" />
-      <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="2" />
-      <window_info anchor="bottom" id="Terminal" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="5" />
-      <window_info anchor="bottom" id="Find" order="6" weight="0.3286119" />
-      <window_info active="true" anchor="bottom" id="Run" order="7" visible="true" weight="0.3286119" />
-      <window_info anchor="bottom" id="Debug" order="8" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="9" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="10" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="11" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="changing viewport" />
-    <option name="LAST_COMMIT_MESSAGE" value="changing viewport" />
+    <MESSAGE value="Merge branch 'master' of https://github.com/A01056715/Team-12-Comp-2930 into m&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
+    <MESSAGE value="padding issue" />
+    <option name="LAST_COMMIT_MESSAGE" value="padding issue" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/design/Bisht/sliderpage/china/js/buttons.js" />
-    <entry file="file://$PROJECT_DIR$/design/Bisht/sliderpage/china/js/burger.js" />
-    <entry file="file://$PROJECT_DIR$/design/Bisht/sliderpage/china/css/main.css" />
-    <entry file="file://$PROJECT_DIR$/design/Bisht/sliderpage/china/js/index.js" />
-    <entry file="file://$PROJECT_DIR$/design/m/canada.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="18" lean-forward="true" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/design/leah/Multichoice/quiz/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/design/leah/Multiplechoice2/original.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/design/leah/Multiplechoice2/multi.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -489,18 +530,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/design/Bisht/quiz/assets/js/main.js" />
-    <entry file="file://$PROJECT_DIR$/design/Bisht/india - Copy/india.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="96" selection-start-line="7" selection-start-column="96" selection-end-line="7" selection-end-column="96" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/design/Bisht/files/js/quiz.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="624">
@@ -580,20 +609,6 @@
     <entry file="file://$PROJECT_DIR$/design/Bisht/india - Copy/js/util.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/design/Bisht/india - Copy/js/quiz.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="78" column="25" selection-start-line="78" selection-start-column="25" selection-end-line="78" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/design/Bisht/canada/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="17" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/design/Bisht/india/india.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -608,24 +623,51 @@
     <entry file="file://$PROJECT_DIR$/design/Bisht/about_us/about_us.html" />
     <entry file="file://$PROJECT_DIR$/design/Bisht/about_us/style.css" />
     <entry file="file://$PROJECT_DIR$/design/Bisht/about_us/main.js" />
-    <entry file="file://$PROJECT_DIR$/design/Bisht/canada/JSTests.jstd">
+    <entry file="file://$PROJECT_DIR$/../about_us/about_us.html" />
+    <entry file="file://$PROJECT_DIR$/design/Bisht/canada/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="17" lean-forward="true" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+        <state relative-caret-position="595">
+          <caret line="35" column="1" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/design/Bisht/canada/test/tests.js">
+    <entry file="file://$PROJECT_DIR$/design/Bisht/india - Copy/js/quiz.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="3" lean-forward="true" selection-start-line="4" selection-start-column="3" selection-end-line="4" selection-end-column="3" />
+        <state relative-caret-position="170">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/design/Bisht/india - Copy/india.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="25" lean-forward="true" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/design/Bisht/canada/JSTests.jstd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conquez/country/static/main/js/base_quiz.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="30" column="22" lean-forward="true" selection-start-line="30" selection-start-column="22" selection-end-line="30" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/design/Bisht/canada/canada.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="97" column="60" lean-forward="true" selection-start-line="109" selection-start-column="17" selection-end-line="109" selection-end-column="32" />
+        <state relative-caret-position="306">
+          <caret line="49" column="10" lean-forward="true" selection-start-line="49" selection-start-column="10" selection-end-line="49" selection-end-column="87" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -634,39 +676,67 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/design/Bisht/canada/js/quiz.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conquez/country/templates/canada/canada.html">
+    <entry file="file://$PROJECT_DIR$/design/Bisht/canada/test/tests.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
-          <caret line="13" column="90" lean-forward="true" selection-start-line="13" selection-start-column="90" selection-end-line="13" selection-end-column="90" />
+          <caret line="13" column="4" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/conquez/country/templates/base.html">
+    <entry file="file://$PROJECT_DIR$/design/Bisht/canada/js/quiz.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="690">
+          <caret line="46" column="25" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conquez/country/templates/china/china.html">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/conquez/country/static/canada/css/style.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/conquez/country/templates/turkey/turkey.html">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/conquez/country/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="57" lean-forward="true" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/conquez/country/static/turkey/css/style.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conquez/country/static/canada/main/css/style.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conquez/country/static/main/css/base_style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-113" />
+        <state relative-caret-position="503">
+          <caret line="217" column="14" lean-forward="true" selection-start-line="217" selection-start-column="14" selection-end-line="217" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conquez/authen/templates/authen/home.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conquez/authen/templates/authen/500.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conquez/authen/templates/authen/404.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conquez/authen/templates/authen/aboutus.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" column="14" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conquez/authen/templates/authen/splash.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conquez/authen/static/authen/css/splash_style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="757">
+          <caret line="1311" selection-start-line="1311" selection-end-line="1311" />
+        </state>
       </provider>
     </entry>
   </component>
