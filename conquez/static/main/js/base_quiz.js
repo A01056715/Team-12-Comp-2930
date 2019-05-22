@@ -24,97 +24,70 @@ const ansDiv4 = document.getElementById('answerContainer4');
 // variables
 let score = 0;
 
-function checkAnswer1(answer){
-    if (answer === 'A'){
-        console.log('Correct');
-        score++;
-        document.getElementById("heading1").innerHTML = "CORRECT";
+function checkAnswer(answer, question) {
+    if (question === 1) {
+        return answer === 'A';
+    }
+    else if (question === 2){
+        return answer === 'B'
+    }
+    else if (question === 3){
+        return answer === 'C'
+    }
+    else{
+        return answer === 'D'
+    }
+}
+
+function validator(bool, question) {
+    if (bool === true ) {
+        if (question === 1) {
+            score++;
+            document.getElementById("heading1").innerHTML = "CORRECT";
+        }
+        else if (question === 2) {
+            score++;
+            document.getElementById("heading2").innerHTML = "CORRECT";
+        }
+        else if (question === 3) {
+            score++;
+            document.getElementById("heading3").innerHTML = "CORRECT";
+        }
+        else if (question === 4) {
+            score++;
+            document.getElementById("heading4").innerHTML = "CORRECT";
+        }
+
+    } else {
+        if (question === 1) {
+            document.getElementById("heading1").innerHTML = "INCORRECT";
+        } else if (question === 2) {
+            document.getElementById("heading2").innerHTML = "INCORRECT";
+        } else if (question === 3) {
+            document.getElementById("heading3").innerHTML = "INCORRECT";
+        } else if (question === 4) {
+            document.getElementById("heading4").innerHTML = "INCORRECT";
+        }
+    }
+    explanationRender(question)
+}
+
+function explanationRender(question) {
+    if (question===1){
+        document.getElementById('buttons1').innerText = "This is the explanation of qus1"
+    }
+    else if (question === 2){
+        document.getElementById('buttons2').innerText = "This is the explanation of qus2"
+    }
+    else if (question === 3){
+        document.getElementById('buttons3').innerText = "This is the explanation of qus3"
     }
     else {
-        console.log('Incorrect');
-        document.getElementById("heading1").innerHTML = "INCORRECT";
+        document.getElementById('buttons4').innerText = "This is the explanation of qus4";
+        document.getElementById('buttons4').innerHTML += "</br></br><button onclick='scoreRender()'>Click Here To Check Score</button>"
+
 
     }
-    explanationRender1();
-}
-
-function explanationRender1() {
-    document.getElementById('buttons1').innerHTML = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.";
-}
-ques_1_A.addEventListener("click", function checkIt0() {checkAnswer1('A');});
-ques_1_B.addEventListener("click", function checkIt1() {checkAnswer1('B');});
-ques_1_C.addEventListener("click", function checkIt2() {checkAnswer1('C');});
-ques_1_D.addEventListener("click", function checkIt3() {checkAnswer1('D');});
-
-
-function checkAnswer2(answer){
-    if (answer === 'B'){
-        console.log('Correct');
-        score++;
-        document.getElementById("heading2").innerHTML = "CORRECT"
-    }
-    else {
-        console.log('Incorrect');
-        document.getElementById("heading2").innerHTML = "INCORRECT"
-
-    }
-    explanationRender2();
-}
-
-function explanationRender2() {
-    document.getElementById('buttons2').innerText = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.";
-    }
-
-ques_2_A.addEventListener("click", function checkIt4() {checkAnswer2('A');});
-ques_2_B.addEventListener("click", function checkIt5() {checkAnswer2('B');});
-ques_2_C.addEventListener("click", function checkIt6() {checkAnswer2('C');});
-ques_2_D.addEventListener("click", function checkIt7() {checkAnswer2('D');});
-
-
-
-
-
-function checkAnswer3(answer){
-    if (answer === 'C'){
-        console.log('Correct');
-        score++;
-        document.getElementById("heading3").innerHTML = "CORRECT"
-    }
-    else {
-        console.log('Incorrect');
-        document.getElementById("heading3").innerHTML = "INCORRECT"
-
-    }
-    explanationRender3()
-}
-
-function explanationRender3() {
-    document.getElementById('buttons3').innerText = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.";
-}
-
-ques_3_A.addEventListener("click", function checkIt8() {checkAnswer3('A');});
-ques_3_B.addEventListener("click", function checkIt9() {checkAnswer3('B');});
-ques_3_C.addEventListener("click", function checkIt10() {checkAnswer3('C');});
-ques_3_D.addEventListener("click", function checkIt11() {checkAnswer3('D');});
-
-
-function checkAnswer4(answer){
-    if (answer === 'D'){
-        console.log('Correct');
-        score++;
-        document.getElementById("heading4").innerHTML = "CORRECT";
-    }
-    else {
-        console.log('Incorrect');
-        document.getElementById("heading4").innerHTML = "INCORRECT";
-
-    }
-    explanationRender4();
-}
-
-function explanationRender4() {
-    document.getElementById('buttons4').innerText = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.";
-    document.getElementById('checkscore_button').innerHTML = "<button id='checkscore' onclick='scoreRender()'>Check Score</button>";
 }
 
 function scoreRender(){
