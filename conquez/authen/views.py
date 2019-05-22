@@ -37,15 +37,5 @@ def aboutus(request):
 def howtoplay(request):
     return render(request, 'authen/howtoplay.html')
 
-<<<<<<< HEAD
-# Renders the Customized 404 page when the url is not found
-def view_404(request, exceptionpy):
-    return render(request, 'authen/404.html', status=404)
-
-# Renders the customized 500 page when there is a server error
-def view_500(request):
-    return render(request, 'authen/500.html', status=500)
-=======
 def view_404(request, exception):
     return render(request, 'authen/404.html', status = 404)
->>>>>>> 2c82fe5e9970f6e791ded64bf59034711b038a9f
