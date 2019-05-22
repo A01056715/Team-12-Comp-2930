@@ -80,10 +80,10 @@ function explanationRender(question) {
         document.getElementById('buttons2').innerText = "China has seen a sharp rise in the incidence of lung cancer in the past 10 years, with long-term exposure to air pollution a possible culprit";
     }
     else if (question === 3){
-        document.getElementById('buttons3').innerText = "Fossil fuel is the major reason that cause Air pollution. China should change it to Renewable energy like Solar panel or wind power.";
+        document.getElementById('buttons3').innerText = "The use of fossil fuels is predominantly why air pollution exists, and should be replaced with a renewable source of energy such as solar panels or wind turbines.";
     }
     else {
-        document.getElementById('buttons4').innerText = "The Yellow River earned it’s nickname “China’s Sorrow” because it’s frequent floods were very destructive to agricultural society.";
+        document.getElementById('buttons4').innerText = "The Yellow River is known as “China’s Sorrow” because its flooding frequently destroys agricultural society";
         document.getElementById('buttons4').innerHTML += "</br></br><button onclick='scoreRender()'>Click Here To Check Score</button>";
 
 
