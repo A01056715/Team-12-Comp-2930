@@ -74,16 +74,16 @@ function validator(bool, question) {
 
 function explanationRender(question) {
     if (question===1){
-        document.getElementById('buttons1').innerText = "This is the explanation of qus1"
+        document.getElementById('buttons1').innerText = "Compared to 1986-2005, the average annual Canadian temperature is projected to increase between 1.8 °C - 6.3 °C."
     }
     else if (question === 2){
-        document.getElementById('buttons2').innerText = "This is the explanation of qus2"
+        document.getElementById('buttons2').innerText = "Climate change is caused by the increase in concentrations of greenhouse gases. "
     }
     else if (question === 3){
-        document.getElementById('buttons3').innerText = "This is the explanation of qus3"
+        document.getElementById('buttons3').innerText = "Only 11% of plastic is recycled in Canada; the rest is either incinerated or is dumped in our landfills, lakes, and parks."
     }
     else {
-        document.getElementById('buttons4').innerText = "This is the explanation of qus4";
+        document.getElementById('buttons4').innerText = "Plastic waste is damaging to ecosystems and is life-threatening to its inhabiting animals. ";
         document.getElementById('buttons4').innerHTML += "</br></br><button onclick='scoreRender()'>Click Here To Check Score</button>"
 
 
