@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="ae609c42-010f-44c4-9127-5a91774aca24" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/design/Bisht/JSTests.jstd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/design/Bisht/canada/canada.html" beforeDir="false" afterPath="$PROJECT_DIR$/design/Bisht/canada/canada.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/design/Bisht/canada/js/quiz.js" beforeDir="false" afterPath="$PROJECT_DIR$/design/Bisht/canada/js/quiz.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/design/Bisht/canada/test/tests.js" beforeDir="false" afterPath="$PROJECT_DIR$/design/Bisht/canada/test/tests.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/design/Bisht/india - Copy/js/quiz.js" beforeDir="false" afterPath="$PROJECT_DIR$/design/Bisht/india - Copy/js/quiz.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conquez/country/static/main/js/base_quiz.js" beforeDir="false" afterPath="$PROJECT_DIR$/conquez/country/static/main/js/base_quiz.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conquez/country/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/conquez/country/templates/base.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,10 +21,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/design/Bisht/canada/JSTests.jstd">
+        <entry file="file://$PROJECT_DIR$/conquez/country/static/main/js/base_quiz.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+            <state relative-caret-position="277">
+              <caret line="120" column="1" selection-start-line="120" selection-start-column="1" selection-end-line="120" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/conquez/country/templates/base.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="143" column="16" lean-forward="true" selection-start-line="143" selection-start-column="16" selection-end-line="143" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -35,8 +41,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/design/Bisht/canada/canada.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="891">
-              <caret line="103" column="81" selection-start-line="103" selection-start-column="81" selection-end-line="103" selection-end-column="81" />
+            <state relative-caret-position="306">
+              <caret line="49" column="10" lean-forward="true" selection-start-line="49" selection-start-column="10" selection-end-line="49" selection-end-column="87" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -46,20 +52,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/design/Bisht/canada/test/tests.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/design/Bisht/canada/js/quiz.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="478">
-              <caret line="92" column="26" lean-forward="true" selection-start-line="92" selection-start-column="26" selection-end-line="92" selection-end-column="26" />
+            <state relative-caret-position="221">
+              <caret line="30" selection-start-line="30" selection-end-line="38" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -136,6 +133,8 @@
         <option value="$PROJECT_DIR$/design/Bisht/canada/canada.html" />
         <option value="$PROJECT_DIR$/design/Bisht/canada/js/quiz.js" />
         <option value="$PROJECT_DIR$/design/Bisht/canada/test/tests.js" />
+        <option value="$PROJECT_DIR$/conquez/country/static/main/js/base_quiz.js" />
+        <option value="$PROJECT_DIR$/conquez/country/templates/base.html" />
       </list>
     </option>
   </component>
@@ -155,6 +154,31 @@
             <path>
               <item name="team-12-comp-2930" type="b2602c69:ProjectViewProjectNode" />
               <item name="team-12-comp-2930" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="team-12-comp-2930" type="b2602c69:ProjectViewProjectNode" />
+              <item name="team-12-comp-2930" type="462c0819:PsiDirectoryNode" />
+              <item name="conquez" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="team-12-comp-2930" type="b2602c69:ProjectViewProjectNode" />
+              <item name="team-12-comp-2930" type="462c0819:PsiDirectoryNode" />
+              <item name="conquez" type="462c0819:PsiDirectoryNode" />
+              <item name="country" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="team-12-comp-2930" type="b2602c69:ProjectViewProjectNode" />
+              <item name="team-12-comp-2930" type="462c0819:PsiDirectoryNode" />
+              <item name="conquez" type="462c0819:PsiDirectoryNode" />
+              <item name="country" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="team-12-comp-2930" type="b2602c69:ProjectViewProjectNode" />
+              <item name="team-12-comp-2930" type="462c0819:PsiDirectoryNode" />
+              <item name="conquez" type="462c0819:PsiDirectoryNode" />
+              <item name="country" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="team-12-comp-2930" type="b2602c69:ProjectViewProjectNode" />
@@ -295,7 +319,7 @@
       <workItem from="1558330894729" duration="4309000" />
       <workItem from="1558386535477" duration="2059000" />
       <workItem from="1558463733878" duration="8485000" />
-      <workItem from="1558474141122" duration="4941000" />
+      <workItem from="1558474141122" duration="6098000" />
     </task>
     <servers />
   </component>
@@ -332,14 +356,14 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="102514000" />
+    <option name="totallyTimeSpent" value="103671000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" sideWeight="0.5042194" side_tool="true" weight="0.20026438" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.4957806" visible="true" weight="0.20026438" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.4957806" visible="true" weight="0.20026438" />
       <window_info id="Structure" order="2" sideWeight="0.5042194" side_tool="true" weight="0.20026438" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="1" />
@@ -347,7 +371,7 @@
       <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.61004627" side_tool="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.3286119" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" sideWeight="0.38995373" visible="true" weight="0.3512748" />
+      <window_info anchor="bottom" id="Run" order="6" sideWeight="0.38995373" visible="true" weight="0.3512748" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
@@ -362,9 +386,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/design/ken/sliderpage/china/js/index.js" />
-    <entry file="file://$PROJECT_DIR$/design/ken/sliderpage/china/js/breakpoints.min.js" />
-    <entry file="file://$PROJECT_DIR$/design/Bisht/sliderpage/china/js/quiz.js" />
     <entry file="file://$PROJECT_DIR$/design/Bisht/sliderpage/china/css/style.css" />
     <entry file="file://$PROJECT_DIR$/design/Bisht/sliderpage/china.html" />
     <entry file="file://$PROJECT_DIR$/design/Bisht/sliderpage/china/js/buttons.js" />
@@ -570,10 +591,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/design/Bisht/canada/test/tests.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conquez/authen/templates/authen/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-559" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/design/Bisht/canada/canada.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="891">
-          <caret line="103" column="81" selection-start-line="103" selection-start-column="81" selection-end-line="103" selection-end-column="81" />
+        <state relative-caret-position="306">
+          <caret line="49" column="10" lean-forward="true" selection-start-line="49" selection-start-column="10" selection-end-line="49" selection-end-column="87" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#2;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -584,15 +617,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/design/Bisht/canada/js/quiz.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="478">
-          <caret line="92" column="26" lean-forward="true" selection-start-line="92" selection-start-column="26" selection-end-line="92" selection-end-column="26" />
+        <state relative-caret-position="221">
+          <caret line="30" selection-start-line="30" selection-end-line="38" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/design/Bisht/canada/test/tests.js">
+    <entry file="file://$PROJECT_DIR$/conquez/country/static/main/js/base_quiz.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="277">
+          <caret line="120" column="1" selection-start-line="120" selection-start-column="1" selection-end-line="120" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/conquez/country/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="143" column="16" lean-forward="true" selection-start-line="143" selection-start-column="16" selection-end-line="143" selection-end-column="16" />
         </state>
       </provider>
     </entry>
