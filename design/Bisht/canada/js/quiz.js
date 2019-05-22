@@ -69,7 +69,7 @@ function explanationRender2() {
 
 
 function checkAnswer3(answer){
-    return answer === 'B';
+    return answer === 'C';
 }
 
 function validator3(bool) {
@@ -90,7 +90,7 @@ function explanationRender3() {
 // for question 4
 
 function checkAnswer4(answer){
-    return answer === 'B';
+    return answer === 'D';
 }
 
 function validator4(bool) {
