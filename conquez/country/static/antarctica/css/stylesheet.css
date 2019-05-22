@@ -1,0 +1,53 @@
+body{
+    background-color: #363442;
+    font-family: Verdana;
+}
+div{
+    color: white;
+}
+p{
+    text-align: center;
+    font-size: 4em;
+    top: 3em;
+}
+#context{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 14em;
+    font-size: 2em;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+
+#headline{
+    top: 40%;
+    left: 50%;
+    width: 8em;
+    font-size: 7em;
+    transform: translate(-50%, -40%);
+    position: absolute;
+
+}
+
+img{
+    height: 25em;
+    width: 25em;
+    top: 10%;
+    left: 50%;
+    transform: translate( -50%, 0);
+    position: absolute;
+}
+#btn{
+    border: 1px solid white;
+    border-radius: 0.2em;
+    padding: 0.3em;
+    position: absolute;
+    top: 77%;
+    left: 50%;
+    transform: translate(-50%, -75%);
+}
+

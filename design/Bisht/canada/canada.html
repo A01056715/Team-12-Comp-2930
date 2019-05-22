@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Canada</title>
     <link rel="stylesheet" href="css/style.css">
+    <!---->
     <link rel="stylesheet" href="css/burger.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=0.7">
@@ -12,7 +13,7 @@
 
     <!-- Navigation -->
     <div class="b-nav">
-      <li><a class="b-link" href="" target="_blank">Globe</a></li>
+      <li><a class="b-link" href="" target="_blank" onclick="">Globe</a></li>
       <li><a class="b-link" href="" target="_blank">Profile</a></li>
     </div>
     
@@ -26,29 +27,34 @@
     </div>
 
     <div class="wrapper">
-      <div class="card card--first">
+      <div id="answerContainer1" style="display: none">This is the hardcoded explanation of question 1.</div>
+      <div class="card card--first" id="first_card">
         <div class="card__header card__header--first">
           <!-- <div class="card__watermark" data-watermark="Plt"></div> -->
           <div class="card__logo card__will-animate"></div>
 
-          <span class="card__price card__will-animate">Question 1</span>
+          <span class="card__price card__will-animate" >Question 1</span>
 
-          <h1 class="card__title card__will-animate">Pollution</h1>
+          <h1  id="heading1" class="card__title card__will-animate">Pollution</h1>
           <span class="card__subtitle card__will-animate">Which of the following is not is a pollution source for the Great Lakes?</span>
 
         </div>
 
-        <div class="card__body">
+        <div class="card__body" id="first_card_body">
           <div class="card__image card__will-animate"></div>
-          <div class="card__wish-list card__wish-list--19 card__will-animate"><button id="1A">Volcanic Mountains</button></div>
-        <div class="card__wish-list card__wish-list--19 card__will-animate"><button id="1B"> Dumping</button></div>
-          <div class="card__wish-list card__wish-list--19 card__will-animate"><button id="1C"> Pollution from factories</button></div>
-          <div class="card__wish-list card__wish-list--19 card__will-animate"><button id="1D"> Other</button></div>
-          <span class="card__category card__will-animate"></span>
+          <div class="card__wish-list card__wish-list--19 card__will-animate" id="buttons1">
+          <div><button class="choices" id="1A" onclick="validator(checkAnswer('A', 1), 1)">Volcanic Mountains</button></div>
+          <div><button class="choices" id="1B" onclick="validator(checkAnswer('B', 1), 1)"> Dumping</button></div>
+          <div><button class="choices" id="1C" onclick="validator(checkAnswer('C', 1), 1)"> Pollution from factories</button></div>
+          <div><button class="choices" id="1D" onclick="validator(checkAnswer('D', 1), 1)"> Other</button></div>
+          </div>
+            <span class="card__category card__will-animate"></span>
         </div>
       </div>
 
       <div class="card card--second">
+        <div id="answerContainer2" style="display: none">Explanation of question 2</div>
+
         <div class="card__header card__header--second">
           <!-- <div class="card__watermark" data-watermark="3r's"></div> -->
 
@@ -56,59 +62,78 @@
 
           <span class="card__price card__will-animate">Question 2</span>
 
-          <h1 class="card__title card__will-animate">The Three R's</h1>
+          <h1 id="heading2" class="card__title card__will-animate">The Three R's</h1>
           <span class="card__subtitle card__will-animate">Which item belongs in a Torontonian blue bin?</span>
 
         </div>
 
         <div class="card__body">
           <div class="card__image card__will-animate"></div>
-          <div class="card__wish-list card__wish-list--solstice card__will-animate">Multiple Choice Section</div>
-
+          <div class="card__wish-list card__wish-list--19 card__will-animate" id="buttons2">
+            <div><button class="choices" id="2A" onclick="validator(checkAnswer('A', 2), 2)">Volcanic Mountains</button></div>
+            <div><button class="choices" id="2B" onclick="validator(checkAnswer('B', 2), 2)"> Dumping</button></div>
+            <div><button class="choices" id="2C" onclick="validator(checkAnswer('C', 2), 2)"> Pollution from factories</button></div>
+            <div><button class="choices" id="2D" onclick="validator(checkAnswer('D', 2), 2)"> Other</button></div>
+          </div>
           <span class="card__category card__will-animate"></span>
         </div>
       </div>
 
       <div class="card card--third">
+        <div id="answerContainer3" style="display: none"></div>
+
         <div class="card__header card__header--third">
           <!-- <div class="card__watermark" data-watermark="r&w"></div> -->
 
           <div class="card__logo card__will-animate"></div>
 
-          <span class="card__price card__will-animate">Question 3</span>
+          <span class="card__price card__will-animate" >Question 3</span>
 
-          <h1 class="card__title card__will-animate">Resources & Waste</h1>
+          <h1 class="card__title card__will-animate" id="heading3">Resources & Waste</h1>
           <span class="card__subtitle card__will-animate">The leader of this newly industrialized Southeast Asian country threatened to declare war on Canada over an illegal trash shipment sent to the capital of that country.</span>
 
         </div>
 
         <div class="card__body">
           <div class="card__image card__will-animate"></div>
-          <div class="card__wish-list card__wish-list--quebec card__will-animate">Multiple Choice Section</div>
-
+          <div class="card__wish-list card__wish-list--19 card__will-animate" id="buttons3">
+            <div><button class="choices" id="3A" onclick="validator(checkAnswer('A', 3), 3)">Volcanic Mountains</button></div>
+            <div><button class="choices" id="3B" onclick="validator(checkAnswer('B', 3), 3)"> Dumping</button></div>
+            <div><button class="choices" id="3C" onclick="validator(checkAnswer('C', 3), 3)"> Pollution from factories</button></div>
+            <div><button class="choices" id="3D" onclick="validator(checkAnswer('D', 3), 3)"> Other</button></div>
+          </div>
           <span class="card__category card__will-animate"></span>
         </div>
       </div>
 
       <div class="card card--fourth">
-          <div class="card__header card__header--fourth">
+        <div id="score_container"></div>
+        <div id="ques_body">
+        <div id="answerContainer4" style="display: none"></div>
+
+        <div class="card__header card__header--fourth">
             <!-- <div class="card__watermark" data-watermark="ecosystem"></div> -->
   
             <div class="card__logo card__will-animate"></div>
   
-            <span class="card__price card__will-animate">Question 4</span>
+            <span class="card__price card__will-animate" id="check_score">Question 4</span>
   
-            <h1 class="card__title card__will-animate">Ecosystem</h1>
+            <h1 class="card__title card__will-animate" id="heading4">Ecosystem</h1>
             <span class="card__subtitle card__will-animate">How many islands combined are in the Great Lakes?</span>
   
           </div>
   
           <div class="card__body">
             <div class="card__image card__will-animate"></div>
-            <div class="card__wish-list card__wish-list--huarache card__will-animate">Multiple Choice Section</div>
-  
+            <div class="card__wish-list card__wish-list--19 card__will-animate" id="buttons4">
+              <div><button class="choices" id="4A" onclick="validator(checkAnswer('A', 4), 4)">Volcanic Mountains</button></div>
+              <div><button class="choices" id="4B" onclick="validator(checkAnswer('B', 4), 4)"> Dumping</button></div>
+              <div><button class="choices" id="4C" onclick="validator(checkAnswer('C', 4), 4)"> Pollution from factories</button></div>
+              <div><button class="choices" id="4D" onclick="validator(checkAnswer('D', 4), 4)"> Other</button></div>
+            </div>
             <span class="card__category card__will-animate"></span>
           </div>
+        </div>
         </div>
 
     </div> <!-- /wrapper -->
@@ -130,6 +155,8 @@
   <script src="js/index.js"></script>
   <script src="js/breakpoints.min.js"></script>
   <script src="js/burger.js"></script>
+    <script src="js/quiz.js"></script>
 
-</body>
+
+  </body>
 </html>

@@ -1,8 +1,43 @@
 {% extends "base.html" %}
 {% load staticfiles %}
-{% block css %}
-<link rel="stylesheet" href="{% static 'turkey/css/style.css' %}">
+
+{% block title %}
+<title>Turkey</title>
 {% endblock %}
+
+{% block css %}
+<style>
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700&display=swap');
+</style>
+<link rel="stylesheet" href="{% static 'main/css/base_style.css' %}">
+<link rel="stylesheet" href="{% static 'turkey/css/style.css' %}">
+
+<link rel="stylesheet" href="{% static 'burger/css/reset.css' %}"> <!-- CSS reset -->
+<link rel="stylesheet" href="{% static 'burger/css/style.css' %}"> <!-- Resource style -->
+{% endblock %}
+
+{% block headline1 %}
+<h1  id="heading1" class="card__title card__will-animate">General</h1>
+{% endblock %}
+
+{% block headline2 %}
+<h1 id="heading2" class="card__title card__will-animate">The Three R's</h1>
+{% endblock %}
+
+{% block headline3 %}
+<h1 class="card__title card__will-animate" id="heading3">Resources & Waste</h1>
+{% endblock %}
+
+{% block headline4 %}
+<h1 class="card__title card__will-animate" id="heading4">Ecosystem</h1>
+{% endblock %}
+
 {% block javascript %}
-<script src="{% static 'turkey/js/quiz.js' %}"></script>
+<script src="{% static 'main/js/base_index.js' %}"></script>
+<script src="{% static 'turkey/js/turkey_quiz.js' %}"></script>
+
+<script src="{% static 'burger/js/velocity.min.js' %}"></script>
+<script src="{% static 'burger/js/main.js' %}"></script>
+<script src="{% static 'burger/js/modernizr.js' %}"></script>
+
 {% endblock %}

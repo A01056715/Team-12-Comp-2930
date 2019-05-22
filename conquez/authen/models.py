@@ -2,7 +2,7 @@ from django.db import models
 from country.models import Country
 from social_django.models import UserSocialAuth
 
-# Create your models here.
+# Models for the countries conquered. A bridge class that connects the User and Country Class
 class Conquered(models.Model):
     country_id=models.ForeignKey(Country, on_delete=models.CASCADE)
     user_id=models.ForeignKey(UserSocialAuth, on_delete=models.CASCADE)

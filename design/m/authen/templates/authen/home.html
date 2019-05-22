@@ -1,0 +1,50 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="https://threejs.org/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/giojs@2.2.1/build/gio.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../authen/main/css/main.css">
+
+    <link rel="stylesheet" href="authen/burger/css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="authen/burger/css/style.css"> <!-- Resource style -->
+	<script src="authen/burger/js/modernizr.js"></script>
+    <title>Globe</title>
+</head>
+<body>
+        <nav>
+                <ul class="cd-primary-nav">
+                    <li><a href="{% url 'profile' %}">Profile</a></li>
+                    <li><a href="{% url 'aboutus' %}">About Us</a></li>
+                    <li><a href="{% url 'howtoplay' %}">How To Play</a></li>
+                </ul>
+            </nav>
+        
+            <div class="cd-overlay-nav">
+                <span></span>
+            </div>
+        
+            <div class="cd-overlay-content">
+                <span></span>
+            </div>
+        
+            <a href="#0" class="cd-nav-trigger">Menu<span class="cd-icon"></span></a>
+        <div>
+        <!-- container to draw 3D Gio globe-->
+        <div id="globalArea"></div>
+        <!-- container for selected country -->
+        <div id="infoBoard">
+            <div id="nameCard"></div>
+        </div>
+    </div>
+    <script src=../authen/main/js/main.js"></script>
+    <script src=authen/main/js/home_2.js"></script>
+    <script src=authen/burger/js/velocity.min.js"></script>
+    <script src="authen/burger/js/main.js"></script>
+
+</body>

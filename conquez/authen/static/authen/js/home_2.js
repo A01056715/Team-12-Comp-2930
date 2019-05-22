@@ -33,7 +33,7 @@ function generateCubes() {
     camera.position.x = 0;
     camera.position.y = 0;
 
-    return cubes
+    return cubes;
 }
 
 function render() {

@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'keo8h)ht$ub7!7652)nipmz$bt^3-+c7fa-3)=wya2_3wv4zas'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False;
 
 ALLOWED_HOSTS = ['conquez.herokuapp.com', '127.0.0.1', 'localhost']
 
@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'authen',
     'country',
     'social_django',
+    'storages',
 ]
 
 AUTHENTICATION_BACKENDS = [
@@ -87,23 +88,10 @@ WSGI_APPLICATION = 'config.wsgi.application'
 LOGIN_URL = 'login'
 LOGIN_REDIRECT_URL = 'home'
 LOGOUT_URL = 'logout'
-LOGOUT_REDIRECT_URL = 'login'
+LOGOUT_REDIRECT_URL = 'splash'
 
 SOCIAL_AUTH_GITHUB_KEY = '3cdffce98e99f50ad8ea'
 SOCIAL_AUTH_GITHUB_SECRET = '81d21b960f04d7d31beb05ea937b4dca149a4cf7'
-
-# SOCIAL_AUTH_FACEBOOK_KEY = '2380139345552475'
-# SOCIAL_AUTH_FACEBOOK_SECRET = '86498316b90262a605eda0b0cfd2cc61'
-# SOCIAL_AUTH_FACEBOOK_SCOPE = ['email', 'user_link']
-# SOCIAL_AUTH_FACEBOOK_PROFILE_EXTRA_PARAMS = {
-#   'fields': 'id, name, email, picture.type(large), link'
-# }
-# SOCIAL_AUTH_FACEBOOK_EXTRA_DATA = [
-#     ('name', 'name'),
-#     ('email', 'email'),
-#     ('picture', 'picture'),
-#     ('link', 'profile_url'),
-# ]
 
 SOCIAL_AUTH_GOOGLE_OAUTH2_KEY ='346054491258-fvcrvr3vta7si363r7db3klf1dvvlrkh.apps.googleusercontent.com'  #Paste CLient Key
 SOCIAL_AUTH_GOOGLE_OAUTH2_SECRET = 'uP2-c65zNVHPQ2o9Zp76KFIY'
@@ -162,8 +150,14 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/1.9/howto/static-files/
+# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR,  'static')
+
+# Extra places for collectstatic to find static files.
 
 SESSION_COOKIE_SAMESITE = None
 
@@ -173,3 +167,30 @@ SECURE_SSL_REDIRECT = False
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 # Force HTTPS in the final URIs
 SOCIAL_AUTH_REDIRECT_IS_HTTPS = False
+
+# Must be commented out when deploying
+# STATIC_ROOT = 'static'
+
+
+
+# Must be uncommented when deploying
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'static'),
+]
+
+AWS_STORAGE_BUCKET_NAME = 'django-conquez'
+AWS_S3_REGION_NAME = 'us-east-2'
+AWS_ACCESS_KEY_ID = 'AKIAIQKSQQX6TSETV3HQ'
+AWS_SECRET_ACCESS_KEY = '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'
+AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
+
+AWS_S3_OBJECT_PARAMETERS = {
+    'CacheControl': 'max-age=86400',
+}
+
+AWS_LOCATION = 'static'
+STATICFILES_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
+STATIC_URL = "https://%s/%s/" % (AWS_S3_CUSTOM_DOMAIN, AWS_LOCATION)
+
+DEFAULT_FILE_STORAGE = 'mysite.storage_backends.MediaStorage'

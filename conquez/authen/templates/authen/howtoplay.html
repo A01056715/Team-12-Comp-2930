@@ -1,0 +1,193 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>How To Play</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--Google Font link-->
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+
+        <!-- CSS Section -->
+        <!-- Suplementary -->
+        <link rel="stylesheet" href="{% static 'authen/css/swiper.min.css' %}">
+        <link rel="stylesheet" href="{% static 'authen/css/animate.css' %}">
+        <link rel="stylesheet" href="{% static 'authen/css/iconfont.css' %}">
+        <link rel="stylesheet" href="{% static 'authen/css/font-awesome.min.css' %}">
+        <link rel="stylesheet" href="{% static 'authen/css/bootstrap.min.css' %}">
+        <link rel="stylesheet" href="{% static 'authen/css/magnific-popup.css' %}">
+        <link rel="stylesheet" href="{% static 'authen/css/bootsnav.css' %}">
+        <!-- Burger Button -->
+        <link rel="stylesheet" href="{% static 'authen/css/burger_reset.css' %}"> <!-- CSS reset -->
+        <link rel="stylesheet" href="{% static 'authen/css/burger_style.css' %}"> <!-- Resource style -->
+        <script src="{% static 'authen/js/modernizr.js' %}"></script>
+
+        <!-- How To Play -->
+        <link rel="stylesheet" href="{% static 'authen/css/howtoplay_style.css' %}">
+
+        <!-- Responsiveness -->
+        <link rel="stylesheet" href="{% static 'authen/css/responsive.css' %}" />
+        <script src="{% static 'authen/js/modernizr-2.8.3-respond-1.4.2.min.js' %}"></script>
+    </head>
+
+    <body data-spy="scroll" data-target=".navbar-collapse">
+
+        <nav>
+            <ul class="cd-primary-nav">
+                <li><a href="{% url 'home' %}">Globe</a></li>
+                <li><a href="{% url 'profile' %}">Profile</a></li>
+                <li><a href="{% url 'aboutus' %}">About Us</a></li>
+                <li><a href="{% url 'logout' %}">Logout</a></li>
+            </ul>
+        </nav>
+                    
+        <div class="cd-overlay-nav">
+            <span></span>
+        </div>
+                
+        <div class="cd-overlay-content">
+            <span></span>
+        </div>
+        <a href="#0" class="cd-nav-trigger">Menu<span class="cd-icon"></span></a>
+
+
+        <!-- Preloader -->
+        <div id="loading">
+            <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+        </div><!--End off Preloader -->
+
+
+        <div class="culmn">
+            <!--Home page style-->
+
+            <!--Home Sections-->
+
+            <section id="home" class="home">
+                <div class="container">
+                    <div class="row">
+                        <div class="main_home">
+                            <div class="col-md-6">
+                                <div class="home_text">
+                                    <h1 class="text-white">How To Play</h1>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--End off row-->
+                </div><!--End off container -->
+            </section> <!--End off Home Sections-->
+
+            <!--screen short section-->
+
+            <section id="screen_area" class="screen_area">
+                <div class="container">
+                    <div class="row">
+                        <div class="main_screen">
+                            <div class="col-md-8 col-md-offset-2 col-sm-12">
+                                <div class="head_title text-center">
+                                </div>
+                            </div>
+                            <div class="col-md-8 col-md-offset-2 col-sm-12">
+                                <div class="head_title text-center">
+                                    <h2 id="steps">Steps</h1>
+                                </div>
+                            </div>
+
+                            <!-- Screen01-->
+                            <div class="screen01 roomy-50">
+                                <div class="col-md-6">
+                                    <div class="screen01_img text-center">
+                                        <img src="{% static 'authen/images/screen01.png' %}" alt="" />
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="screen01_content m-top-100">
+                                        <h2 class="m-top-40">Scroll!</h2>
+                                        <p class="m-top-20">Scroll the globe and find the country you want to conquer!</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Screen02-->
+                            <div class="screen02 roomy-50 m-top-100">
+                                <div class="col-md-6 col-md-push-6">
+                                    <div class="screen02_img text-center">
+                                        <img src="{% static 'authen/images/screen02.png' %}" alt="" />
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-md-pull-6">
+                                    <div class="screen02_content m-top-100">
+                                        <h2 class="m-top-40">Click!</h2>
+                                        <p class="m-top-20">Once you see the country you want to conquer, have a click!</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Screen03-->
+                            <div class="screen03 roomy-50 m-top-100">
+                                <div class="col-md-6">
+                                    <div class="screen03_img text-center">
+                                        <img src="{% static 'authen/images/screen03.png' %}" alt="" />
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="screen03_content m-top-100">
+                                        <h2 class="m-top-40">Slide!</h2>
+                                        <p class="m-top-20">Once you are on the quiz page, answer the multiple choice and slide to the next question!</p>
+                                    </div>
+                                    <div class="screen03_content m-top-100">
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- scroll up-->
+            <div class="scrollup">
+                <a href="#"><i class="fa fa-chevron-up"></i></a>
+            </div><!-- End off scroll up -->
+            
+            
+            <footer id="footer" class="footer bg-black">
+                <div class="container">
+                    <div class="row">
+                        <div class="divider"></div>
+                        <div class="col-md-12">
+                            <div class="main_footer text-center p-top-40 p-bottom-30">
+                                <h2 class="wow fadeInRight text-white" data-wow-duration="1s">
+                                    Team 12
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+
+
+
+        </div>
+
+        <!-- JS Section -->
+
+        <!-- Suplementary -->
+        <script src="{% static 'authen/js/jquery-1.11.2.min.js' %}"></script>
+        <script src="{% static 'authen/js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'authen/js/jquery.magnific-popup.js' %}"></script>
+        <script src="{% static 'authen/js/jquery.easing.1.3.js' %}"></script>
+        <script src="{% static 'authen/js/swiper.min.js' %}"></script>
+        <script src="{% static 'authen/js/jquery.collapse.js' %}"></script>
+        <script src="{% static 'authen/js/bootsnav.js' %}"></script>
+        <script src="{% static 'authen/js/plugins.js' %}"></script>
+        <!-- How To Play -->
+        <script src="{% static 'authen/js/howtoplay_main.js' %}"></script>
+        <!-- Burger Button -->
+        <script src="{% static 'authen/js/velocity.min.js' %}"></script>
+        <script src="{% static 'authen/js/burger_main.js' %}"></script>
+    </body>
+</html>
