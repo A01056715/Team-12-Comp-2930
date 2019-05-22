@@ -28,12 +28,9 @@ def home(request):
     return render(request, 'authen/home.html')
 
 # Renders the aboutus page only if the user is logged in
-@login_required
 def aboutus(request):
     return render(request, 'authen/aboutus.html')
 
-# Renders the how to play (instruction) page if the user is logged in
-@login_required
 def howtoplay(request):
     return render(request, 'authen/howtoplay.html')
 
