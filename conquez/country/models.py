@@ -1,6 +1,6 @@
 from django.db import models
 
-# Create your models here.
+# Models for the Country and Question for the question
 class Country(models.Model):
     name = models.CharField(max_length=100, null=True, blank=True)
 

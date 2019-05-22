@@ -1,6 +1,6 @@
 {% load staticfiles %}
 <!doctype html>
-<html class="no-js" lang="en"> <!--<![endif]-->
+<html class="no-js" lang="en">
     <head>
         <meta charset="utf-8">
         <title>How To Play</title>
@@ -10,7 +10,8 @@
         <!--Google Font link-->
         <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
 
-
+        <!-- CSS Section -->
+        <!-- Suplementary -->
         <link rel="stylesheet" href="{% static 'authen/css/swiper.min.css' %}">
         <link rel="stylesheet" href="{% static 'authen/css/animate.css' %}">
         <link rel="stylesheet" href="{% static 'authen/css/iconfont.css' %}">
@@ -18,19 +19,16 @@
         <link rel="stylesheet" href="{% static 'authen/css/bootstrap.min.css' %}">
         <link rel="stylesheet" href="{% static 'authen/css/magnific-popup.css' %}">
         <link rel="stylesheet" href="{% static 'authen/css/bootsnav.css' %}">
-
+        <!-- Burger Button -->
         <link rel="stylesheet" href="{% static 'authen/css/burger_reset.css' %}"> <!-- CSS reset -->
         <link rel="stylesheet" href="{% static 'authen/css/burger_style.css' %}"> <!-- Resource style -->
         <script src="{% static 'authen/js/modernizr.js' %}"></script>
 
-        <!--For Plugins external css-->
-        <!--<link rel="stylesheet" href="assets/css/plugins.css" />-->
-        <!--Theme custom css -->
+        <!-- How To Play -->
         <link rel="stylesheet" href="{% static 'authen/css/howtoplay_style.css' %}">
 
-        <!--Theme Responsive css-->
+        <!-- Responsiveness -->
         <link rel="stylesheet" href="{% static 'authen/css/responsive.css' %}" />
-
         <script src="{% static 'authen/js/modernizr-2.8.3-respond-1.4.2.min.js' %}"></script>
     </head>
 
@@ -41,7 +39,7 @@
                 <li><a href="{% url 'home' %}">Globe</a></li>
                 <li><a href="{% url 'profile' %}">Profile</a></li>
                 <li><a href="{% url 'aboutus' %}">About Us</a></li>
-                <li><a href="{% url 'logout' %}">Logout</a></li>
+                <li><a href="{% url 'socialauth_disconnect' 'logout' %}">Logout</a></li>
             </ul>
         </nav>
                     
@@ -57,14 +55,7 @@
 
         <!-- Preloader -->
         <div id="loading">
-            <div id="loading-center">
-                <div id="loading-center-absolute">
-                    <div class="object" id="object_one"></div>
-                    <div class="object" id="object_two"></div>
-                    <div class="object" id="object_three"></div>
-                    <div class="object" id="object_four"></div>
-                </div>
-            </div>
+            <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
         </div><!--End off Preloader -->
 
 
@@ -116,7 +107,7 @@
                                         <p class="m-top-20">Scroll the globe and find the country you want to conquer!</p>
                                     </div>
                                 </div>
-                            </div><!--End off Screen01-->
+                            </div>
 
                             <!-- Screen02-->
                             <div class="screen02 roomy-50 m-top-100">
@@ -131,7 +122,7 @@
                                         <p class="m-top-20">Once you see the country you want to conquer, have a click!</p>
                                     </div>
                                 </div>
-                            </div><!--End off Screen02-->
+                            </div>
 
                             <!-- Screen03-->
                             <div class="screen03 roomy-50 m-top-100">
@@ -148,13 +139,13 @@
                                     <div class="screen03_content m-top-100">
                                     </div>
                                 </div>
-                            </div><!--End off Screen02-->
+                            </div>
 
 
                         </div>
-                    </div><!--End off row-->
-                </div><!--End off container-->
-            </section><!--End off Screen01 Area Section -->
+                    </div>
+                </div>
+            </section>
 
             <!-- scroll up-->
             <div class="scrollup">
@@ -182,24 +173,21 @@
 
         </div>
 
-        <!-- JS includes -->
+        <!-- JS Section -->
 
+        <!-- Suplementary -->
         <script src="{% static 'authen/js/jquery-1.11.2.min.js' %}"></script>
         <script src="{% static 'authen/js/bootstrap.min.js' %}"></script>
-
         <script src="{% static 'authen/js/jquery.magnific-popup.js' %}"></script>
         <script src="{% static 'authen/js/jquery.easing.1.3.js' %}"></script>
         <script src="{% static 'authen/js/swiper.min.js' %}"></script>
         <script src="{% static 'authen/js/jquery.collapse.js' %}"></script>
         <script src="{% static 'authen/js/bootsnav.js' %}"></script>
-
-
-
         <script src="{% static 'authen/js/plugins.js' %}"></script>
+        <!-- How To Play -->
         <script src="{% static 'authen/js/howtoplay_main.js' %}"></script>
-
+        <!-- Burger Button -->
         <script src="{% static 'authen/js/velocity.min.js' %}"></script>
         <script src="{% static 'authen/js/burger_main.js' %}"></script>
-
     </body>
 </html>

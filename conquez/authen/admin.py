@@ -1,5 +1,5 @@
 from django.contrib import admin
 from authen.models import Conquered
 
-# Register your models here.
+# Register the Conquered model so that it appears on the Django admin page
 admin.site.register(Conquered)
