@@ -45,8 +45,9 @@
           <div class="card__watermark" data-watermark="Q1"></div>
           <div class="card__logo card__will-animate"></div>
           <span class="card__price card__will-animate" ></span>
+          {% block headline1 %}
           <h1  id="heading1" class="card__title card__will-animate">General</h1>
-
+          {% endblock %}
           <span class="card__subtitle card__will-animate">{{ question.question }}</span>
         </div>
 
@@ -72,7 +73,8 @@
           <div class="card__watermark" data-watermark="Q2"></div>
           <div class="card__logo card__will-animate"></div>
           <span class="card__price card__will-animate"></span>
-          <h1 id="heading2" class="card__title card__will-animate">The Three R's</h1>
+          {% block headline2 %}
+          {% endblock %}
           <span class="card__subtitle card__will-animate">{{ question.question }}</span>
         </div>
 
@@ -98,7 +100,8 @@
           <div class="card__watermark" data-watermark="Q3"></div>
           <div class="card__logo card__will-animate"></div>
           <span class="card__price card__will-animate" ></span>
-          <h1 class="card__title card__will-animate" id="heading3">Resources & Waste</h1>
+          {% block headline3 %}
+          {% endblock %}
           <span class="card__subtitle card__will-animate">{{ question.question }}</span>
         </div>
 
@@ -124,7 +127,8 @@
           <div class="card__watermark" data-watermark="Q4"></div>
           <div class="card__logo card__will-animate"></div>
           <span class="card__price card__will-animate"></span>
-          <h1 class="card__title card__will-animate" id="heading4">Ecosystem</h1>
+          {% block headline4 %}
+          {% endblock %}
           <span class="card__subtitle card__will-animate">{{ question.question }}</span>
         </div>
 
