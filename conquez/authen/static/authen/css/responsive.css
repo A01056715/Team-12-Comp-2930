@@ -197,4 +197,8 @@ Author URI: http://www.xpeedstudio.com
 }
 
 
-
+@media  (max-width: 700px) {
+    .sm-m-top-50, .scrolldown {
+        display: none;
+    }
+}
