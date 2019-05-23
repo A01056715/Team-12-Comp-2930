@@ -1,3 +1,7 @@
+/*
+After discussions with flynn. The only working solution for onclick events on the globe to work we have to make
+the globe and its configurations global.
+ */
 let configs = {
     color: {
         surface:0xFFFFFF,
@@ -53,7 +57,9 @@ controller.addData(data);
 controller.setInitCountry('CA').adjustOceanBrightness( 2 ).setTransparentBackground( true ).addHalo(0xFFF2CC);
 controller.init();
 controller.onCountryPicked(callback);
-
+/*
+Appends information on the banner according to the status of the country
+ */
 function callback(selectedCountry) {
     let available_countries = [ 'BRAZIL', 'CANADA', 'CHINA', 'INDIA', 'TURKEY', 'ANTARCTICA'];
     let nameCard = $( "#nameCard" );
@@ -104,7 +110,4 @@ function callback(selectedCountry) {
     console.log(controller.getSelectedCountry().name);
 
 }
-function explode() {
-    $('#globalArea').toggle('explode');
 
-}
