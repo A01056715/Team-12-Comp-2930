@@ -74,16 +74,16 @@ function validator(bool, question) {
 
 function explanationRender(question) {
     if (question===1){
-        document.getElementById('buttons1').innerText = "This is the explanation of qus1"
+        document.getElementById('buttons1').innerText = "With more than 1 million hectares of wetlands lost since 1950, half of the country's forest area degraded and populations of fish, birds, and large mammals on the decline"
     }
     else if (question === 2){
-        document.getElementById('buttons2').innerText = "This is the explanation of qus2"
+        document.getElementById('buttons2').innerText = "Total bird counts have dropped 50 percent in the past 20 years, and now up to 70 percent of the bird species regularly observed in Turkey are threatened with extinction"
     }
     else if (question === 3){
-        document.getElementById('buttons3').innerText = "This is the explanation of qus3"
+        document.getElementById('buttons3').innerText = "KuzeyDoğa is a Turkish conservation non-governmental organization operating primarily in the far eastern section of the country, with a focal area ranging from the shores of the Black Sea to Mount Ağrı (Ararat). It is headquartered in the city of Kars."
     }
     else {
-        document.getElementById('buttons4').innerText = "This is the explanation of qus4";
+        document.getElementById('buttons4').innerText = "Turkey generates 28,858,880 tons of solid municipal waste per year; the annual amount of waste generated per capita amounts to 390 kilograms.Turkey's waste collection coverage rate is 77%, whereas its unsound waste disposal rate is 69%";
         document.getElementById('buttons4').innerHTML += "</br></br><button onclick='scoreRender()'>Click Here To Check Score</button>"
 
 
