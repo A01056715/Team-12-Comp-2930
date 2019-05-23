@@ -5,7 +5,8 @@ conquez is mobile-friendly quiz app on environmental issues with a conquering mo
 -A Profile page with milestones 
 
 # Prerequisites 
-A phone with an internet connection
+A Mobile phone with an internet connection
+Owns Google Account or Github Account
 
 # Technology
 Frontend: HTML, CSS(Bootstrap, Responsiveness),  JavaScript (jQuery, Gio.js, Three.js, Modernizer.js)
@@ -21,7 +22,11 @@ IDE’s : Visual Studio Code, Webstorm, Pycharm
 # Authors
 Team 12
 Kenichi Okiebisu : Project Manager, Backend Developer
+
 Younga Leah Park: Backend Developer
+
 Michelle Chan: Frontend Developer, Copywriter, Researcher 
+
 Dhruv Gandhi: Frontend Developer
+
 Kshitiz Bisht: Frontend Developer
