@@ -4,10 +4,10 @@ conquez is mobile-friendly quiz app on environmental issues with a conquering mo
 -A globe to select countries before conquering them.
 -A Profile page with milestones 
 
-#Prerequisites 
+##Prerequisites 
 A phone with an internet connection
 
-#Technology
+##Technology
 Frontend: HTML, CSS(Bootstrap, Responsiveness),  JavaScript (jQuery, Gio.js, Three.js, Modernizer.js)
 
 Backend: Django (Social Django)
@@ -18,7 +18,7 @@ Hosting: AWS S3, Heroku
 
 IDE’s : Visual Studio Code, Webstorm, Pycharm
 
-#Authors
+##Authors
 Team 12
 Kenichi Okiebisu : Project Manager, Backend Developer
 Younga Leah Park: Backend Developer
