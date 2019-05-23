@@ -1,11 +1,16 @@
 # Conquez
 conquez is mobile-friendly quiz app on environmental issues with a conquering motif
+
 -Five countires to "conquer" (answer questions)
+
 -A globe to select countries before conquering them.
+
 -A Profile page with milestones 
 
 # Prerequisites 
 A Mobile phone with an internet connection
+Owns Google Account or Github Account
+
 Owns Google Account or Github Account
 
 # Technology
@@ -21,6 +26,7 @@ IDE’s : Visual Studio Code, Webstorm, Pycharm
 
 # Authors
 Team 12
+
 Kenichi Okiebisu : Project Manager, Backend Developer
 
 Younga Leah Park: Backend Developer
