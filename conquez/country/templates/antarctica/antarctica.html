@@ -5,14 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'antarctica/css/stylesheet.css' %}">
     <title>Antarctica</title>
 </head>
 <body>
-<div>
-    <img src="{% static 'antarctica/images/Mask Group.png' %}" alt="penguin">
-    <p id="headline"><b>Too clean to conquer retreat</b></p>
-    <p id="btn"><a href="{% url 'home' %}">Return Home</a></p>
-</div>
+    <div id="penguin">
+        <img src="{% static 'antarctica/images/Mask Group.png' %}" alt="penguin">
+    </div>
+    <div>
+        <p id="headline"><b>Too Clean To Conquer! Retreat!</b></p>
+    </div>
+    <div id="btn">
+        <a href="{% url 'home' %}">Return Home</a>
+    </div>
 
 </body>
 </html>

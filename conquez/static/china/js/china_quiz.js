@@ -74,13 +74,13 @@ function validator(bool, question) {
 
 function explanationRender(question) {
     if (question===1){
-        document.getElementById('buttons1').innerText = "air pollution from the burning of fossil fuels, principally coal, is causing people to die on average 5.5 years sooner than they otherwise might.";
+        document.getElementById('buttons1').innerText = "Air pollution from the burning of fossil fuels, principally coal, is causing people to die on average 5.5 years sooner than they otherwise might.";
     }
     else if (question === 2){
         document.getElementById('buttons2').innerText = "China has seen a sharp rise in the incidence of lung cancer in the past 10 years, with long-term exposure to air pollution a possible culprit";
     }
     else if (question === 3){
-        document.getElementById('buttons3').innerText = "Fossil fuel is the major reason that cause Air pollution. China should change it to Renewable energy like Solar panel or wind power.";
+        document.getElementById('buttons3').innerText = "The use of fossil fuels is predominantly why air pollution exists, and should be replaced with a renewable source of energy such as solar panels or wind turbines.";
     }
     else {
         document.getElementById('buttons4').innerText = "The Yellow River earned it’s nickname “China’s Sorrow” because it’s frequent floods were very destructive to agricultural society.";

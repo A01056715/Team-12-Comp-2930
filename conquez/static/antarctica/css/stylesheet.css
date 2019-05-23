@@ -1,5 +1,44 @@
-body {
+body{
+    background-color: #363442;
+    font-family: Verdana;
+}
+
+p {
+    font-size: 4em;
     color: white;
-    background-color: #2ee4bb;
+    text-align: center;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+#headline{
+    width: 12em;
+    font-size: 1.5em;
+    text-align: center;
+    margin: 0 auto;
+}
+
+img{
+    height: 6em;
+    width: 6em;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+#btn{
+    border: 1px solid white;
+    border-radius: 0.2em;
+    padding: 0.3em;
+    position: absolute;
+    top: 77%;
+    left: 50%;
+    transform: translate(-50%, -75%);
+}
+
+#penguin {
+    text-align: center;
+    margin: 0 auto;
 }
 

@@ -74,16 +74,16 @@ function validator(bool, question) {
 
 function explanationRender(question) {
     if (question===1){
-        document.getElementById('buttons1').innerText = "This is the explanation of qus1"
+        document.getElementById('buttons1').innerText = "The biggest environmental issue in Brazil is Deforestation. Forest losses in the Brazil Amazon biome averaged 1.4 million hectares per year between 2001 and 2012"
     }
     else if (question === 2){
-        document.getElementById('buttons2').innerText = "This is the explanation of qus2"
+        document.getElementById('buttons2').innerText = "Cattle ranching is now the biggest cause of deforestation in the Amazon, and nearly 80 per cent of deforested areas in Brazil are now used for pasture"
     }
     else if (question === 3){
-        document.getElementById('buttons3').innerText = "This is the explanation of qus3"
+        document.getElementById('buttons3').innerText = "Since 1970, 70% of the Amazon forest was deforested  "
     }
     else {
-        document.getElementById('buttons4').innerText = "This is the explanation of qus4";
+        document.getElementById('buttons4').innerText = "Amazon Watch is Non profit organizeation founded in 1996 to protect the rainforest and advance the rights of indigenous peoples in the Amazon Basin";
         document.getElementById('buttons4').innerHTML += "</br></br><button onclick='scoreRender()'>Click Here To Check Score</button>"
 
 
