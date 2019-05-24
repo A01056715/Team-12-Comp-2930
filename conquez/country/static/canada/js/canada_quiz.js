@@ -112,7 +112,3 @@ function scoreRender(){
     }
     document.getElementById('buttons4').innerHTML += '<div id="link"><a href="https://conquez.herokuapp.com/home">Go Back</a></div>';
 }
-ques_4_A.addEventListener("click", function checkIt12() {checkAnswer4('A');});
-ques_4_B.addEventListener("click", function checkIt13() {checkAnswer4('B');});
-ques_4_C.addEventListener("click", function checkIt14() {checkAnswer4('C');});
-ques_4_D.addEventListener("click", function checkIt15() {checkAnswer4('D');});

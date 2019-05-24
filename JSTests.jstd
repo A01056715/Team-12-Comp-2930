@@ -1,0 +1,4 @@
+load:
+  - conquez/country/static/canada/js/canada_quiz.js
+test:
+  - test/tests.js

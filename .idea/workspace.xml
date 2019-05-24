@@ -217,16 +217,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.about_us.html">
+  <component name="RunManager" selected="JsTestDriver.JSTests.jstd">
     <configuration name="about_us.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/team-12-comp-2930/design/Bisht/about_us/about_us.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
     <configuration name="canada.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/team-12-comp-2930/design/Bisht/canada/canada.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="Unnamed" type="JsTestDriver-test-runner" factoryName="JsTestDriver" nameIsGenerated="true">
+    <configuration name="JSTests.jstd" type="JsTestDriver-test-runner" factoryName="JsTestDriver" nameIsGenerated="true">
       <setting name="configLocationType" value="CONFIG_FILE" />
-      <setting name="settingsFile" value="$PROJECT_DIR$/design/Bisht/canada/JSTests.jstd" />
+      <setting name="settingsFile" value="$PROJECT_DIR$/JSTests.jstd" />
       <setting name="serverType" value="INTERNAL" />
       <setting name="preferredDebugBrowser" value="Chrome" />
       <method v="2" />
@@ -237,7 +237,7 @@
     <list>
       <item itemvalue="JavaScript Debug.about_us.html" />
       <item itemvalue="JavaScript Debug.canada.html" />
-      <item itemvalue="JsTestDriver.Unnamed" />
+      <item itemvalue="JsTestDriver.JSTests.jstd" />
       <item itemvalue="Node.js.quiz.js" />
     </list>
     <recent_temporary>
